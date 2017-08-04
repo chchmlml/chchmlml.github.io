@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haicheng的博客</title>
+    <description>这是haicheng的博客，里面是技术、感悟和气的东西。 This is haicheng`s blog,A jumble of things.
+</description>
+    <link>https://chchmlml.github.io/</link>
+    <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 04 Aug 2017 16:12:39 +0800</pubDate>
+    <lastBuildDate>Fri, 04 Aug 2017 16:12:39 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.0</generator>
+    
+      <item>
+        <title>每天学习笔记_1</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#第一周&quot; id=&quot;markdown-toc-第一周&quot;&gt;第一周&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;第一周&quot;&gt;第一周&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;追求自我价值之路
+    &lt;blockquote&gt;
+      &lt;p&gt;承认自己的价值&lt;br /&gt;
+正视自己的作用&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何获取好点子&lt;/li&gt;
+  &lt;li&gt;八个认为是好习惯的坏习惯&lt;/li&gt;
+  &lt;li&gt;做个积极的悲观主义者（韩雪）
+    &lt;blockquote&gt;
+      &lt;p&gt;勇于接受挑战&lt;br /&gt;
+不惧怕失败&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;我为什么做一个黑客
+    &lt;blockquote&gt;
+      &lt;p&gt;从突破中找到乐趣  &lt;br /&gt;
+在互联网上为年轻人简历正确的道德观&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/08/01/everyday-learn/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/01/everyday-learn/</guid>
+        
+        
+        <category>学习笔记</category>
+        
+      </item>
+    
+      <item>
+        <title>Stacer Linux监控系统</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#stacer&quot; id=&quot;markdown-toc-stacer&quot;&gt;Stacer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#简介&quot; id=&quot;markdown-toc-简介&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#项目地址&quot; id=&quot;markdown-toc-项目地址&quot;&gt;项目地址&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;想看看源码来着，作为后端学习意义不大，实际应用更大。&lt;/p&gt;
+
+&lt;h1 id=&quot;stacer&quot;&gt;Stacer&lt;/h1&gt;
+
+&lt;h1 id=&quot;简介&quot;&gt;简介&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;针对linux服务器监控，主要是Ubuntu&lt;/li&gt;
+  &lt;li&gt;系统概要监控，整体运行、文件状态&lt;/li&gt;
+  &lt;li&gt;支持插件、服务&lt;/li&gt;
+  &lt;li&gt;进程监控&lt;/li&gt;
+  &lt;li&gt;资源监控&lt;/li&gt;
+  &lt;li&gt;多语言系统支持&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;项目地址&quot;&gt;项目地址&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/oguzhaninan/Stacer&quot;&gt;https://github.com/oguzhaninan/Stacer&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 30 Jul 2017 14:45:03 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/30/stacer/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/stacer/</guid>
+        
+        
+        <category>服务器 前端</category>
+        
+      </item>
+    
+      <item>
+        <title>网络爬虫技术总结</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#基本原理&quot; id=&quot;markdown-toc-基本原理&quot;&gt;基本原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#爬虫的工作流程&quot; id=&quot;markdown-toc-爬虫的工作流程&quot;&gt;爬虫的工作流程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#要解决的问题&quot; id=&quot;markdown-toc-要解决的问题&quot;&gt;要解决的问题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#相关资料&quot; id=&quot;markdown-toc-相关资料&quot;&gt;相关资料&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;基本原理&quot;&gt;基本原理&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），
+是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还
+有蚂蚁、自动索引、模拟程序或者蠕虫。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;我这里说的爬虫则是相对狭义，作为开发，自己做爬虫爬去资料无疑是很有成就感的。&lt;/p&gt;
+
+&lt;h1 id=&quot;爬虫的工作流程&quot;&gt;爬虫的工作流程&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;准备种子URL；&lt;/li&gt;
+  &lt;li&gt;将这些URL放入待抓取URL队列；&lt;/li&gt;
+  &lt;li&gt;从待抓取URL队列中取出待抓取在URL，解析DNS，并且得到主机的ip，并将URL对应的网页下载下来，存储进已下载网页库中。此外，将这些URL放进已抓取URL队列。&lt;/li&gt;
+  &lt;li&gt;分析已抓取URL队列中的URL，分析其中的其他URL，并且将URL放入待抓取URL队列，从而进入下一个循环；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;要解决的问题&quot;&gt;要解决的问题&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;要获取我们只定的信息，所以可以指定我们需要的格式来定义目标也，通过DOM解析技术从缓存的页面提炼信息，保存指定信息；&lt;/li&gt;
+  &lt;li&gt;效率是个大问题，多线程、分布式技术的应用很重要；&lt;/li&gt;
+  &lt;li&gt;递归的获取url地址是个类似图数据结构，以何种方式抓取url成为抓取策略，其中有&lt;code class=&quot;highlighter-rouge&quot;&gt;深度优先遍历策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;宽度优先遍历策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;反向链接数策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;PageRank策略&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;相关资料&quot;&gt;相关资料&lt;/h1&gt;
+&lt;p&gt;java、python、Node.js、Go语言因为多线程、协程的支持，非常适合做爬虫语言；php应用多进程方式也可作为爬虫的应用。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/owner888/phpspider&quot;&gt;php爬虫&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;PHP, Python, Node.js 哪个比较适合写爬虫？&quot;&gt;PHP, Python, Node.js 哪个比较适合写爬虫？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 30 Jul 2017 13:58:34 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/30/about-crawler-technology/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/about-crawler-technology/</guid>
+        
+        
+        <category>关于网络爬虫</category>
+        
+      </item>
+    
+      <item>
+        <title>信息加密技术总结</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#开发中的信息加密&quot; id=&quot;markdown-toc-开发中的信息加密&quot;&gt;开发中的信息加密&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#加密技术分类&quot; id=&quot;markdown-toc-加密技术分类&quot;&gt;加密技术分类&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#对称加密&quot; id=&quot;markdown-toc-对称加密&quot;&gt;对称加密&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#非对称加密&quot; id=&quot;markdown-toc-非对称加密&quot;&gt;非对称加密&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#单线散列摘要&quot; id=&quot;markdown-toc-单线散列摘要&quot;&gt;单线散列摘要&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#https中对加密技术的应用&quot; id=&quot;markdown-toc-https中对加密技术的应用&quot;&gt;https中对加密技术的应用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;开发中的信息加密&quot;&gt;开发中的信息加密&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，
+到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子
+商务和VPN上的应用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;加密技术分类&quot;&gt;加密技术分类&lt;/h1&gt;
+&lt;p&gt;加密技术根据其实现，主要分为&lt;code class=&quot;highlighter-rouge&quot;&gt;对称加密&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;非对称加密&lt;/code&gt;，但是大家熟知的MD5、sha算法不是加密技术，属于&lt;code class=&quot;highlighter-rouge&quot;&gt;单线散列摘要&lt;/code&gt;算法，不可逆算法。&lt;/p&gt;
+
+&lt;h1 id=&quot;对称加密&quot;&gt;对称加密&lt;/h1&gt;
+&lt;p&gt;所谓对称加密，就是加密和解密使用同一秘钥，这也是这种加密算法最显著的缺点之一。上面的字典、圣经等也可以理解为是一份秘钥。现代的加密算法中，DES、3DES、AES等算法都属于对称加密算法。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;优点：效率高&lt;/li&gt;
+  &lt;li&gt;缺点：密钥传输不确定性，一单密钥泄露，就造成加密的失败&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;非对称加密&quot;&gt;非对称加密&lt;/h1&gt;
+&lt;p&gt;这种加密算法的秘钥分为公钥和私钥，公开秘钥用于对信息进行加密，而解密时使用私有秘钥进行解密，信息发送方使用公钥对信息进行加密，然后将信息发送给接收方，接收方使用私钥进行解密即可。常见的非对称加密算法有：RSA、EIGamal、背包算法、Rebin（RSA的特例）。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;优点：相对于对称加密安全&lt;/li&gt;
+  &lt;li&gt;缺点：效率低&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;单线散列摘要&quot;&gt;单线散列摘要&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;单向散列算法，又称hash函数，Hash函数（也称杂凑函数或杂凑算法）就是把任意长的输入消息串变化
+成固定长的输出串的一种函数。这个输出串称为该消息的杂凑值。一般用于产生消息摘要，密钥加密等。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;常见散列函数(Hash函数)有：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MD5（Message Digest Algorithm 5）：是RSA数据安全公司开发的一种单向散列算法，MD5被广泛使用，
+可以用来把不同长度的数据块进行暗码运算成一个128位的数值。
+SHA（Secure Hash Algorithm）这是一种较新的散列算法，可以对任意长度的数据运算生成一个160位的数值。
+MAC（Message Authentication Code）：消息认证代码，是一种使用密钥的单向函数，可以用它们在系统上或
+用户之间认证文件或消息，常见的是HMAC（用于消息认证的密钥散列算法）。
+CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现简单，检错能力强，被广泛使用在各种
+数据校验应用中。占用系统资源少，用软硬件均能实现，是进行数据传输差错检测地一种很好的手段（CRC 并不是严格
+意义上的散列算法，但它的作用与散列算法大致相同，所以归于此类）。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(摘录于百度)&lt;/p&gt;
+
+&lt;h1 id=&quot;https中对加密技术的应用&quot;&gt;https中对加密技术的应用&lt;/h1&gt;
+&lt;p&gt;https通信双方建立通信后，A首先生成一对公钥和私钥，并将公钥发送给B，B使用公钥将一个对称加密算法的“秘钥+有效期”加密后，再发回给A，A使用私钥解密后，双方便同步了一个对称算法的秘钥，然后在规定的有效期内，双方便可以使用这个秘钥对通信数据进行加密和解密。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;总结起来：非对称加密传输的是加密算法；对称加密传输的是信息。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 15 Jul 2017 15:43:36 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/15/about-encryption-technology/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/15/about-encryption-technology/</guid>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+      <item>
+        <title>关于职业的困惑和探讨</title>
+        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#我的职业经历&quot; id=&quot;markdown-toc-我的职业经历&quot;&gt;我的职业经历&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#遇到的问题&quot; id=&quot;markdown-toc-遇到的问题&quot;&gt;遇到的问题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#关于技术的学习&quot; id=&quot;markdown-toc-关于技术的学习&quot;&gt;关于技术的学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;我的职业经历&quot;&gt;我的职业经历&lt;/h1&gt;
+
+&lt;p&gt;2011年怀着惊喜与忐忑，来到了上海漕河泾，成为毕业生实习的光荣一员。当时的公司PPS对自己来说还是很满意的，毕竟自己的学校与能力能顺利的找到工作还是知足的，漫漫工作路只是开始，在漕河泾一待就是三年多，里面的坎坷、温馨、困难自然如同生活一样不期而遇又不出意料。应该要感谢这份工作，从中理解生活与自我塑造的收获相比作为一名技术人员来说，更多而且丰富。&lt;/p&gt;
+
+&lt;p&gt;随着时间的进行，工作与生活的迷茫渐渐使自己不知所措。就如这浮躁的社会一样，离开重新开始也是顺应潮流了。所以我做了个至今不知道正确与否的决定，加入去做一份完全不可能成功的工作，美其名曰叫创业，甚至连自己否不知道这两个字的意义。&lt;/p&gt;
+
+&lt;p&gt;至少生活还是公平的，不会轻易放弃任何一个人，在诡异的结束了这个邮轮海的项目，我又一次似乎是被命运驱使的前行，来到了jd。从pps到jd，整整三年时间，自己的技术并没有显著提高，同时可能也错过了自己最该成长的日子。可是至少对于生活的领悟人、更加准确，明白如何面对自己、面对生活。&lt;/p&gt;
+
+&lt;p&gt;2015来到北京，我觉得这次是对自己的反省，承认自己的失败，对之前的日子彻底推翻重来。对自己的要求只有放低一切，重新塑造。是不是该感谢自己能承认之前的失误呢，不清楚，至少浪费了时间要自己争取回来，丢掉的自尊要自己拾起来，失去的快乐要慢慢先把伤口抚平起来。&lt;/p&gt;
+
+&lt;h1 id=&quot;遇到的问题&quot;&gt;遇到的问题&lt;/h1&gt;
+&lt;p&gt;来北京之前，虽然忐忑，但是对自己的技术还是相对自信的，可是面试的时候确实碰了不少壁，也曾经十分消沉，不知道这究竟是怎么回事。&lt;/p&gt;
+
+&lt;p&gt;后来也花一段时间思考原因，毕竟对自己的问题，钻牛角尖的时候还是挺多的，先记下来吧。&lt;/p&gt;
+
+&lt;p&gt;归纳起来，我觉得自身的问题可是技术方面的，长久以来自己对技术都是相对宽泛的学习，追求广度而缺乏精度，从后端到前端都学习，但是由于职业的进展跟技术的进步很贴近，杂而不够深入，所以较真的问题不行；缺乏周期性的归纳，不能牢靠的吸收可能是专业性较强的专业都怕的，甚至于生活，老祖宗早就告诉我们：“吾日三省吾身，为人谋而不忠乎？与朋友交而不信乎？传而不习乎”；缺乏对于人性的洞察，可能说来有些玄，可是事实就是所有事都是跟人打交道，把事情想的简单或者复杂终究不能成事，自身的发展不迎合身边的一切终究不成功。&lt;/p&gt;
+
+&lt;h1 id=&quot;关于技术的学习&quot;&gt;关于技术的学习&lt;/h1&gt;
+&lt;p&gt;职业的迷茫在于缺乏成长带来的危机感，技术成长停滞更加明显。&lt;/p&gt;
+
+&lt;p&gt;曾经我不断追求新的东西，并且贴近于实践，使得很长一段时间所有的理解仅限于知其然不知所以然，后来渐渐改掉这个毛病。&lt;/p&gt;
+
+&lt;p&gt;但是面对海量的技术，而且不断出现的新技术，很难保持长久的动力对所有的东西进行学习。&lt;/p&gt;
+
+&lt;p&gt;渐渐的明白我的做法或者着说方向是有问题的，毕竟做万金油不能保持上面所说的长久的上升动力，所以我希望以后对于技术学习保持：
+1、对知识的透彻理解 2、对某一方向的深入精通 3、对未知的敬畏。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Jul 2017 14:13:04 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/14/my-life-stage-summury/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/14/my-life-stage-summury/</guid>
+        
+        
+        <category>感悟</category>
+        
+      </item>
+    
+      <item>
+        <title>win7 oracle php</title>
+        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。
+    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。
+    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装，一切顺利，打开phpinfo()，没有oci8的提示，所以，进入php目录。打开php.ini，吧extension=php_oci8.dll，extension=php_pdo_oci.dll前面的；去掉，重启apache，打开phpinfo()，仍然没有oci8的提示，这里有个小问题，就是在php的扩展库里没有对oracle的扩展支持，所以大家还有下oraociei10.dll 和orannzsbb10.dll 和oci.dll（大家可以在这里下载），放入php环境下的ext（这个要在环境变里面，否则就复制到system32下面），重启apache，打开phpinfo()，已经有了oci8的提示。
+    下面配置oci客户端（这里大家注意下，因为php5以后，默认只支持10g以上版本），因为我这里要与公司的局域网服务端连接，只需要plsql调试，也就是客户端的安装就好了（http://115.com/file/dng7y94w），安装过程是从网上找的：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;把下载的Basic版压缩包解压，放到 D:\Program Files\instantclient_10_2 目录下，总共8个文件。&lt;/li&gt;
+  &lt;li&gt;桌面上，右键点“我的电脑”，选择“属性”，选择“高级”页中的“环境变量”，在系统变量中，增加：
+1) 变量名：ORACLE_HOME
+   变量值：D:\Program Files\instantclient_10_2
+2) 变量名：TNS_ADMIN
+   变量值：D:\Program Files\instantclient_10_2
+3) 变量名：NLS_LANG
+   变量值：SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+4) 修改Path变量，在后面添加 D:\Program Files\instantclient_10_2
+如果不愿意手工增加，可以下载 SetOraEnv.rar 附件, 解压后执行其中的 setOraEnv.bat.&lt;/li&gt;
+  &lt;li&gt;在D:\Progra~1\instantclient_10_2 新建一个文本文件，文件名为tnsnames.ora,文件中增加自己的数据库别名配置，
+示例如下：
+MyDB =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = 172.16.1.16)(PORT = 1521))
+ (CONNECT_DATA =
+   (SERVER = DEDICATED)
+   (SERVICE_NAME = ora10g)
+ )
+)
+主要改=前面的别名，Host为IP地址, SERVICE_NAME为数据库服务器的实例名。&lt;/li&gt;
+  &lt;li&gt;把sqlplus的压缩包中的文件，解压到 D:\Program Files\instantclient_10_2 目录下,共3个文件。
+在Dos命令行，在D:\Program Files\instantclient_10_2 目录下，运行 sqlplus   username/password@dbname,即可连到数据库上。
+（我没有进行第四步），个人认为环境变量最重要的是path、TNS_ADMIN的修改，重启apache，一切OK。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/07/win7-oracle-php/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/win7-oracle-php/</guid>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+      <item>
+        <title>php5 oracle xp</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 由于换组，今天不得不把业务熟悉下。新的组长要求我在本地进行程序编写及测试，所以。不得不搭建PHP的本地环境。虽然有傻瓜式的集成环境搭建工具，但是都是基于MySQL的，可是我需要搭建Oracle的本地环境，连接线上的数据库，想想就头痛。 因为以前自己测试过xampp搭建xp/php5/oracle，所以这次选用的是xampp，抛弃了一直用的wamp。一开始都很顺利，可是老问题也来了。 1.安装orl client 2.修改php.ini，打开php_oci.dll等扩展dll 重启apache，结果和我想的一样，木有用哭，还是报哪个“找不到php_oci8.php模块”。 能怎么办，度娘，google呗。查了半天，有了点眉目，有的资料上说php在xp平台上支持oci的最低版本是10g，没办法试一下吧，我把自己的已安装的9g卸掉，下了个10g的版本，地址ed2k://%7Cfile%7C%5BOracle.10g.For.Windows%5D.Oracle.10g.for.Windows.ISO%7C650379264%7C6cc207b3996489dd0998e4354a929481%7Ch=w3j5oxjfere6le6kykjxfwoymgojzhs3%7C/ 花了半天安上，重启apache（表示平静，打击多了也就不兴奋了）结果依旧抓狂。 继续查资料，这是找到了个有点靠谱的文章，地址http://blog.sina.com.cn/s/blog_56e9c93c01000ace.html 所以我又下了个instantclient10（我已经收藏到我的资源里了），并把里面的oraociei10.dll 和orannzsbb10.dll 和oci.dll 复制到php的ext（个人觉得只要在环境变量里就行），重启apache，好了，出现了oci8的支持。可怜。 当然我还借鉴了其他的文章，跟大家分享下http://bbs.phpchina.com/thread-44502-1-1.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</guid>
+        
+        <category>php</category>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+      <item>
+        <title>oracle php week problem</title>
+        <description>&lt;p&gt;今天遇到了个小问题，项目要求在数据库里查出某一天上一周的数据列，sql语句还好写；&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;to_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ww'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;运行，测试。起初还好，几轮测试下来出问题了，总是有那么几天不正确，就是说手算是40周，这是查询时却不是，有可能是41，所以我查了下手册，原来PHP中给日期格式化是这样的&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;date(&quot;W&quot;)//当天是当年的第几周，注：每周是从星期一开始  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;但是在Oracle周的解释是每周是从一月一日算起，所以显而易见会有些问题，所以为了解决我们就最好使他们保持一致，所以我写了下面的算法，跟大家分享下&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function get_week_index($month=null, $day=null, $year=null){  
+        //拿到某一天的月日年  
+        $month =$month?$month: date(&quot;m&quot;);  
+        $day =$day?$day:date(&quot;d&quot;);   
+        $year  =$year?$year: date(&quot;Y&quot;);  
+        //得到那一天的时间戳  
+        $getDay = mktime(0, 0, 0, $month, $day, $year);  
+        //得到差值  
+        $dayMin =$getDay- mktime(0, 0, 0, 1, 1, $year);  
+        //换算出是第几周  
+        $dayR =(int) ($dayMin / (7*24*3600));   
+        return ++$dayR;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/07/oracle-php-week-problem/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/oracle-php-week-problem/</guid>
+        
+        <category>php</category>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+      <item>
+        <title>left join where</title>
+        <description>&lt;p&gt;今天项目中遇到个问题，
+有三个表需要联合查询，我起初用的是where条件，语句是&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_name&lt;/span&gt;  
+          &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_corporation_event&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_brand&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_profession&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;  
+         &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt;  
+           &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;like&lt;/span&gt;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;测试没什么问题，可是偶尔会差不到，经过测试，原来数据录入时，有的时候这几个表偶儿会无法关联，也就是id无法对应上，所以果断使用left join，开始的语句是这样写的&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_name&lt;/span&gt;  
+                  &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_corporation_event&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;   
+                  &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_brand&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;  
+                    &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt;  
+                  &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_profession&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;  
+                    &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;like&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'%%'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rownum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;  
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这样出现的问题主要like条件不能成立，还有ROWNUM&amp;lt;5条件不能成立，看来是sql语法有问题，查了下资料，更改成&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;  
+          &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_name&lt;/span&gt;  
+                  &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_corporation_event&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;   
+                  &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_brand&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;  
+                    &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt;  
+                  &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_profession&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;  
+                    &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt;  
+                   &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+          &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;like&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'%运%'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ROWNUM&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;  
+          
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;虽然结果正确，但是大家可以看到，这样的效率不高，所以我有改进了一下&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_corporation_event&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ce_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;like&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'%运%'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rownum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;     
+       &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_brand&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;  
+          &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand_id&lt;/span&gt;  
+        &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;join&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pps_ad_profession&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;  
+          &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pro_id&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/07/left-join-where/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/left-join-where/</guid>
+        
+        <category>sql</category>
+        
+        <category>数据库</category>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+      <item>
+        <title>json string to json</title>
+        <description>
+&lt;p&gt;jQuery的ajax返回的如果是json格式，在success方法获取的值并不能直接当做json object处理，需要用$.parseJSON来转化成个json对象
+例如
+后台程序&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;  
+&lt;span class=&quot;k&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;json_helper.php&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+&lt;span class=&quot;nv&quot;&gt;$Josn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Services_JSON&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;  
+&lt;span class=&quot;nv&quot;&gt;$r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;status&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;list&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;  
+        &lt;span class=&quot;nx&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_parent_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_name&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;旅游美食&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_status&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_area&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;反选:福建|湖南|内蒙古|&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  
+        &lt;span class=&quot;nx&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_parent_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_name&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;旅游美食&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_status&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_area&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;反选:福建|湖南|内蒙古|&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  
+        &lt;span class=&quot;nx&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_parent_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_name&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;旅游美食&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_status&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_area&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;反选:福建|湖南|内蒙古|&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  
+        &lt;span class=&quot;nx&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_parent_id&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_name&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;旅游美食&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_status&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c_area&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;反选:福建|湖南|内蒙古|&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+&lt;span class=&quot;nv&quot;&gt;$r_josn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$Josn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   
+&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$r_josn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;静态页面&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html; charset=UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Insert title here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/js/jquery-1.4.2.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;   
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#getjson&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;  
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;  
+              &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;POST&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+               &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/json/index.php&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  
+               &lt;span class=&quot;na&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;   
+                   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parseJSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   
+                   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;table border=1&amp;gt;&amp;lt;/table&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+                   &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;  
+                       &lt;span class=&quot;nx&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+                   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+                   &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;body&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
+               &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+  
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;  
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;getjson&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;获取&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;  
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/07/07/json-string-to-json/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/json-string-to-json/</guid>
+        
+        <category>javascript</category>
+        
+        
+        <category>编程技术</category>
+        
+      </item>
+    
+  </channel>
+</rss>
