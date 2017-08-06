@@ -6,8 +6,8 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Aug 2017 21:13:49 +0800</pubDate>
-    <lastBuildDate>Sun, 06 Aug 2017 21:13:49 +0800</lastBuildDate>
+    <pubDate>Sun, 06 Aug 2017 21:24:07 +0800</pubDate>
+    <lastBuildDate>Sun, 06 Aug 2017 21:24:07 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
@@ -23,6 +23,12 @@
       &lt;li&gt;&lt;a href=&quot;#业务之间集成的标准&quot; id=&quot;markdown-toc-业务之间集成的标准&quot;&gt;业务之间集成的标准&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#我们应该专注做什么&quot; id=&quot;markdown-toc-我们应该专注做什么&quot;&gt;我们应该专注做什么&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#构建精细化管理&quot; id=&quot;markdown-toc-构建精细化管理&quot;&gt;构建精细化管理&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#系统之间集成标准的建立&quot; id=&quot;markdown-toc-系统之间集成标准的建立&quot;&gt;系统之间集成标准的建立&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#提高业务进化速度&quot; id=&quot;markdown-toc-提高业务进化速度&quot;&gt;提高业务进化速度&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -31,10 +37,68 @@
 
 &lt;h1 id=&quot;初创公司平台建立&quot;&gt;初创公司平台建立&lt;/h1&gt;
 
+&lt;p&gt;可以说这是一个激烈竞争的市场，在这样的市场，&lt;code class=&quot;highlighter-rouge&quot;&gt;只有高效，有效的模式会成功的存留下来&lt;/code&gt;，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。&lt;/p&gt;
+
+&lt;p&gt;对创业开发者来说，成本和效率是最需要关注的两个方面，&lt;code class=&quot;highlighter-rouge&quot;&gt;第一他们缺少技术的积累，第二他们需要很低的成本去验证他们的模式，从而成长起来&lt;/code&gt;。这些云服务提供者成为他们最好的选择。&lt;/p&gt;
+
+&lt;p&gt;在这个移动互联网时代，基本会需要移动APP和web的功能，那么一下的问题我们需要解决：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;服务器部署维护&lt;/li&gt;
+  &lt;li&gt;APP和Web网站开发&lt;/li&gt;
+  &lt;li&gt;后端服务开发&lt;/li&gt;
+  &lt;li&gt;平台功能：
+    &lt;ul&gt;
+      &lt;li&gt;认证和授权&lt;/li&gt;
+      &lt;li&gt;文件存储&lt;/li&gt;
+      &lt;li&gt;推送和通讯&lt;/li&gt;
+      &lt;li&gt;地图功能&lt;/li&gt;
+      &lt;li&gt;支付功能&lt;/li&gt;
+      &lt;li&gt;社会化分享&lt;/li&gt;
+      &lt;li&gt;验证和安全&lt;/li&gt;
+      &lt;li&gt;智能识别&lt;/li&gt;
+      &lt;li&gt;搜索&lt;/li&gt;
+      &lt;li&gt;用户行为分析&lt;/li&gt;
+      &lt;li&gt;…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;业务功能&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&quot;我们要面对的问题&quot;&gt;我们要面对的问题&lt;/h1&gt;
 &lt;h3 id=&quot;系统繁多不能轻装上阵&quot;&gt;系统繁多，不能轻装上阵&lt;/h3&gt;
+
+&lt;p&gt;然后我们又发现，好像我们没做太多事情啊，支持的业务可以数的过来，这些居然需要上百系统来支持。&lt;/p&gt;
+
+&lt;p&gt;这后面存在的问题肯定让人深思，然后随着我们梳理的深入，会发现有些最主要的问题是：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;重复建设&lt;/li&gt;
+  &lt;li&gt;缺乏规划&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这里对开发资源和物理资源的浪费将显而易见。&lt;/p&gt;
+
+&lt;p&gt;这些系统也成为了一个庞大的负担，我们需要花很大的精力去维护，升级，开发，同时也要花很多公司的资源去运行，监控。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;如果一个软件变得复杂难以维护需要去做代码级别的重构，那么我们这种系统级别的复杂就需要架构级别的重构了。&lt;/code&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;对开发人员人手布局的考验&quot;&gt;对开发人员人手布局的考验&lt;/h3&gt;
+
+&lt;p&gt;为什么我们做个业务系统，除了业务逻辑实现外，还需要每个开发人员掌握如此多的技能。 作为业务系统的开发人员，不是应该专注于业务逻辑的开发吗。 系统的稳定性，后端的高并发性能不是应该有更底层，更专业的团队去做吗，为什么每个开发团队都要求去做，这些不合理是由什么造成的，是分工？规划？还是技术架构？&lt;/p&gt;
+
 &lt;h3 id=&quot;业务之间集成的标准&quot;&gt;业务之间集成的标准&lt;/h3&gt;
+
+&lt;h1 id=&quot;我们应该专注做什么&quot;&gt;我们应该专注做什么&lt;/h1&gt;
+
+&lt;p&gt;我们的开发团队可以很好的分工开发各种能力模块，同时业务系统可以标准化的使用这些模块。&lt;/p&gt;
+&lt;h3 id=&quot;构建精细化管理&quot;&gt;构建精细化管理&lt;/h3&gt;
+&lt;h3 id=&quot;系统之间集成标准的建立&quot;&gt;系统之间集成标准的建立&lt;/h3&gt;
+&lt;h3 id=&quot;提高业务进化速度&quot;&gt;提高业务进化速度&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;以上是我对此文章的总结归纳，完整地址： &lt;a href=&quot;https://yq.aliyun.com/articles/2918?comefrom=http://blogread.cn/news/&quot;&gt;BaaS后端即服务 - 通往中台架构之路&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 </description>
         <pubDate>Sun, 06 Aug 2017 20:57:06 +0800</pubDate>
