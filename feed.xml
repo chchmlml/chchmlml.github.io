@@ -6,8 +6,8 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Aug 2017 11:12:26 +0800</pubDate>
-    <lastBuildDate>Mon, 07 Aug 2017 11:12:26 +0800</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 11:15:02 +0800</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 11:15:02 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
@@ -23,6 +23,8 @@
         <link>https://chchmlml.github.io/2017/08/07/redis-learn/</link>
         <guid isPermaLink="true">https://chchmlml.github.io/2017/08/07/redis-learn/</guid>
         
+        
+        <category>服务器</category>
         
         <category>redis设计与实践</category>
         
@@ -200,7 +202,9 @@
         <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/stacer/</guid>
         
         
-        <category>服务器 前端</category>
+        <category>服务器</category>
+        
+        <category>前端</category>
         
       </item>
     
@@ -250,6 +254,8 @@
         <link>https://chchmlml.github.io/2017/07/30/about-crawler-technology/</link>
         <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/about-crawler-technology/</guid>
         
+        
+        <category>服务器</category>
         
         <category>关于网络爬虫</category>
         
@@ -325,6 +331,8 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
         <link>https://chchmlml.github.io/2017/07/15/about-encryption-technology/</link>
         <guid isPermaLink="true">https://chchmlml.github.io/2017/07/15/about-encryption-technology/</guid>
         
+        
+        <category>服务器</category>
         
         <category>编程技术</category>
         
