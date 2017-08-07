@@ -6,12 +6,12 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Aug 2017 11:07:08 +0800</pubDate>
-    <lastBuildDate>Mon, 07 Aug 2017 11:07:08 +0800</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 11:08:48 +0800</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 11:08:48 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
-        <title></title>
+        <title>《redis设计与实践》学习1</title>
         <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
@@ -19,10 +19,12 @@
 &lt;hr /&gt;
 
 </description>
-        <pubDate>Mon, 07 Aug 2017 11:07:08 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/07/2017-08-07-redis-learn/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/07/2017-08-07-redis-learn/</guid>
+        <pubDate>Mon, 07 Aug 2017 11:04:42 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/08/07/redis-learn/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/07/redis-learn/</guid>
         
+        
+        <category>redis设计与实践</category>
         
       </item>
     
