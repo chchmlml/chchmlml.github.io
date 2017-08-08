@@ -6,9 +6,29 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Aug 2017 09:15:06 +0800</pubDate>
-    <lastBuildDate>Tue, 08 Aug 2017 09:15:06 +0800</lastBuildDate>
+    <pubDate>Tue, 08 Aug 2017 09:17:50 +0800</pubDate>
+    <lastBuildDate>Tue, 08 Aug 2017 09:17:50 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
+    
+      <item>
+        <title>interview summary</title>
+        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;http://t.cn/R9WgJuv&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 08 Aug 2017 09:16:56 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/08/08/interview-summary/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/08/interview-summary/</guid>
+        
+        
+        <category>面试总结</category>
+        
+      </item>
     
       <item>
         <title>《redis设计与实践》学习1</title>
@@ -454,44 +474,6 @@ MyDB =
         <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
         <link>https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</link>
         <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</guid>
-        
-        <category>php</category>
-        
-        
-        <category>编程技术</category>
-        
-      </item>
-    
-      <item>
-        <title>oracle php week problem</title>
-        <description>&lt;p&gt;今天遇到了个小问题，项目要求在数据库里查出某一天上一周的数据列，sql语句还好写；&lt;/p&gt;
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;to_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ww'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;运行，测试。起初还好，几轮测试下来出问题了，总是有那么几天不正确，就是说手算是40周，这是查询时却不是，有可能是41，所以我查了下手册，原来PHP中给日期格式化是这样的&lt;/p&gt;
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;date(&quot;W&quot;)//当天是当年的第几周，注：每周是从星期一开始  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;但是在Oracle周的解释是每周是从一月一日算起，所以显而易见会有些问题，所以为了解决我们就最好使他们保持一致，所以我写了下面的算法，跟大家分享下&lt;/p&gt;
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function get_week_index($month=null, $day=null, $year=null){  
-        //拿到某一天的月日年  
-        $month =$month?$month: date(&quot;m&quot;);  
-        $day =$day?$day:date(&quot;d&quot;);   
-        $year  =$year?$year: date(&quot;Y&quot;);  
-        //得到那一天的时间戳  
-        $getDay = mktime(0, 0, 0, $month, $day, $year);  
-        //得到差值  
-        $dayMin =$getDay- mktime(0, 0, 0, 1, 1, $year);  
-        //换算出是第几周  
-        $dayR =(int) ($dayMin / (7*24*3600));   
-        return ++$dayR;  
-}  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/07/oracle-php-week-problem/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/oracle-php-week-problem/</guid>
         
         <category>php</category>
         
