@@ -6,8 +6,8 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Aug 2017 15:19:21 +0800</pubDate>
-    <lastBuildDate>Tue, 08 Aug 2017 15:19:21 +0800</lastBuildDate>
+    <pubDate>Thu, 10 Aug 2017 11:28:48 +0800</pubDate>
+    <lastBuildDate>Thu, 10 Aug 2017 11:28:48 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
@@ -156,36 +156,43 @@
 &lt;h1 id=&quot;第一周&quot;&gt;第一周&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;追求自我价值之路
-    &lt;blockquote&gt;
-      &lt;p&gt;承认自己的价值&lt;br /&gt;
-正视自己的作用&lt;/p&gt;
-    &lt;/blockquote&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;承认自己的价值，正视自己的作用
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;如何获取好点子&lt;/li&gt;
   &lt;li&gt;八个认为是好习惯的坏习惯&lt;/li&gt;
   &lt;li&gt;做个积极的悲观主义者（韩雪）
-    &lt;blockquote&gt;
-      &lt;p&gt;勇于接受挑战&lt;br /&gt;
-不惧怕失败&lt;/p&gt;
-    &lt;/blockquote&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;勇于接受挑战，不惧怕失败
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;我为什么做一个黑客
-    &lt;blockquote&gt;
-      &lt;p&gt;从突破中找到乐趣  &lt;br /&gt;
-在互联网上为年轻人简历正确的道德观&lt;/p&gt;
-    &lt;/blockquote&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;第二周&quot;&gt;第二周&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;《redis设计与实现》
-    &lt;blockquote&gt;
-      &lt;p&gt;类型概要  &lt;br /&gt;
-SDS simple dynamic string&lt;/p&gt;
-    &lt;/blockquote&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类型概要，SDS simple dynamic string
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;《redis设计与实现》
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典模型，跳跃表
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;性格迷思 - 你究竟是谁
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
 </description>
         <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
         <link>https://chchmlml.github.io/2017/08/01/everyday-learn/</link>
