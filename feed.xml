@@ -6,8 +6,8 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Aug 2017 17:45:08 +0800</pubDate>
-    <lastBuildDate>Sat, 12 Aug 2017 17:45:08 +0800</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 08:29:05 +0800</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 08:29:05 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
@@ -75,6 +75,8 @@
 &lt;p&gt;HashTable同样是基于哈希表实现的，其实类似HashMap，只不过有些区别，HashTable同样每个元素是一个key-value对，其内部也是通过单链表解决冲突问题，容量不足（超过了阀值）时，同样会自动增长。&lt;/p&gt;
 
 &lt;p&gt;HashTable 是线程安全的，能用于多线程环境中。Hashtable同样也实现了Serializable接口，支持序列化，也实现了Cloneable接口，能被克隆。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/24338517&quot;&gt;源博&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Aug 2017 09:26:03 +0800</pubDate>
         <link>https://chchmlml.github.io/2017/08/08/java-hashmap/</link>
