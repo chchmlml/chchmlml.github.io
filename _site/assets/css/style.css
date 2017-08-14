@@ -35,11 +35,14 @@ a.nav-link i{
 }
 a.nav-link:hover { color: #777; }
 
-#bio {
+#bio,#bio2 {
 	/*font-family: "Courier New", Courier, monospace;*/
 	font-size: 11px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+}
+#bio2 a{
+	color: white;
 }
 
 #contact-list li .fa,

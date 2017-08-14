@@ -6,9 +6,6 @@ markdown: kramdown
 disqus: dbyll
 title: haicheng的博客
 email: chchmlml@163.com
-description: >
-  这是haicheng的博客，里面是技术、感悟和气的东西。
-  This is haicheng`s blog,A jumble of things.
 baseurl: ""
 url: "https://chchmlml.github.io"
 
