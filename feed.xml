@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>haicheng的博客</title>
-    <description>这是haicheng的博客，里面是技术、感悟和气的东西。 This is haicheng`s blog,A jumble of things.
-</description>
-    <link>https://chchmlml.github.io/</link>
-    <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Aug 2017 15:49:08 +0800</pubDate>
-    <lastBuildDate>Mon, 14 Aug 2017 15:49:08 +0800</lastBuildDate>
-    <generator>Jekyll v3.5.0</generator>
-    
-      <item>
-        <title>php与系统性能优化总结</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+	<channel>
+		<title>haicheng的博客</title>
+		<description>Stylish Jekyll Theme</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>php与系统性能优化总结</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#原则&quot; id=&quot;markdown-toc-原则&quot;&gt;原则&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#前端优化&quot; id=&quot;markdown-toc-前端优化&quot;&gt;前端优化&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#减少http请求&quot; id=&quot;markdown-toc-减少http请求&quot;&gt;减少http请求&lt;/a&gt;&lt;/li&gt;
@@ -166,18 +162,14 @@ explain应用
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/14/optimization-performance-with-php/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/14/optimization-performance-with-php/</guid>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>HashMap 和 HashTable 源码学习和面试总结</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+				<pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
+				<link>/php/2017/08/14/optimization-performance-with-php.html</link>
+				<guid isPermaLink="true">/php/2017/08/14/optimization-performance-with-php.html</guid>
+			</item>
+		
+			<item>
+				<title>HashMap 和 HashTable 源码学习和面试总结</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#java集合概述&quot; id=&quot;markdown-toc-java集合概述&quot;&gt;Java集合概述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#hashmap介绍&quot; id=&quot;markdown-toc-hashmap介绍&quot;&gt;HashMap介绍&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#hashmap有四个构造方法方法中有两个很重要的参数初始容量和加载因子&quot; id=&quot;markdown-toc-hashmap有四个构造方法方法中有两个很重要的参数初始容量和加载因子&quot;&gt;HashMap有四个构造方法，方法中有两个很重要的参数：初始容量和加载因子&lt;/a&gt;&lt;/li&gt;
@@ -243,38 +235,28 @@ explain应用
 
 &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/24338517&quot;&gt;源博&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 08 Aug 2017 09:26:03 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/08/java-hashmap/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/08/java-hashmap/</guid>
-        
-        
-        <category>面试总结</category>
-        
-      </item>
-    
-      <item>
-        <title>《redis设计与实践》学习1</title>
-        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+				<pubDate>Tue, 08 Aug 2017 09:26:03 +0800</pubDate>
+				<link>/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap.html</link>
+				<guid isPermaLink="true">/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap.html</guid>
+			</item>
+		
+			<item>
+				<title>《redis设计与实践》学习1</title>
+				<description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
 </description>
-        <pubDate>Mon, 07 Aug 2017 11:04:42 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/07/redis-learn/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/07/redis-learn/</guid>
-        
-        
-        <category>服务器</category>
-        
-        <category>redis设计与实践</category>
-        
-      </item>
-    
-      <item>
-        <title>SaaS 后端即服务</title>
-        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+				<pubDate>Mon, 07 Aug 2017 11:04:42 +0800</pubDate>
+				<link>/%E6%9C%8D%E5%8A%A1%E5%99%A8/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html</link>
+				<guid isPermaLink="true">/%E6%9C%8D%E5%8A%A1%E5%99%A8/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html</guid>
+			</item>
+		
+			<item>
+				<title>SaaS 后端即服务</title>
+				<description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#阐述&quot; id=&quot;markdown-toc-阐述&quot;&gt;阐述&lt;/a&gt;&lt;/li&gt;
@@ -363,18 +345,14 @@ explain应用
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Sun, 06 Aug 2017 20:57:06 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/06/backend-service/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/06/backend-service/</guid>
-        
-        
-        <category>编程技术</category>
-        
-      </item>
-    
-      <item>
-        <title>每天学习笔记_1</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+				<pubDate>Sun, 06 Aug 2017 20:57:06 +0800</pubDate>
+				<link>/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</link>
+				<guid isPermaLink="true">/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</guid>
+			</item>
+		
+			<item>
+				<title>每天学习笔记_1</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#第一周&quot; id=&quot;markdown-toc-第一周&quot;&gt;第一周&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#第二周&quot; id=&quot;markdown-toc-第二周&quot;&gt;第二周&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -427,18 +405,14 @@ explain应用
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/08/01/everyday-learn/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/01/everyday-learn/</guid>
-        
-        
-        <category>学习笔记</category>
-        
-      </item>
-    
-      <item>
-        <title>Stacer Linux监控系统</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+				<pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
+				<link>/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn.html</link>
+				<guid isPermaLink="true">/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn.html</guid>
+			</item>
+		
+			<item>
+				<title>Stacer Linux监控系统</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#stacer&quot; id=&quot;markdown-toc-stacer&quot;&gt;Stacer&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#简介&quot; id=&quot;markdown-toc-简介&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#项目地址&quot; id=&quot;markdown-toc-项目地址&quot;&gt;项目地址&lt;/a&gt;&lt;/li&gt;
@@ -463,20 +437,14 @@ explain应用
 &lt;p&gt;&lt;a href=&quot;https://github.com/oguzhaninan/Stacer&quot;&gt;https://github.com/oguzhaninan/Stacer&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 30 Jul 2017 14:45:03 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/30/stacer/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/stacer/</guid>
-        
-        
-        <category>服务器</category>
-        
-        <category>前端</category>
-        
-      </item>
-    
-      <item>
-        <title>网络爬虫技术总结</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+				<pubDate>Sun, 30 Jul 2017 14:45:03 +0800</pubDate>
+				<link>/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer.html</link>
+				<guid isPermaLink="true">/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer.html</guid>
+			</item>
+		
+			<item>
+				<title>网络爬虫技术总结</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#基本原理&quot; id=&quot;markdown-toc-基本原理&quot;&gt;基本原理&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#爬虫的工作流程&quot; id=&quot;markdown-toc-爬虫的工作流程&quot;&gt;爬虫的工作流程&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#要解决的问题&quot; id=&quot;markdown-toc-要解决的问题&quot;&gt;要解决的问题&lt;/a&gt;&lt;/li&gt;
@@ -516,20 +484,14 @@ explain应用
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 30 Jul 2017 13:58:34 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/30/about-crawler-technology/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/30/about-crawler-technology/</guid>
-        
-        
-        <category>服务器</category>
-        
-        <category>关于网络爬虫</category>
-        
-      </item>
-    
-      <item>
-        <title>信息加密技术总结</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+				<pubDate>Sun, 30 Jul 2017 13:58:34 +0800</pubDate>
+				<link>/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology.html</link>
+				<guid isPermaLink="true">/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology.html</guid>
+			</item>
+		
+			<item>
+				<title>信息加密技术总结</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#开发中的信息加密&quot; id=&quot;markdown-toc-开发中的信息加密&quot;&gt;开发中的信息加密&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#加密技术分类&quot; id=&quot;markdown-toc-加密技术分类&quot;&gt;加密技术分类&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#对称加密&quot; id=&quot;markdown-toc-对称加密&quot;&gt;对称加密&lt;/a&gt;&lt;/li&gt;
@@ -593,20 +555,14 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 15 Jul 2017 15:43:36 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/15/about-encryption-technology/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/15/about-encryption-technology/</guid>
-        
-        
-        <category>服务器</category>
-        
-        <category>编程技术</category>
-        
-      </item>
-    
-      <item>
-        <title>关于职业的困惑和探讨</title>
-        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+				<pubDate>Sat, 15 Jul 2017 15:43:36 +0800</pubDate>
+				<link>/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</link>
+				<guid isPermaLink="true">/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</guid>
+			</item>
+		
+			<item>
+				<title>关于职业的困惑和探讨</title>
+				<description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#我的职业经历&quot; id=&quot;markdown-toc-我的职业经历&quot;&gt;我的职业经历&lt;/a&gt;&lt;/li&gt;
@@ -642,18 +598,14 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
 &lt;p&gt;渐渐的明白我的做法或者着说方向是有问题的，毕竟做万金油不能保持上面所说的长久的上升动力，所以我希望以后对于技术学习保持：
 1、对知识的透彻理解 2、对某一方向的深入精通 3、对未知的敬畏。&lt;/p&gt;
 </description>
-        <pubDate>Fri, 14 Jul 2017 14:13:04 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/14/my-life-stage-summury/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/14/my-life-stage-summury/</guid>
-        
-        
-        <category>感悟</category>
-        
-      </item>
-    
-      <item>
-        <title>win7 oracle php</title>
-        <description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
+				<pubDate>Fri, 14 Jul 2017 14:13:04 +0800</pubDate>
+				<link>/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</link>
+				<guid isPermaLink="true">/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</guid>
+			</item>
+		
+			<item>
+				<title>win7 oracle php</title>
+				<description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -690,14 +642,10 @@ MyDB =
 （我没有进行第四步），个人认为环境变量最重要的是path、TNS_ADMIN的修改，重启apache，一切OK。&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/07/win7-oracle-php/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/win7-oracle-php/</guid>
-        
-        
-        <category>编程技术</category>
-        
-      </item>
-    
-  </channel>
+				<pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
+				<link>/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html</link>
+				<guid isPermaLink="true">/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html</guid>
+			</item>
+		
+	</channel>
 </rss>

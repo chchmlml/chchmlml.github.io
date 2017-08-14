@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>About</title>
+	<title>php与系统性能优化总结</title>
+	
+	<meta name="description" content="系统性能从开发角度怎样性能压榨呢，总结一下以供学习参考">
 	
 	<meta name="author" content="haicheng">
 
@@ -164,7 +166,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>About </h1>
+  <h1>php与系统性能优化总结 </h1>
 </div>
 	
 <article>
@@ -172,69 +174,165 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	    
-	   0th,
+	   August 
+	   14th,
 	   
-	   
+	   2017
 	 </span>
 	  <div class="article_body">
-	  <h3 id="寄语">寄语</h3>
-<blockquote>
-  <p>随遇而安</p>
-</blockquote>
+	  <ul id="markdown-toc">
+  <li><a href="#原则" id="markdown-toc-原则">原则</a></li>
+  <li><a href="#前端优化" id="markdown-toc-前端优化">前端优化</a>    <ul>
+      <li><a href="#减少http请求" id="markdown-toc-减少http请求">减少http请求</a></li>
+      <li><a href="#浏览器缓存" id="markdown-toc-浏览器缓存">浏览器缓存</a></li>
+      <li><a href="#cdn分布式存储前端资源" id="markdown-toc-cdn分布式存储前端资源">CDN分布式存储前端资源</a></li>
+      <li><a href="#多域名访问" id="markdown-toc-多域名访问">多域名访问</a></li>
+      <li><a href="#数据压缩" id="markdown-toc-数据压缩">数据压缩</a></li>
+      <li><a href="#首页优化" id="markdown-toc-首页优化">首页优化</a></li>
+    </ul>
+  </li>
+  <li><a href="#nginx优化" id="markdown-toc-nginx优化">Nginx优化</a>    <ul>
+      <li><a href="#nginx配置优化" id="markdown-toc-nginx配置优化">Nginx配置优化</a></li>
+      <li><a href="#tcpip-网络协议配置优化" id="markdown-toc-tcpip-网络协议配置优化">tcp/ip 网络协议配置优化</a></li>
+      <li><a href="#linux系统优化" id="markdown-toc-linux系统优化">linux系统优化</a></li>
+    </ul>
+  </li>
+  <li><a href="#php优化" id="markdown-toc-php优化">php优化</a>    <ul>
+      <li><a href="#php7升级" id="markdown-toc-php7升级">php7升级？</a></li>
+      <li><a href="#opcode缓存" id="markdown-toc-opcode缓存">opcode缓存</a></li>
+      <li><a href="#代码伪编译" id="markdown-toc-代码伪编译">代码伪编译</a></li>
+      <li><a href="#模板编译" id="markdown-toc-模板编译">模板编译</a></li>
+      <li><a href="#xhprof" id="markdown-toc-xhprof">xhprof</a></li>
+    </ul>
+  </li>
+  <li><a href="#业务优化" id="markdown-toc-业务优化">业务优化</a>    <ul>
+      <li><a href="#扩展开放修改封闭" id="markdown-toc-扩展开放修改封闭">扩展开放、修改封闭</a></li>
+      <li><a href="#异步缓存分布式" id="markdown-toc-异步缓存分布式">异步、缓存、分布式</a></li>
+      <li><a href="#静态化" id="markdown-toc-静态化">静态化</a></li>
+      <li><a href="#业务解耦" id="markdown-toc-业务解耦">业务解耦</a></li>
+    </ul>
+  </li>
+  <li><a href="#mysql优化" id="markdown-toc-mysql优化">mysql优化</a>    <ul>
+      <li><a href="#部署" id="markdown-toc-部署">部署</a></li>
+      <li><a href="#开发" id="markdown-toc-开发">开发</a></li>
+    </ul>
+  </li>
+  <li><a href="#缓存优化" id="markdown-toc-缓存优化">缓存优化</a>    <ul>
+      <li><a href="#多级缓存" id="markdown-toc-多级缓存">多级缓存</a></li>
+    </ul>
+  </li>
+  <li><a href="#服务器优化" id="markdown-toc-服务器优化">服务器优化</a>    <ul>
+      <li><a href="#多进程" id="markdown-toc-多进程">多进程</a></li>
+      <li><a href="#减少上下文切换" id="markdown-toc-减少上下文切换">减少上下文切换</a></li>
+      <li><a href="#多路复用" id="markdown-toc-多路复用">多路复用</a></li>
+      <li><a href="#减少系统调用" id="markdown-toc-减少系统调用">减少系统调用</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
 
-<p>是自己对内心的领悟。</p>
-<blockquote>
-  <p>能争取的尽量争取，哪怕只有一分</p>
-</blockquote>
+<h1 id="原则">原则</h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>优化不可脱离业务
+</code></pre>
+</div>
 
-<p>是自己对生活的领悟。
-也许这就是生活需要在矛盾中找到一个平衡点然后坚持下去。</p>
+<h1 id="前端优化">前端优化</h1>
 
-<h3 id="技术">技术</h3>
-<p>一个二流程序员，三流铲屎官，我知道的很多，会的很少。</p>
+<h3 id="减少http请求">减少http请求</h3>
+<h3 id="浏览器缓存">浏览器缓存</h3>
+<h3 id="cdn分布式存储前端资源">CDN分布式存储前端资源</h3>
+<h3 id="多域名访问">多域名访问</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+原因二：使用同一域名的时候无用的 cookie 简直是噩梦
+</code></pre>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>技术</th>
-      <th>等级</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>php</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>java</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>linux</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>docker</td>
-      <td>还在学习中</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="数据压缩">数据压缩</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>gzip压缩
+资源编译压缩
+</code></pre>
+</div>
 
-<h3 id="项目的总结">项目的总结</h3>
-<p>大家不要急，会有的。。。</p>
+<h3 id="首页优化">首页优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>基础加载、后期渲染
+</code></pre>
+</div>
 
-<h3 id="职业历程">职业历程</h3>
-<ol>
-  <li>PPS 酱油几年</li>
-  <li>京东 酱油几年</li>
-  <li>微博 酱油几年</li>
-  <li>未来希望能做点喜欢的</li>
-</ol>
+<h1 id="nginx优化">Nginx优化</h1>
+
+<h3 id="nginx配置优化">Nginx配置优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>进程数
+进程文件打开最大数
+多路复用
+gzip压缩
+静态资源缓存（动态也支持）
+开启长连接
+</code></pre>
+</div>
+
+<h3 id="tcpip-网络协议配置优化">tcp/ip 网络协议配置优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>这边不太熟悉
+</code></pre>
+</div>
+
+<h3 id="linux系统优化">linux系统优化</h3>
+
+<h1 id="php优化">php优化</h1>
+
+<h3 id="php7升级">php7升级？</h3>
+<h3 id="opcode缓存">opcode缓存</h3>
+<h3 id="代码伪编译">代码伪编译</h3>
+<h3 id="模板编译">模板编译</h3>
+<h3 id="xhprof">xhprof</h3>
+
+<h1 id="业务优化">业务优化</h1>
+
+<h3 id="扩展开放修改封闭">扩展开放、修改封闭</h3>
+<h3 id="异步缓存分布式">异步、缓存、分布式</h3>
+<h3 id="静态化">静态化</h3>
+<h3 id="业务解耦">业务解耦</h3>
+
+<h1 id="mysql优化">mysql优化</h1>
+
+<h3 id="部署">部署</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>慢查询日志收集
+nosql
+并发数
+连接时间
+</code></pre>
+</div>
+
+<h3 id="开发">开发</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>innodb表引擎
+主键索引
+字段优化
+explain应用
+</code></pre>
+</div>
+
+<h1 id="缓存优化">缓存优化</h1>
+
+<h3 id="多级缓存">多级缓存</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>请求内缓存
+本地缓存
+分布式缓存
+</code></pre>
+</div>
+
+<p>#redis
+    多实例化
+    内存优化
+    hash使用</p>
+
+<h1 id="服务器优化">服务器优化</h1>
+
+<h3 id="多进程">多进程</h3>
+<h3 id="减少上下文切换">减少上下文切换</h3>
+<h3 id="多路复用">多路复用</h3>
+<h3 id="减少系统调用">减少系统调用</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>strace统计调用次数
+</code></pre>
+</div>
 
 	  </div>
 
@@ -243,20 +341,16 @@
 		  <li><i class="fa fa-folder-open"></i></li>
 		  
 		  
+			 
+				<li><a href="/categories.html#php-ref">
+					php <span>(1)</span>
+					
+				</a></li>
 			
 		  
 		</ul>
 		  
 
-		
-		<ul class="list-inline">
-		  <li><i class="fa fa-tags"></i></li>
-		  
-		  
-			
-		  
-		  
-		</ul>
 		  
 
 		<hr>
@@ -264,12 +358,12 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">分享</h4>
-        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=About@chchmlml&url="
+        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=php与系统性能优化总结@chchmlml&url="
            onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;">
           <i class="fa fa-weibo fa-lg"></i>
           微博
         </a>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=About&via=chchmlml"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=php与系统性能优化总结&via=chchmlml"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -297,7 +391,7 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  <li class="previous"><a href="/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap.html" title="HashMap 和 HashTable 源码学习和面试总结">&larr; Previous</a></li>
 		  
 		  
 			<li class="next disabled"><a>Next &rarr;</a>

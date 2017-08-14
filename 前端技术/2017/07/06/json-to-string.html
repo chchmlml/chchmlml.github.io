@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>About</title>
+	<title> JS json object 与 string 相互转换</title>
+	
+	<meta name="description" content="一篇javascript小技巧.">
 	
 	<meta name="author" content="haicheng">
 
@@ -164,7 +166,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>About </h1>
+  <h1> JS json object 与 string 相互转换 </h1>
 </div>
 	
 <article>
@@ -172,69 +174,55 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	    
-	   0th,
+	   July 
+	   6th,
 	   
-	   
+	   2017
 	 </span>
 	  <div class="article_body">
-	  <h3 id="寄语">寄语</h3>
-<blockquote>
-  <p>随遇而安</p>
-</blockquote>
+	  
+<p>这是很久之前从文章了，收录下</p>
 
-<p>是自己对内心的领悟。</p>
-<blockquote>
-  <p>能争取的尽量争取，哪怕只有一分</p>
-</blockquote>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">//object t ostr</span>
+<span class="kd">function</span> <span class="nx">obj2str</span><span class="p">(</span><span class="nx">o</span><span class="p">){</span>
+   <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="p">[];</span>
+   <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">o</span> <span class="o">==</span> <span class="s2">"string"</span> <span class="o">||</span> <span class="nx">o</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="nx">o</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">o</span> <span class="o">==</span> <span class="s2">"object"</span><span class="p">){</span>
+     <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">o</span><span class="p">.</span><span class="nx">sort</span><span class="p">){</span>
+       <span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="s2">"{"</span>
+       <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">o</span><span class="p">){</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="nx">i</span><span class="p">;</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="s2">":"</span><span class="p">;</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="nx">obj2str</span><span class="p">(</span><span class="nx">o</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="s2">","</span><span class="p">;</span>
+       <span class="p">}</span>
+       <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="s2">"}"</span>
+     <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+       <span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="s2">"["</span>
+       <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">o</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="nx">obj2str</span><span class="p">(</span><span class="nx">o</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+         <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="p">]</span><span class="o">=</span><span class="s2">","</span><span class="p">;</span>
+       <span class="p">}</span>
+       <span class="nx">r</span><span class="p">[</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="s2">"]"</span>
+     <span class="p">}</span>
+     <span class="k">return</span> <span class="nx">r</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+   <span class="p">}</span>
+   <span class="k">return</span> <span class="nx">o</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
+<span class="p">}</span>
 
-<p>是自己对生活的领悟。
-也许这就是生活需要在矛盾中找到一个平衡点然后坚持下去。</p>
+<span class="c1">//string 转 object</span>
+<span class="kd">function</span> <span class="nx">taoRan</span><span class="p">(){</span>
+<span class="kd">var</span> <span class="nx">str</span><span class="o">=</span><span class="s1">'{"result": [["提现", "219"], ["提现银行", "121"], ["退款", "272"], ["提现失败", "16"], ["团购", "15"], ["淘宝", "412"],["台湾", "58"], ["提现限额", "16"], ["提现时间", "81"], ["台湾认证", "26"]]}'</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">strToObj</span><span class="p">(</span><span class="nx">str</span><span class="p">).</span><span class="nx">result</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">strToObj</span><span class="p">(</span><span class="nx">json</span><span class="p">){</span> 
+         <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="s2">"("</span><span class="o">+</span><span class="nx">json</span><span class="o">+</span><span class="s2">")"</span><span class="p">);</span> 
+<span class="p">}</span>
+</code></pre>
+</div>
 
-<h3 id="技术">技术</h3>
-<p>一个二流程序员，三流铲屎官，我知道的很多，会的很少。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>技术</th>
-      <th>等级</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>php</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>java</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>linux</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>docker</td>
-      <td>还在学习中</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="项目的总结">项目的总结</h3>
-<p>大家不要急，会有的。。。</p>
-
-<h3 id="职业历程">职业历程</h3>
-<ol>
-  <li>PPS 酱油几年</li>
-  <li>京东 酱油几年</li>
-  <li>微博 酱油几年</li>
-  <li>未来希望能做点喜欢的</li>
-</ol>
 
 	  </div>
 
@@ -243,6 +231,11 @@
 		  <li><i class="fa fa-folder-open"></i></li>
 		  
 		  
+			 
+				<li><a href="/categories.html#前端技术-ref">
+					前端技术 <span>(1)</span>
+					
+				</a></li>
 			
 		  
 		</ul>
@@ -253,6 +246,13 @@
 		  <li><i class="fa fa-tags"></i></li>
 		  
 		  
+			 
+				<li>
+					<a href="/tags.html#javascript-ref">
+					javascript <span>(2)</span>
+					
+					</a>
+				</li>
 			
 		  
 		  
@@ -264,12 +264,12 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">分享</h4>
-        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=About@chchmlml&url="
+        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title= JS json object 与 string 相互转换@chchmlml&url="
            onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;">
           <i class="fa fa-weibo fa-lg"></i>
           微博
         </a>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=About&via=chchmlml"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text= JS json object 与 string 相互转换&via=chchmlml"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -297,10 +297,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  <li class="previous"><a href="/general/setup/demo/2013/11/15/hello-world.html" title="Hello World!">&larr; Previous</a></li>
 		  
 		  
-			<li class="next disabled"><a>Next &rarr;</a>
+		  <li class="next"><a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/design-pattern-strategy.html" title="设计模式之策略模式">Next &rarr;</a></li>
 		  
 		</ul>
 

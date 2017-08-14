@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HashMap 和 HashTable 源码学习和面试总结</title>
+	
+	<meta name="description" content="HashMap 和 HashTable 是各种面试问滥的问题，掌握好理解好也是对java学习上必要的课程。">
+	
+	<meta name="author" content="haicheng">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://weibo.com/chchmlml">
+				<i class="fa fa-weibo"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/chchmlml">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/chchmlml">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:chchmlml@163.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+<!--				<img src="/assets/ico/blog-author.jpg" class="img-circle" />-->
+				haicheng的博客
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">首页</a></li>
+				<li><a href="/categories.html">分类</a></li>
+				<li><a href="/tags.html">标签</a></li>
+				<li><a href="/about/"><i class="fa fa-leaf"></i>关于我</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>分类</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>标签</a></li>
+            <li><a href="/about/"><i class="fa fa-leaf"></i>关于我</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="/assets/ico/blog-author.jpg" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">haicheng的博客</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	这是haicheng的博客，里面是技术、感悟和气的东西。
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://weibo.com/chchmlml">
+                <i class="fa fa-weibo fa-lg"></i>
+            </a>
+        </li>
+        
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/chchmlml">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/chchmlml">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+<!--		-->
+<!--		<li>-->
+<!--			<a class="btn btn-default btn-sm" href="https://pinterest.com/chchmlml">-->
+<!--				<i class="fa fa-pinterest fa-lg"></i>-->
+<!--			</a>-->
+<!--		</li>-->
+<!--		-->
+<!--		-->
+<!--		<li>-->
+<!--			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/chchmlml">-->
+<!--				<i class="fa fa-linkedin fa-lg"></i>-->
+<!--			</a>-->
+<!--		</li>-->
+<!--		-->
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="mailto:chchmlml@163.com">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </li>
+        
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>HashMap 和 HashTable 源码学习和面试总结 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   August 
+	   8th,
+	   
+	   2017
+	 </span>
+	  <div class="article_body">
+	  <ul id="markdown-toc">
+  <li><a href="#java集合概述" id="markdown-toc-java集合概述">Java集合概述</a></li>
+  <li><a href="#hashmap介绍" id="markdown-toc-hashmap介绍">HashMap介绍</a>    <ul>
+      <li><a href="#hashmap有四个构造方法方法中有两个很重要的参数初始容量和加载因子" id="markdown-toc-hashmap有四个构造方法方法中有两个很重要的参数初始容量和加载因子">HashMap有四个构造方法，方法中有两个很重要的参数：初始容量和加载因子</a></li>
+    </ul>
+  </li>
+  <li><a href="#关于hashmap的几个经典问题" id="markdown-toc-关于hashmap的几个经典问题">关于HashMap的几个经典问题</a>    <ul>
+      <li><a href="#说下hashmap的-扩容机制" id="markdown-toc-说下hashmap的-扩容机制">说下hashmap的 扩容机制？</a></li>
+      <li><a href="#hashmap的key和value都能为null么如果k能为null那么它是怎么样查找值的" id="markdown-toc-hashmap的key和value都能为null么如果k能为null那么它是怎么样查找值的">HashMap的key和value都能为null么？如果k能为null，那么它是怎么样查找值的？</a></li>
+      <li><a href="#hashmap中put值的时候如果发生了冲突是怎么处理的" id="markdown-toc-hashmap中put值的时候如果发生了冲突是怎么处理的">HashMap中put值的时候如果发生了冲突，是怎么处理的？</a></li>
+      <li><a href="#hashtable和hashmap的区别有哪些" id="markdown-toc-hashtable和hashmap的区别有哪些">HashTable和HashMap的区别有哪些？</a></li>
+    </ul>
+  </li>
+  <li><a href="#hashmap-和-hashtable-比较" id="markdown-toc-hashmap-和-hashtable-比较">HashMap 和 HashTable 比较</a></li>
+</ul>
+<hr />
+
+<h1 id="java集合概述">Java集合概述</h1>
+
+<p>本文重点总结HashMap，HashMap是基于哈希表实现的，每一个元素是一个key-value对，其内部通过单链表解决冲突问题，容量不足（超过了阀值）时，同样会自动增长。</p>
+
+<p>HashMap是非线程安全的，只用于单线程环境下，多线程环境下可以采用concurrent并发包下的concurrentHashMap。</p>
+
+<p>HashMap 实现了Serializable接口，因此它支持序列化。</p>
+
+<p>HashMap还实现了Cloneable接口，故能被克隆。</p>
+
+<h1 id="hashmap介绍">HashMap介绍</h1>
+
+<h3 id="hashmap有四个构造方法方法中有两个很重要的参数初始容量和加载因子">HashMap有四个构造方法，方法中有两个很重要的参数：初始容量和加载因子</h3>
+<p>这两个参数是影响HashMap性能的重要参数，其中容量表示哈希表中槽的数量（即哈希数组的长度），初始容量是创建哈希表时的容量（默认为16），加载因子是哈希表当前key的数量和容量的比值，当哈希表中的条目数超出了加载因子与当前容量的乘积时，则要对该哈希表提前进行 resize 操作（即扩容）。如果加载因子越大，对空间的利用更充分，但是查找效率会降低（链表长度会越来越长）；如果加载因子太小，那么表中的数据将过于稀疏（很多空间还没用，就开始扩容了），严重浪费。</p>
+
+<h1 id="关于hashmap的几个经典问题">关于HashMap的几个经典问题</h1>
+
+<h3 id="说下hashmap的-扩容机制">说下hashmap的 扩容机制？</h3>
+<p>前面说了，hashmap的构造器里指明了两个对于理解HashMap比较重要的两个参数 int initialCapacity, float loadFactor,这两个参数会影响HashMap效率，HashMap底层采用的散列数组实现，利用initialCapacity这个参数我们可以设置这个数组的大小，也就是散列桶的数量，但是如果需要Map的数据过多，在不断的add之后，这些桶可能都会被占满，这是有两种策略，一种是不改变Capacity，因为即使桶占满了，我们还是可以利用每个桶附带的链表增加元素。</p>
+
+<h3 id="hashmap的key和value都能为null么如果k能为null那么它是怎么样查找值的">HashMap的key和value都能为null么？如果k能为null，那么它是怎么样查找值的？</h3>
+<p>如果key为null，则直接从哈希表的第一个位置table[0]对应的链表上查找。记住，key为null的键值对永远都放在以table[0]为头结点的链表中。</p>
+
+<h3 id="hashmap中put值的时候如果发生了冲突是怎么处理的">HashMap中put值的时候如果发生了冲突，是怎么处理的？</h3>
+<p>JDK使用了链地址法，hash表的每个元素又分别链接着一个单链表，元素为头结点，如果不同的key映射到了相同的下标，那么就使用头插法，插入到该元素对应的链表。</p>
+
+<h3 id="hashtable和hashmap的区别有哪些">HashTable和HashMap的区别有哪些？</h3>
+<p>HashMap和Hashtable都实现了Map接口，但决定用哪一个之前先要弄清楚它们之间的分别。主要的区别有：线程安全性，同步(synchronization)，以及速度。</p>
+
+<p>理解HashMap是Hashtable的轻量级实现（非线程安全的实现，hashtable是非轻量级，线程安全的），都实现Map接口，主要区别在于：</p>
+
+<p>1、由于HashMap非线程安全，在只有一个线程访问的情况下，效率要高于HashTable</p>
+
+<p>2、HashMap允许将null作为一个entry的key或者value，而Hashtable不允许。</p>
+
+<p>3、HashMap把Hashtable的contains方法去掉了，改成containsValue和containsKey。因为contains方法容易让人引起误解。</p>
+
+<p>4、Hashtable继承自陈旧的Dictionary类，而HashMap是Java1.2引进的Map 的一个实现。</p>
+
+<p>5、Hashtable和HashMap扩容的方法不一样，HashTable中hash数组默认大小11，扩容方式是 old*2+1。HashMap中hash数组的默认大小是16，而且一定是2的指数，增加为原来的2倍，没有加1。</p>
+
+<h1 id="hashmap-和-hashtable-比较">HashMap 和 HashTable 比较</h1>
+
+<p>HashTable同样是基于哈希表实现的，其实类似HashMap，只不过有些区别，HashTable同样每个元素是一个key-value对，其内部也是通过单链表解决冲突问题，容量不足（超过了阀值）时，同样会自动增长。</p>
+
+<p>HashTable 是线程安全的，能用于多线程环境中。Hashtable同样也实现了Serializable接口，支持序列化，也实现了Cloneable接口，能被克隆。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/24338517">源博</a></p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#面试总结-ref">
+					面试总结 <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">分享</h4>
+        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=HashMap 和 HashTable 源码学习和面试总结@chchmlml&url="
+           onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;">
+          <i class="fa fa-weibo fa-lg"></i>
+          微博
+        </a>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=HashMap 和 HashTable 源码学习和面试总结&via=chchmlml"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+<!--        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"-->
+<!--           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">-->
+<!--          <i class="fa fa-facebook fa-lg"></i>-->
+<!--          Facebook-->
+<!--        </a>-->
+<!--        <a class="btn btn-default btn-sm gplus"-->
+<!--           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">-->
+<!--          <i class="fa fa-google-plus fa-lg"></i>-->
+<!--          Google+-->
+<!--        </a>-->
+      </section>
+
+      <section class="col-sm-6 author">
+<!--        <img src="/assets/ico/blog-author.jpg" class="img-rounded author-image" />-->
+        <h4 class="section-title author-name">haicheng</h4>
+        <p class="author-bio">这是haicheng的博客，里面是技术、感悟和气的东西。</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html" title="《redis设计与实践》学习1">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/php/2017/08/14/optimization-performance-with-php.html" title="php与系统性能优化总结">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2017 haicheng with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+

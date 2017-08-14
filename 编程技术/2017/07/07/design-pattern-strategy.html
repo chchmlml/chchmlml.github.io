@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>About</title>
+	<title>设计模式之策略模式</title>
+	
+	<meta name="description" content="策略模式：定义算法组，分别封装，他们之间可以互换，此模式让算法的变化与客户的需求分开.">
 	
 	<meta name="author" content="haicheng">
 
@@ -164,7 +166,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>About </h1>
+  <h1>设计模式之策略模式 </h1>
 </div>
 	
 <article>
@@ -172,69 +174,96 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	    
-	   0th,
+	   July 
+	   7th,
 	   
-	   
+	   2017
 	 </span>
 	  <div class="article_body">
-	  <h3 id="寄语">寄语</h3>
-<blockquote>
-  <p>随遇而安</p>
-</blockquote>
+	  <ul id="markdown-toc">
+  <li><a href="#设计模式" id="markdown-toc-设计模式">设计模式</a></li>
+  <li><a href="#继承一下" id="markdown-toc-继承一下">继承一下</a></li>
+  <li><a href="#问题" id="markdown-toc-问题">问题</a></li>
+  <li><a href="#接口来实现" id="markdown-toc-接口来实现">接口来实现</a></li>
+  <li><a href="#总结" id="markdown-toc-总结">总结</a></li>
+</ul>
 
-<p>是自己对内心的领悟。</p>
-<blockquote>
-  <p>能争取的尽量争取，哪怕只有一分</p>
-</blockquote>
+<h1 id="设计模式">设计模式</h1>
 
-<p>是自己对生活的领悟。
-也许这就是生活需要在矛盾中找到一个平衡点然后坚持下去。</p>
+<p>策略模式：定义算法组，分别封装，他们之间可以互换，此模式让算法的变化与客户的需求分开。
+举个例子，当我们需要一群鸭子，我们就定义这样一个类</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>class duck{  
+ function quack(){}//鸭子叫  
+ function fly(){}//飞起来了  
+}  
+</code></pre>
+</div>
 
-<h3 id="技术">技术</h3>
-<p>一个二流程序员，三流铲屎官，我知道的很多，会的很少。</p>
+<h1 id="继承一下">继承一下</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>技术</th>
-      <th>等级</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>php</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>java</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>linux</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>docker</td>
-      <td>还在学习中</td>
-    </tr>
-  </tbody>
-</table>
+<p>当我们需要一个新的种类，继承就好了，但是问题是，有的鸭子不会飞，我们可以把叫跟飞的方法覆盖起来，但是工作量会很大，所以我们有用到接口了</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>class duck{}  
+  
+interface quack{}  
+interface fly{}  
+</code></pre>
+</div>
 
-<h3 id="项目的总结">项目的总结</h3>
-<p>大家不要急，会有的。。。</p>
+<h1 id="问题">问题</h1>
+<p>貌似这样就可以了，但是当需求又有变化时，再更改飞行，叫的接口时，很容易就会出问题了。
+策略模式就可以派上用场了，我们把会变化的部分全部抽象出来，不在主体类中实现，也就是有一个抽象父类</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>abstruct class duck{  
+ quackBehivour = null;  
+ flyBehivour = null;  
+   
+ function quack(){}  
+ function fly(){}  
+}  
+</code></pre>
+</div>
 
-<h3 id="职业历程">职业历程</h3>
-<ol>
-  <li>PPS 酱油几年</li>
-  <li>京东 酱油几年</li>
-  <li>微博 酱油几年</li>
-  <li>未来希望能做点喜欢的</li>
-</ol>
+<h1 id="接口来实现">接口来实现</h1>
+<p>上面的行为用来存储不同的鸭子不同的行为，所以这里还有两个类需要实现</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>interface quackBehivour{  
+ function quack(){}  
+}  
+interface flyBehivour{  
+ function fly(){}  
+}  
+  
+class mikeQuack implement quackBehivour{  
+  
+}  
+class mikeFly implement flyBehivour{  
+  
+}  
+</code></pre>
+</div>
+
+<p>所以这样我们就可以实现自己的mike鸭子了</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>class mikeDuck extend duck{  
+ function __construct(){  
+   quackBehivour = new mikeQuack();  
+   flyBehivour = new mikeFly();  
+ }  
+  
+ function quack(){  
+  quackBehivour.quack();  
+ }  
+  
+ function fly(){  
+  flyBehivour.fly();  
+ }  
+}  
+</code></pre>
+</div>
+
+<h1 id="总结">总结</h1>
+<p>这样我们就把变化最多的两个部分飞行，叫这两个部分分离出来了，新的需求来时，我们只需要增加新的类就能完成扩展。
+设计原则：
+ 针对接口而不是实现编程
+ 多组合，少继承</p>
+
 
 	  </div>
 
@@ -243,6 +272,11 @@
 		  <li><i class="fa fa-folder-open"></i></li>
 		  
 		  
+			 
+				<li><a href="/categories.html#编程技术-ref">
+					编程技术 <span>(8)</span>
+					
+				</a></li>
 			
 		  
 		</ul>
@@ -253,6 +287,20 @@
 		  <li><i class="fa fa-tags"></i></li>
 		  
 		  
+			 
+				<li>
+					<a href="/tags.html#php-ref">
+					php <span>(3)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#设计模式-ref">
+					设计模式 <span>(1)</span>
+					
+					</a>
+				</li>
 			
 		  
 		  
@@ -264,12 +312,12 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">分享</h4>
-        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=About@chchmlml&url="
+        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=设计模式之策略模式@chchmlml&url="
            onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;">
           <i class="fa fa-weibo fa-lg"></i>
           微博
         </a>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=About&via=chchmlml"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=设计模式之策略模式&via=chchmlml"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -297,10 +345,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  <li class="previous"><a href="/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/2017/07/06/json-to-string.html" title=" JS json object 与 string 相互转换">&larr; Previous</a></li>
 		  
 		  
-			<li class="next disabled"><a>Next &rarr;</a>
+		  <li class="next"><a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json.html" title="json string to json">Next &rarr;</a></li>
 		  
 		</ul>
 

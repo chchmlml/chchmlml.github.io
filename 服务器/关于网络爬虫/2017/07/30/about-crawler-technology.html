@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>About</title>
+	<title>网络爬虫技术总结</title>
+	
+	<meta name="description" content="今天说说爬虫、 网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者）， 是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还 有蚂蚁、自动索引、模拟程序或者蠕虫。">
 	
 	<meta name="author" content="haicheng">
 
@@ -164,7 +166,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>About </h1>
+  <h1>网络爬虫技术总结 </h1>
 </div>
 	
 <article>
@@ -172,69 +174,51 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	    
-	   0th,
+	   July 
+	   30th,
 	   
-	   
+	   2017
 	 </span>
 	  <div class="article_body">
-	  <h3 id="寄语">寄语</h3>
-<blockquote>
-  <p>随遇而安</p>
-</blockquote>
+	  <ul id="markdown-toc">
+  <li><a href="#基本原理" id="markdown-toc-基本原理">基本原理</a></li>
+  <li><a href="#爬虫的工作流程" id="markdown-toc-爬虫的工作流程">爬虫的工作流程</a></li>
+  <li><a href="#要解决的问题" id="markdown-toc-要解决的问题">要解决的问题</a></li>
+  <li><a href="#相关资料" id="markdown-toc-相关资料">相关资料</a></li>
+</ul>
+<hr />
 
-<p>是自己对内心的领悟。</p>
-<blockquote>
-  <p>能争取的尽量争取，哪怕只有一分</p>
-</blockquote>
+<h1 id="基本原理">基本原理</h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），
+是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还
+有蚂蚁、自动索引、模拟程序或者蠕虫。
+</code></pre>
+</div>
 
-<p>是自己对生活的领悟。
-也许这就是生活需要在矛盾中找到一个平衡点然后坚持下去。</p>
+<p>我这里说的爬虫则是相对狭义，作为开发，自己做爬虫爬去资料无疑是很有成就感的。</p>
 
-<h3 id="技术">技术</h3>
-<p>一个二流程序员，三流铲屎官，我知道的很多，会的很少。</p>
+<h1 id="爬虫的工作流程">爬虫的工作流程</h1>
+<ul>
+  <li>准备种子URL；</li>
+  <li>将这些URL放入待抓取URL队列；</li>
+  <li>从待抓取URL队列中取出待抓取在URL，解析DNS，并且得到主机的ip，并将URL对应的网页下载下来，存储进已下载网页库中。此外，将这些URL放进已抓取URL队列。</li>
+  <li>分析已抓取URL队列中的URL，分析其中的其他URL，并且将URL放入待抓取URL队列，从而进入下一个循环；</li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>技术</th>
-      <th>等级</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>php</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>★★★★☆</td>
-    </tr>
-    <tr>
-      <td>java</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>linux</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>docker</td>
-      <td>还在学习中</td>
-    </tr>
-  </tbody>
-</table>
+<h1 id="要解决的问题">要解决的问题</h1>
+<ul>
+  <li>要获取我们只定的信息，所以可以指定我们需要的格式来定义目标也，通过DOM解析技术从缓存的页面提炼信息，保存指定信息；</li>
+  <li>效率是个大问题，多线程、分布式技术的应用很重要；</li>
+  <li>递归的获取url地址是个类似图数据结构，以何种方式抓取url成为抓取策略，其中有<code class="highlighter-rouge">深度优先遍历策略</code>、<code class="highlighter-rouge">宽度优先遍历策略</code>、<code class="highlighter-rouge">反向链接数策略</code>、<code class="highlighter-rouge">PageRank策略</code>。</li>
+</ul>
 
-<h3 id="项目的总结">项目的总结</h3>
-<p>大家不要急，会有的。。。</p>
+<h1 id="相关资料">相关资料</h1>
+<p>java、python、Node.js、Go语言因为多线程、协程的支持，非常适合做爬虫语言；php应用多进程方式也可作为爬虫的应用。</p>
+<ul>
+  <li><a href="https://github.com/owner888/phpspider">php爬虫</a></li>
+  <li><a href="PHP, Python, Node.js 哪个比较适合写爬虫？">PHP, Python, Node.js 哪个比较适合写爬虫？</a></li>
+</ul>
 
-<h3 id="职业历程">职业历程</h3>
-<ol>
-  <li>PPS 酱油几年</li>
-  <li>京东 酱油几年</li>
-  <li>微博 酱油几年</li>
-  <li>未来希望能做点喜欢的</li>
-</ol>
 
 	  </div>
 
@@ -243,20 +227,21 @@
 		  <li><i class="fa fa-folder-open"></i></li>
 		  
 		  
+			 
+				<li><a href="/categories.html#服务器-ref">
+					服务器 <span>(4)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#关于网络爬虫-ref">
+					关于网络爬虫 <span>(1)</span>
+					
+				</a></li>
 			
 		  
 		</ul>
 		  
 
-		
-		<ul class="list-inline">
-		  <li><i class="fa fa-tags"></i></li>
-		  
-		  
-			
-		  
-		  
-		</ul>
 		  
 
 		<hr>
@@ -264,12 +249,12 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">分享</h4>
-        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=About@chchmlml&url="
+        <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=网络爬虫技术总结@chchmlml&url="
            onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;">
           <i class="fa fa-weibo fa-lg"></i>
           微博
         </a>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=About&via=chchmlml"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=网络爬虫技术总结&via=chchmlml"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -297,10 +282,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  <li class="previous"><a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" title="信息加密技术总结">&larr; Previous</a></li>
 		  
 		  
-			<li class="next disabled"><a>Next &rarr;</a>
+		  <li class="next"><a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer.html" title="Stacer Linux监控系统">Next &rarr;</a></li>
 		  
 		</ul>
 
