@@ -6,9 +6,161 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Aug 2017 10:26:07 +0800</pubDate>
-    <lastBuildDate>Mon, 14 Aug 2017 10:26:07 +0800</lastBuildDate>
+    <pubDate>Mon, 14 Aug 2017 14:37:23 +0800</pubDate>
+    <lastBuildDate>Mon, 14 Aug 2017 14:37:23 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
+    
+      <item>
+        <title>php与系统性能优化总结</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#原则&quot; id=&quot;markdown-toc-原则&quot;&gt;原则&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#前端优化&quot; id=&quot;markdown-toc-前端优化&quot;&gt;前端优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#减少http请求&quot; id=&quot;markdown-toc-减少http请求&quot;&gt;减少http请求&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#浏览器缓存&quot; id=&quot;markdown-toc-浏览器缓存&quot;&gt;浏览器缓存&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cdn分布式存储前端资源&quot; id=&quot;markdown-toc-cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#多域名访问&quot; id=&quot;markdown-toc-多域名访问&quot;&gt;多域名访问&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nginx优化&quot; id=&quot;markdown-toc-nginx优化&quot;&gt;Nginx优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#nginx配置优化&quot; id=&quot;markdown-toc-nginx配置优化&quot;&gt;Nginx配置优化&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tcpip-网络协议配置优化&quot; id=&quot;markdown-toc-tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#php优化&quot; id=&quot;markdown-toc-php优化&quot;&gt;php优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#php7升级&quot; id=&quot;markdown-toc-php7升级&quot;&gt;php7升级？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#opcode缓存&quot; id=&quot;markdown-toc-opcode缓存&quot;&gt;opcode缓存&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#代码伪编译&quot; id=&quot;markdown-toc-代码伪编译&quot;&gt;代码伪编译&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#模板编译&quot; id=&quot;markdown-toc-模板编译&quot;&gt;模板编译&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#xhprof&quot; id=&quot;markdown-toc-xhprof&quot;&gt;xhprof&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#业务优化&quot; id=&quot;markdown-toc-业务优化&quot;&gt;业务优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#扩展开放修改封闭&quot; id=&quot;markdown-toc-扩展开放修改封闭&quot;&gt;扩展开放、修改封闭&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#异步缓存分布式&quot; id=&quot;markdown-toc-异步缓存分布式&quot;&gt;异步、缓存、分布式&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#静态化&quot; id=&quot;markdown-toc-静态化&quot;&gt;静态化&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#业务解耦&quot; id=&quot;markdown-toc-业务解耦&quot;&gt;业务解耦&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mysql优化&quot; id=&quot;markdown-toc-mysql优化&quot;&gt;mysql优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#部署&quot; id=&quot;markdown-toc-部署&quot;&gt;部署&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#开发&quot; id=&quot;markdown-toc-开发&quot;&gt;开发&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#缓存优化&quot; id=&quot;markdown-toc-缓存优化&quot;&gt;缓存优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#多级缓存&quot; id=&quot;markdown-toc-多级缓存&quot;&gt;多级缓存&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#服务器优化&quot; id=&quot;markdown-toc-服务器优化&quot;&gt;服务器优化&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#多进程&quot; id=&quot;markdown-toc-多进程&quot;&gt;多进程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#减少上下文切换&quot; id=&quot;markdown-toc-减少上下文切换&quot;&gt;减少上下文切换&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#多路复用&quot; id=&quot;markdown-toc-多路复用&quot;&gt;多路复用&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#减少系统调用&quot; id=&quot;markdown-toc-减少系统调用&quot;&gt;减少系统调用&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;前端优化&quot;&gt;前端优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;减少http请求&quot;&gt;减少http请求&lt;/h3&gt;
+&lt;h3 id=&quot;浏览器缓存&quot;&gt;浏览器缓存&lt;/h3&gt;
+&lt;h3 id=&quot;cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/h3&gt;
+&lt;h3 id=&quot;多域名访问&quot;&gt;多域名访问&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+原因二：使用同一域名的时候无用的 cookie 简直是噩梦 ### 数据压缩 
+gzip压缩
+资源编译压缩 ### 首页优化
+基础加载、后期渲染
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;nginx优化&quot;&gt;Nginx优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;nginx配置优化&quot;&gt;Nginx配置优化&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
+进程文件打开最大数
+多路复用
+gzip压缩
+静态资源缓存（动态也支持）
+开启长连接
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉 ### linux系统优化
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;php优化&quot;&gt;php优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;php7升级&quot;&gt;php7升级？&lt;/h3&gt;
+&lt;h3 id=&quot;opcode缓存&quot;&gt;opcode缓存&lt;/h3&gt;
+&lt;h3 id=&quot;代码伪编译&quot;&gt;代码伪编译&lt;/h3&gt;
+&lt;h3 id=&quot;模板编译&quot;&gt;模板编译&lt;/h3&gt;
+&lt;h3 id=&quot;xhprof&quot;&gt;xhprof&lt;/h3&gt;
+
+&lt;h1 id=&quot;业务优化&quot;&gt;业务优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;扩展开放修改封闭&quot;&gt;扩展开放、修改封闭&lt;/h3&gt;
+&lt;h3 id=&quot;异步缓存分布式&quot;&gt;异步、缓存、分布式&lt;/h3&gt;
+&lt;h3 id=&quot;静态化&quot;&gt;静态化&lt;/h3&gt;
+&lt;h3 id=&quot;业务解耦&quot;&gt;业务解耦&lt;/h3&gt;
+
+&lt;h1 id=&quot;mysql优化&quot;&gt;mysql优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;部署&quot;&gt;部署&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
+nosql
+并发数
+连接时间
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;开发&quot;&gt;开发&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
+主键索引
+字段优化
+explain应用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;缓存优化&quot;&gt;缓存优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多级缓存&quot;&gt;多级缓存&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
+本地缓存
+分布式缓存
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;#redis
+    多实例化
+    内存优化
+    hash使用&lt;/p&gt;
+
+&lt;h1 id=&quot;服务器优化&quot;&gt;服务器优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多进程&quot;&gt;多进程&lt;/h3&gt;
+&lt;h3 id=&quot;减少上下文切换&quot;&gt;减少上下文切换&lt;/h3&gt;
+&lt;h3 id=&quot;多路复用&quot;&gt;多路复用&lt;/h3&gt;
+&lt;h3 id=&quot;减少系统调用&quot;&gt;减少系统调用&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
+        <link>https://chchmlml.github.io/2017/08/14/optimization-performance-with-php/</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/2017/08/14/optimization-performance-with-php/</guid>
+        
+        
+        <category>php</category>
+        
+      </item>
     
       <item>
         <title>HashMap 和 HashTable 源码学习和面试总结</title>
@@ -528,24 +680,6 @@ MyDB =
         <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
         <link>https://chchmlml.github.io/2017/07/07/win7-oracle-php/</link>
         <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/win7-oracle-php/</guid>
-        
-        
-        <category>编程技术</category>
-        
-      </item>
-    
-      <item>
-        <title>php5 oracle xp</title>
-        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 由于换组，今天不得不把业务熟悉下。新的组长要求我在本地进行程序编写及测试，所以。不得不搭建PHP的本地环境。虽然有傻瓜式的集成环境搭建工具，但是都是基于MySQL的，可是我需要搭建Oracle的本地环境，连接线上的数据库，想想就头痛。 因为以前自己测试过xampp搭建xp/php5/oracle，所以这次选用的是xampp，抛弃了一直用的wamp。一开始都很顺利，可是老问题也来了。 1.安装orl client 2.修改php.ini，打开php_oci.dll等扩展dll 重启apache，结果和我想的一样，木有用哭，还是报哪个“找不到php_oci8.php模块”。 能怎么办，度娘，google呗。查了半天，有了点眉目，有的资料上说php在xp平台上支持oci的最低版本是10g，没办法试一下吧，我把自己的已安装的9g卸掉，下了个10g的版本，地址ed2k://%7Cfile%7C%5BOracle.10g.For.Windows%5D.Oracle.10g.for.Windows.ISO%7C650379264%7C6cc207b3996489dd0998e4354a929481%7Ch=w3j5oxjfere6le6kykjxfwoymgojzhs3%7C/ 花了半天安上，重启apache（表示平静，打击多了也就不兴奋了）结果依旧抓狂。 继续查资料，这是找到了个有点靠谱的文章，地址http://blog.sina.com.cn/s/blog_56e9c93c01000ace.html 所以我又下了个instantclient10（我已经收藏到我的资源里了），并把里面的oraociei10.dll 和orannzsbb10.dll 和oci.dll 复制到php的ext（个人觉得只要在环境变量里就行），重启apache，好了，出现了oci8的支持。可怜。 当然我还借鉴了其他的文章，跟大家分享下http://bbs.phpchina.com/thread-44502-1-1.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
-        <link>https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/2017/07/07/php5-oracle-xp/</guid>
-        
-        <category>php</category>
         
         
         <category>编程技术</category>
