@@ -1,0 +1,41 @@
+paginate: 10
+paginate_path: "page:num"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
+highlighter: rouge
+markdown: kramdown
+disqus: dbyll
+title: haicheng的博客
+email: chchmlml@163.com
+description: >
+  这是haicheng的博客，里面是技术、感悟和气的东西。
+  This is haicheng`s blog,A jumble of things.
+baseurl: ""
+url: "https://chchmlml.github.io"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: ""
+
+description: Stylish Jekyll Theme
+author:
+  name: haicheng
+  email: chchmlml@163.com
+  weibo: chchmlml
+  github: chchmlml
+  twitter: chchmlml
+  pinterest: chchmlml
+  linkedin: chchmlml
+  bio: 这是haicheng的博客，里面是技术、感悟和气的东西。
+  email_md5:
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
+
+plugins:
+  - jekyll-paginate
