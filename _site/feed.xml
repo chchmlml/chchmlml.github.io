@@ -273,7 +273,26 @@ explain应用
 &lt;h1 id=&quot;数据结构与对象&quot;&gt;数据结构与对象&lt;/h1&gt;
 
 &lt;h3 id=&quot;简单动态字符串-sds&quot;&gt;简单动态字符串 SDS&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis用C的字符串作为字面量，SDS取而代之。好处
+获取长度常量复杂度
+杜绝缓冲溢出
+减少长度修改分配内存次数
+二进制安全
+兼容部分C字符串
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;链表&quot;&gt;链表&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;用途较广、订阅、慢查询等
+链表节点listNode结构、双向链表
+链表为list结构有头尾结构信息，长度信息
+头结点头指向、尾节点尾指向null
+节点保存不同类型
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;字典&quot;&gt;字典&lt;/h3&gt;
 &lt;h3 id=&quot;跳跃表&quot;&gt;跳跃表&lt;/h3&gt;
 &lt;h3 id=&quot;整数集合&quot;&gt;整数集合&lt;/h3&gt;
