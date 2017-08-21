@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '每天学习笔记_1'
+title: '每天学习笔记'
 date: '2017-08-01 13:13:26'
 image: '/styles/images/'
 description: '我的每天学习笔记，做个日记记录点滴'
@@ -49,6 +49,7 @@ author: 'haicheng'
 ```
 - 邓乐普谈对人生的热情
 
+# 第三周
 - 定位自我的意义
 
 

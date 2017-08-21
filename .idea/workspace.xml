@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc1dbb7-fe2f-44cf-90f1-639e22265e84" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-08-01-everyday-learn.md" afterPath="$PROJECT_DIR$/_posts/2017-08-01-everyday-learn.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-08-01-everyday-learn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="607">
-                <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <first_editor relative-caret-position="40">
+                <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -220,12 +217,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503323376221</updated>
-      <workItem from="1503323379479" duration="162000" />
+      <workItem from="1503323379479" duration="560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162000" />
+    <option name="totallyTimeSpent" value="560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1600" height="873" extended-state="6" />
@@ -275,8 +272,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-08-01-everyday-learn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="607">
-            <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             <folding />
           </first_editor>
           <second_editor />
