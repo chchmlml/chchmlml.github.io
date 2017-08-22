@@ -7,6 +7,54 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>面试题目收集1</title>
+				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#什么是内存泄露什么引起的&quot; id=&quot;markdown-toc-什么是内存泄露什么引起的&quot;&gt;什么是内存泄露？什么引起的&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ip地址可以被伪造吗&quot; id=&quot;markdown-toc-ip地址可以被伪造吗&quot;&gt;ip地址可以被伪造吗？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#有100万个奖品没人可中3次怎么办&quot; id=&quot;markdown-toc-有100万个奖品没人可中3次怎么办&quot;&gt;有100万个奖品，没人可中3次，怎么办？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#btree索引与hash索引的长度复杂度为什么不用hash索引&quot; id=&quot;markdown-toc-btree索引与hash索引的长度复杂度为什么不用hash索引&quot;&gt;btree索引与hash索引的长度复杂度？为什么不用hash索引？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#memcache跟redis的区别&quot; id=&quot;markdown-toc-memcache跟redis的区别&quot;&gt;memcache跟redis的区别&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;什么是内存泄露什么引起的&quot;&gt;什么是内存泄露？什么引起的&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;内存泄漏是因为一块被分配内存既不能被使用，也不能被回收，直到进程结束。
+原理上是不合理的内存使用造成变量不能释放；资源不释放，具体原因还看情况。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;ip地址可以被伪造吗&quot;&gt;ip地址可以被伪造吗？&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;开发层面很难，因为ip在传输层，而应用层面的修改比较容易。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;有100万个奖品没人可中3次怎么办&quot;&gt;有100万个奖品，没人可中3次，怎么办？&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;这个问题的关键解决的点有两个，有限资源读写更新一致的问题，也就是锁；并发的处理。
+读写更新涉及到脏读、表锁一致性，是否允许不一致的情况，是否用分布式所，数据量太大是否需要用到异步；
+并发的问题负载均衡，增加qps能力，缓存的应用。
+总之缓存、异步、分布式。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;btree索引与hash索引的长度复杂度为什么不用hash索引&quot;&gt;btree索引与hash索引的长度复杂度？为什么不用hash索引？&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;O(log(n))，O(1)
+因为hash是散列的，不支持范围查找。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;memcache跟redis的区别&quot;&gt;memcache跟redis的区别&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;我觉得这两个东西不该一起比较，应该算两个对于KV存储的阶段，memcache进本满足我们高效，
+要求，但是不能持久化、分布式支持不够问题还是要redis更好，对于各种类型的查询复杂度优化，
+高可用性的支持更好。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				<pubDate>Tue, 22 Aug 2017 10:44:29 +0800</pubDate>
+				<link>/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1.html</link>
+				<guid isPermaLink="true">/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1.html</guid>
+			</item>
+		
+			<item>
 				<title>php与系统性能优化总结</title>
 				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#原则&quot; id=&quot;markdown-toc-原则&quot;&gt;原则&lt;/a&gt;&lt;/li&gt;
@@ -426,10 +474,11 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
 			</item>
 		
 			<item>
-				<title>每天学习笔记_1</title>
+				<title>每天学习笔记</title>
 				<description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#第一周&quot; id=&quot;markdown-toc-第一周&quot;&gt;第一周&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#第二周&quot; id=&quot;markdown-toc-第二周&quot;&gt;第二周&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#第三周&quot; id=&quot;markdown-toc-第三周&quot;&gt;第三周&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -477,6 +526,19 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;邓乐普谈对人生的热情&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;第三周&quot;&gt;第三周&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;定位自我的意义&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;请求的艺术&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求需要沟通，交流
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -676,50 +738,6 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
 				<pubDate>Fri, 14 Jul 2017 14:13:04 +0800</pubDate>
 				<link>/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</link>
 				<guid isPermaLink="true">/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</guid>
-			</item>
-		
-			<item>
-				<title>win7 oracle php</title>
-				<description>&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。
-    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。
-    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装，一切顺利，打开phpinfo()，没有oci8的提示，所以，进入php目录。打开php.ini，吧extension=php_oci8.dll，extension=php_pdo_oci.dll前面的；去掉，重启apache，打开phpinfo()，仍然没有oci8的提示，这里有个小问题，就是在php的扩展库里没有对oracle的扩展支持，所以大家还有下oraociei10.dll 和orannzsbb10.dll 和oci.dll（大家可以在这里下载），放入php环境下的ext（这个要在环境变里面，否则就复制到system32下面），重启apache，打开phpinfo()，已经有了oci8的提示。
-    下面配置oci客户端（这里大家注意下，因为php5以后，默认只支持10g以上版本），因为我这里要与公司的局域网服务端连接，只需要plsql调试，也就是客户端的安装就好了（http://115.com/file/dng7y94w），安装过程是从网上找的：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;把下载的Basic版压缩包解压，放到 D:\Program Files\instantclient_10_2 目录下，总共8个文件。&lt;/li&gt;
-  &lt;li&gt;桌面上，右键点“我的电脑”，选择“属性”，选择“高级”页中的“环境变量”，在系统变量中，增加：
-1) 变量名：ORACLE_HOME
-   变量值：D:\Program Files\instantclient_10_2
-2) 变量名：TNS_ADMIN
-   变量值：D:\Program Files\instantclient_10_2
-3) 变量名：NLS_LANG
-   变量值：SIMPLIFIED CHINESE_CHINA.ZHS16GBK
-4) 修改Path变量，在后面添加 D:\Program Files\instantclient_10_2
-如果不愿意手工增加，可以下载 SetOraEnv.rar 附件, 解压后执行其中的 setOraEnv.bat.&lt;/li&gt;
-  &lt;li&gt;在D:\Progra~1\instantclient_10_2 新建一个文本文件，文件名为tnsnames.ora,文件中增加自己的数据库别名配置，
-示例如下：
-MyDB =
-(DESCRIPTION =
- (ADDRESS = (PROTOCOL = TCP)(HOST = 172.16.1.16)(PORT = 1521))
- (CONNECT_DATA =
-   (SERVER = DEDICATED)
-   (SERVICE_NAME = ora10g)
- )
-)
-主要改=前面的别名，Host为IP地址, SERVICE_NAME为数据库服务器的实例名。&lt;/li&gt;
-  &lt;li&gt;把sqlplus的压缩包中的文件，解压到 D:\Program Files\instantclient_10_2 目录下,共3个文件。
-在Dos命令行，在D:\Program Files\instantclient_10_2 目录下，运行 sqlplus   username/password@dbname,即可连到数据库上。
-（我没有进行第四步），个人认为环境变量最重要的是path、TNS_ADMIN的修改，重启apache，一切OK。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-				<pubDate>Fri, 07 Jul 2017 13:37:21 +0800</pubDate>
-				<link>/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html</link>
-				<guid isPermaLink="true">/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html</guid>
 			</item>
 		
 	</channel>
