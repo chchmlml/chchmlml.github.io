@@ -14,6 +14,8 @@
   &lt;li&gt;&lt;a href=&quot;#有100万个奖品没人可中3次怎么办&quot; id=&quot;markdown-toc-有100万个奖品没人可中3次怎么办&quot;&gt;有100万个奖品，没人可中3次，怎么办？&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#btree索引与hash索引的长度复杂度为什么不用hash索引&quot; id=&quot;markdown-toc-btree索引与hash索引的长度复杂度为什么不用hash索引&quot;&gt;btree索引与hash索引的长度复杂度？为什么不用hash索引？&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#memcache跟redis的区别&quot; id=&quot;markdown-toc-memcache跟redis的区别&quot;&gt;memcache跟redis的区别&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#php快速输出响应&quot; id=&quot;markdown-toc-php快速输出响应&quot;&gt;php快速输出响应&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#怎么对系统的qps进行优化&quot; id=&quot;markdown-toc-怎么对系统的qps进行优化&quot;&gt;怎么对系统的QPS进行优化&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -47,6 +49,17 @@
   &lt;p&gt;我觉得这两个东西不该一起比较，应该算两个对于KV存储的阶段，memcache进本满足我们高效，
 要求，但是不能持久化、分布式支持不够问题还是要redis更好，对于各种类型的查询复杂度优化，
 高可用性的支持更好。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;php快速输出响应&quot;&gt;php快速输出响应&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;fastcgi_finish_request()，会立刻断开http连接并返回输出，支持php-fpm的fastcgi模式，
+Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;怎么对系统的qps进行优化&quot;&gt;怎么对系统的QPS进行优化&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;提高QPS可以从水平和垂直两个反面进行，水平扩展机器，垂直可采用增加一步特性（减少耗时处理）、减少数据库交互、优化业务逻辑。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
 				<pubDate>Tue, 22 Aug 2017 10:44:29 +0800</pubDate>
