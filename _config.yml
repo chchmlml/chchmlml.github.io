@@ -1,38 +1,15 @@
-paginate: 10
-paginate_path: "page:num"
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
-highlighter: rouge
-markdown: kramdown
-disqus: dbyll
+# Site settings
 title: haicheng的博客
 email: chchmlml@163.com
 baseurl: ""
 url: "https://chchmlml.github.io"
+description: >
+  这是haicheng的博客，里面是技术跟感悟的东西。
+twitter_username: chchmlml
+weibo_username: chchmlml
+github_username:  chchmlml
+motto: "博观而约取，厚积而薄发。"
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      title: ""
+markdown: kramdown
 
-description: Stylish Jekyll Theme
-author:
-  name: haicheng
-  email: chchmlml@163.com
-  weibo: chchmlml
-  github: chchmlml
-  twitter: chchmlml
-  pinterest: chchmlml
-  linkedin: chchmlml
-  bio: 这是haicheng的博客，里面是技术跟感悟的东西。
-  email_md5:
-
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
-
-BASE_PATH:
-
-plugins:
-  - jekyll-paginate
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']

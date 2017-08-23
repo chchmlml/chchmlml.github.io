@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: page
 title: About
-permalink: /about/
+permalink: /about.html
 ---
 
+![Alt text](/images/blog-author.jpg )
 
 ### 寄语
 > 随遇而安
