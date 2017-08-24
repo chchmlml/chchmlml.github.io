@@ -1,1 +1,206 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <title>SaaS 后端即服务</title> <meta name="description" content="SaaS 后端即服务,这篇文章阐述PaaS平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。"> <meta name="author" content="haicheng"> <!-- Enable responsive viewport --> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Le HTML5 shim, for IE6-8 support of HTML elements --> <!--[if lt IE 9]> <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>--> <![endif]--> <!-- Le styles --> <link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet"> <link href="/assets/resources/syntax/syntax.css" rel="stylesheet"> <link href="/assets/css/style.css" rel="stylesheet"> <link rel="shortcut icon" href="/assets/ico/favicon.ico"> <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml"> </head> <body> <nav class="navbar navbar-default visible-xs" role="navigation"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a type="button" class="navbar-toggle nav-link" href="http://weibo.com/chchmlml"> <i class="fa fa-weibo"></i> </a> <a type="button" class="navbar-toggle nav-link" href="http://github.com/chchmlml"> <i class="fa fa-github"></i> </a> <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/chchmlml"> <i class="fa fa-twitter"></i> </a> <a type="button" class="navbar-toggle nav-link" href="mailto:chchmlml@163.com"> <i class="fa fa-envelope"></i> </a> <a class="navbar-brand" href="/"> <!-- <img src="/assets/ico/blog-author.jpg" class="img-circle" />--> haicheng的博客 </a> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav"> <li class="active"><a href="/">首页</a></li> <li><a href="/categories.html">分类</a></li> <li><a href="/tags.html">标签</a></li> <li><a href="/about/">关于我</a></li> </ul> </div><!-- /.navbar-collapse --> </nav> <!-- nav-menu-dropdown --> <div class="btn-group hidden-xs" id="nav-menu"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bars"></i> </button> <ul class="dropdown-menu" role="menu"> <li><a href="/"><i class="fa fa-home"></i>首页</a></li> <li><a href="/categories.html"><i class="fa fa-folder"></i>分类</a></li> <li><a href="/tags.html"><i class="fa fa-tags"></i>标签</a></li> <li><a href="/about/"><i class="fa fa-leaf"></i>关于我</a></li> <li class="divider"></li> <li><a href="#"><i class="fa fa-arrow-up"></i>Top</a></li> </ul> </div> <div class="col-sm-3 sidebar hidden-xs" style=""> <!-- sidebar.html --> <header class="sidebar-header" role="banner"> <a href="/"> <img src="/assets/ico/blog-author.jpg" class="img-circle" /> </a> <!-- <h3 class="title">--> <!-- <a href="/">haicheng的博客</a>--> <!-- </h3>--> </header> <div id="bio" class="text-center"> 这是haicheng的博客，里面是技术跟感悟的东西。 </div> <div id="bio2" class="text-center"> <a href="/">首页</a>&nbsp; <a href="/categories.html">分类</a>&nbsp; <a href="/tags.html">标签</a>&nbsp; <a href="/about/">关于我</a> </div> <div id="contact-list" class="text-center"> <ul class="list-unstyled list-inline"> <li> <a class="btn btn-default btn-sm" href="https://weibo.com/chchmlml"> <i class="fa fa-weibo fa-lg"></i> </a> </li> <li> <a class="btn btn-default btn-sm" href="https://github.com/chchmlml"> <i class="fa fa-github-alt fa-lg"></i> </a> </li> <li> <a class="btn btn-default btn-sm" href="https://twitter.com/chchmlml"> <i class="fa fa-twitter fa-lg"></i> </a> </li> </ul> <ul id="contact-list-secondary" class="list-unstyled list-inline"> <!-- --> <!-- <li>--> <!-- <a class="btn btn-default btn-sm" href="https://pinterest.com/chchmlml">--> <!-- <i class="fa fa-pinterest fa-lg"></i>--> <!-- </a>--> <!-- </li>--> <!-- --> <!-- --> <!-- <li>--> <!-- <a class="btn btn-default btn-sm" href="https://linkedin.com/in/chchmlml">--> <!-- <i class="fa fa-linkedin fa-lg"></i>--> <!-- </a>--> <!-- </li>--> <!-- --> <li> <a class="btn btn-default btn-sm" href="mailto:chchmlml@163.com"> <i class="fa fa-envelope fa-lg"></i> </a> </li> <li> <a class="btn btn-default btn-sm" href="/feed.xml"> <i class="fa fa-rss fa-lg"></i> </a> </li> </ul> </div> <!-- sidebar.html end --> </div> <div class="col-sm-9 col-sm-offset-3"> <div class="page-header"> <h1>SaaS 后端即服务 </h1> </div> <article> <div class="col-sm-10"> <span class="post-date"></span> <div class="article_body"> <h1 id="目录">目录</h1> <ul id="markdown-toc"> <li><a href="#目录" id="markdown-toc-目录">目录</a></li> <li><a href="#阐述" id="markdown-toc-阐述">阐述</a></li> <li><a href="#初创公司平台建立" id="markdown-toc-初创公司平台建立">初创公司平台建立</a></li> <li><a href="#我们要面对的问题" id="markdown-toc-我们要面对的问题">我们要面对的问题</a> <ul> <li><a href="#系统繁多不能轻装上阵" id="markdown-toc-系统繁多不能轻装上阵">系统繁多，不能轻装上阵</a></li> <li><a href="#对开发人员人手布局的考验" id="markdown-toc-对开发人员人手布局的考验">对开发人员人手布局的考验</a></li> <li><a href="#业务之间集成的标准" id="markdown-toc-业务之间集成的标准">业务之间集成的标准</a></li> </ul> </li> <li><a href="#我们应该专注做什么" id="markdown-toc-我们应该专注做什么">我们应该专注做什么</a> <ul> <li><a href="#构建精细化管理" id="markdown-toc-构建精细化管理">构建精细化管理</a></li> <li><a href="#系统之间集成标准的建立" id="markdown-toc-系统之间集成标准的建立">系统之间集成标准的建立</a></li> <li><a href="#提高业务进化速度" id="markdown-toc-提高业务进化速度">提高业务进化速度</a></li> </ul> </li> </ul> <hr /> <h1 id="阐述">阐述</h1> <p>这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。</p> <h1 id="初创公司平台建立">初创公司平台建立</h1> <p>可以说这是一个激烈竞争的市场，在这样的市场，<code class="highlighter-rouge">只有高效，有效的模式会成功的存留下来</code>，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。</p> <p>对创业开发者来说，成本和效率是最需要关注的两个方面，<code class="highlighter-rouge">第一他们缺少技术的积累，第二他们需要很低的成本去验证他们的模式，从而成长起来</code>。这些云服务提供者成为他们最好的选择。</p> <p>在这个移动互联网时代，基本会需要移动APP和web的功能，那么一下的问题我们需要解决：</p> <ul> <li>服务器部署维护</li> <li>APP和Web网站开发</li> <li>后端服务开发</li> <li>平台功能： <ul> <li>认证和授权</li> <li>文件存储</li> <li>推送和通讯</li> <li>地图功能</li> <li>支付功能</li> <li>社会化分享</li> <li>验证和安全</li> <li>智能识别</li> <li>搜索</li> <li>用户行为分析</li> <li>…</li> </ul> </li> <li>业务功能</li> <li>…</li> </ul> <h1 id="我们要面对的问题">我们要面对的问题</h1> <h3 id="系统繁多不能轻装上阵">系统繁多，不能轻装上阵</h3> <p>然后我们又发现，好像我们没做太多事情啊，支持的业务可以数的过来，这些居然需要上百系统来支持。</p> <p>这后面存在的问题肯定让人深思，然后随着我们梳理的深入，会发现有些最主要的问题是：</p> <ol> <li>重复建设</li> <li>缺乏规划</li> </ol> <p>这里对开发资源和物理资源的浪费将显而易见。</p> <p>这些系统也成为了一个庞大的负担，我们需要花很大的精力去维护，升级，开发，同时也要花很多公司的资源去运行，监控。</p> <p><code class="highlighter-rouge">如果一个软件变得复杂难以维护需要去做代码级别的重构，那么我们这种系统级别的复杂就需要架构级别的重构了。</code></p> <h3 id="对开发人员人手布局的考验">对开发人员人手布局的考验</h3> <p>为什么我们做个业务系统，除了业务逻辑实现外，还需要每个开发人员掌握如此多的技能。 作为业务系统的开发人员，不是应该专注于业务逻辑的开发吗。 系统的稳定性，后端的高并发性能不是应该有更底层，更专业的团队去做吗，为什么每个开发团队都要求去做，这些不合理是由什么造成的，是分工？规划？还是技术架构？</p> <h3 id="业务之间集成的标准">业务之间集成的标准</h3> <h1 id="我们应该专注做什么">我们应该专注做什么</h1> <p>我们的开发团队可以很好的分工开发各种能力模块，同时业务系统可以标准化的使用这些模块。</p> <h3 id="构建精细化管理">构建精细化管理</h3> <h3 id="系统之间集成标准的建立">系统之间集成标准的建立</h3> <h3 id="提高业务进化速度">提高业务进化速度</h3> <blockquote> <p>以上是我对此文章的总结归纳，完整地址： <a href="https://yq.aliyun.com/articles/2918?comefrom=http://blogread.cn/news/">BaaS后端即服务 - 通往中台架构之路</a></p> </blockquote> </div> <ul class="tag_box list-unstyled list-inline"> <li><i class="fa fa-folder-open"></i></li> <li><a href="/categories.html#编程技术-ref"> 编程技术 <span>(8)</span> </a></li> </ul> <hr> <div> <section class="share col-sm-6"> <h4 class="section-title">分享</h4> <a class="btn btn-default btn-sm weibo" href="http://service.weibo.com/share/share.php?title=SaaS 后端即服务@chchmlml&url=" onclick="window.open(this.href + '&url='+window.location.href, '分享到微博', 'width=550,height=235');return false;"> <i class="fa fa-weibo fa-lg"></i> 微博 </a> <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=SaaS 后端即服务&via=chchmlml" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <i class="fa fa-twitter fa-lg"></i> Twitter </a> <!-- <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"--> <!-- onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">--> <!-- <i class="fa fa-facebook fa-lg"></i>--> <!-- Facebook--> <!-- </a>--> <!-- <a class="btn btn-default btn-sm gplus"--> <!-- onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">--> <!-- <i class="fa fa-google-plus fa-lg"></i>--> <!-- Google+--> <!-- </a>--> </section> <section class="col-sm-6 author"> <!-- <img src="/assets/ico/blog-author.jpg" class="img-rounded author-image" />--> <h4 class="section-title author-name">haicheng</h4> <p class="author-bio">这是haicheng的博客，里面是技术跟感悟的东西。</p> </section> </div> <div class="clearfix"></div> <ul class="pager"> <li class="previous"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn.html" title="每天学习笔记">&larr; Previous</a></li> <li class="next"><a href="/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html" title="《redis设计与实践》学习">Next &rarr;</a></li> </ul> <hr> </div> <div class="col-sm-2 sidebar-2"> </div> </article> <div class="clearfix"></div> <footer> <hr/> <p> &copy; 2017 haicheng with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek. </p> <p> <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span> </p> </footer> </div> <script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script> <script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script> <script type="text/javascript" src="/assets/js/app.js"></script> <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> </body> </html>
+<!DOCTYPE html>
+<html>    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <title>SaaS 后端即服务</title>
+    <meta name="description"
+          content="目录  目录">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html">
+    <link rel="alternate" type="application/atom+xml" title="haicheng的博客" href="https://chchmlml.github.io/feed.xml" />
+    <script src="/scripts/jquery-1.11.2.min.js"></script>
+    <script src="/scripts/pithy.js"></script>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+
+  <body>
+    <header class="header">
+    <div class="header-container">
+        <img src="/images/blog-author.jpg" class="author-log">
+        
+        <div class="nav">
+            
+            <li>
+                <a href="/index.html">首页</a>
+            </li>
+            
+            
+            <li>
+                <a href="/archive.html">归档</a>
+            </li>
+            
+            
+            <li>
+                <a href="/category.html">分类</a>
+            </li>
+            
+            
+            <li>
+                <a href="/about.html">about</a>
+            </li>
+            
+        </div>
+        <div class="description"> 博观而约取，厚积而薄发。</div>
+        <ul class="social-links">
+            <li>
+                <a href="https://weibo.com/chchmlml" title="Weibo" target="_blank">
+                    <img width="19px" height="19px" src="/images/weibo.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/chchmlml" title="Github" target="_blank">
+                    <img width="19px" height="19px" src="/images/github.png"/>
+                </a>
+            </li>
+            <li>
+            <a href="https://twitter.com/chchmlml" title="Twitter" target="_blank">
+                <img width="19px" height="19px" src="/images/twitter.png"/>
+            </a>
+            </li>
+            <li>
+                <a href="/feed.xml" title="RSS" target="_blank">
+                    <img width="19px" height="19px" src="/images/rss.png"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <br>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+  <br>
+  <header class="post-header">
+    <h1 class="post-title">SaaS 后端即服务</h1>
+    <p class="post-meta">Aug 6, 2017 • haicheng</p>
+  </header>
+
+  <article class="post-content">
+    <h1 id="目录">目录</h1>
+<ul id="markdown-toc">
+  <li><a href="#目录" id="markdown-toc-目录">目录</a></li>
+  <li><a href="#阐述" id="markdown-toc-阐述">阐述</a></li>
+  <li><a href="#初创公司平台建立" id="markdown-toc-初创公司平台建立">初创公司平台建立</a></li>
+  <li><a href="#我们要面对的问题" id="markdown-toc-我们要面对的问题">我们要面对的问题</a>    <ul>
+      <li><a href="#系统繁多不能轻装上阵" id="markdown-toc-系统繁多不能轻装上阵">系统繁多，不能轻装上阵</a></li>
+      <li><a href="#对开发人员人手布局的考验" id="markdown-toc-对开发人员人手布局的考验">对开发人员人手布局的考验</a></li>
+      <li><a href="#业务之间集成的标准" id="markdown-toc-业务之间集成的标准">业务之间集成的标准</a></li>
+    </ul>
+  </li>
+  <li><a href="#我们应该专注做什么" id="markdown-toc-我们应该专注做什么">我们应该专注做什么</a>    <ul>
+      <li><a href="#构建精细化管理" id="markdown-toc-构建精细化管理">构建精细化管理</a></li>
+      <li><a href="#系统之间集成标准的建立" id="markdown-toc-系统之间集成标准的建立">系统之间集成标准的建立</a></li>
+      <li><a href="#提高业务进化速度" id="markdown-toc-提高业务进化速度">提高业务进化速度</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h1 id="阐述">阐述</h1>
+<p>这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。</p>
+
+<h1 id="初创公司平台建立">初创公司平台建立</h1>
+
+<p>可以说这是一个激烈竞争的市场，在这样的市场，<code class="highlighter-rouge">只有高效，有效的模式会成功的存留下来</code>，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。</p>
+
+<p>对创业开发者来说，成本和效率是最需要关注的两个方面，<code class="highlighter-rouge">第一他们缺少技术的积累，第二他们需要很低的成本去验证他们的模式，从而成长起来</code>。这些云服务提供者成为他们最好的选择。</p>
+
+<p>在这个移动互联网时代，基本会需要移动APP和web的功能，那么一下的问题我们需要解决：</p>
+
+<ul>
+  <li>服务器部署维护</li>
+  <li>APP和Web网站开发</li>
+  <li>后端服务开发</li>
+  <li>平台功能：
+    <ul>
+      <li>认证和授权</li>
+      <li>文件存储</li>
+      <li>推送和通讯</li>
+      <li>地图功能</li>
+      <li>支付功能</li>
+      <li>社会化分享</li>
+      <li>验证和安全</li>
+      <li>智能识别</li>
+      <li>搜索</li>
+      <li>用户行为分析</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>业务功能</li>
+  <li>…</li>
+</ul>
+
+<h1 id="我们要面对的问题">我们要面对的问题</h1>
+<h3 id="系统繁多不能轻装上阵">系统繁多，不能轻装上阵</h3>
+
+<p>然后我们又发现，好像我们没做太多事情啊，支持的业务可以数的过来，这些居然需要上百系统来支持。</p>
+
+<p>这后面存在的问题肯定让人深思，然后随着我们梳理的深入，会发现有些最主要的问题是：</p>
+<ol>
+  <li>重复建设</li>
+  <li>缺乏规划</li>
+</ol>
+
+<p>这里对开发资源和物理资源的浪费将显而易见。</p>
+
+<p>这些系统也成为了一个庞大的负担，我们需要花很大的精力去维护，升级，开发，同时也要花很多公司的资源去运行，监控。</p>
+
+<p><code class="highlighter-rouge">如果一个软件变得复杂难以维护需要去做代码级别的重构，那么我们这种系统级别的复杂就需要架构级别的重构了。</code></p>
+
+<h3 id="对开发人员人手布局的考验">对开发人员人手布局的考验</h3>
+
+<p>为什么我们做个业务系统，除了业务逻辑实现外，还需要每个开发人员掌握如此多的技能。 作为业务系统的开发人员，不是应该专注于业务逻辑的开发吗。 系统的稳定性，后端的高并发性能不是应该有更底层，更专业的团队去做吗，为什么每个开发团队都要求去做，这些不合理是由什么造成的，是分工？规划？还是技术架构？</p>
+
+<h3 id="业务之间集成的标准">业务之间集成的标准</h3>
+
+<h1 id="我们应该专注做什么">我们应该专注做什么</h1>
+
+<p>我们的开发团队可以很好的分工开发各种能力模块，同时业务系统可以标准化的使用这些模块。</p>
+<h3 id="构建精细化管理">构建精细化管理</h3>
+<h3 id="系统之间集成标准的建立">系统之间集成标准的建立</h3>
+<h3 id="提高业务进化速度">提高业务进化速度</h3>
+
+<blockquote>
+  <p>以上是我对此文章的总结归纳，完整地址： <a href="https://yq.aliyun.com/articles/2918?comefrom=http://blogread.cn/news/">BaaS后端即服务 - 通往中台架构之路</a></p>
+</blockquote>
+
+
+  </article>
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key=/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service data-title=SaaS 后端即服务 data-url=博观而约取，厚积而薄发。//%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"pawpaw"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+
+      </div>
+    </div>
+    
+    <footer class="footer">
+  <div id="gotop">^</div>
+  <br>
+	@2015 Pithy Theme by Pawpaw.<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+</footer>
+
+    
+  </body>
+
+</html>
