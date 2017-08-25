@@ -50,3 +50,5 @@ category_page: '/blog/categories/'
 hero:
   image: /public/img/index.jpg
   caption: '这是肉包，我养的猫'
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
