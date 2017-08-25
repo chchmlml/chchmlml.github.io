@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Blog &middot; haicheng的博客
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">-->
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="/">
+          <img src="/public/blog-author.jpg" title="haicheng的博客" alt="haicheng的博客" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>博观而约取，厚积而薄发。</p>
+      </div>
+      
+      
+      
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: 
+        
+        
+        
+        <a href="http://weibo.com/chchmlml">
+          <i class="fa fa-weibo" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://github.com/chchmlml">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://twitter.com/chchmlml">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="mailto:chchmlml@163.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        
+        
+        
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/">
+          Home
+        </a>
+
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="foldable">
+        <a class="sidebar-nav-item " href="/blog/">
+          Blog
+        </a>
+
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/">
+                Categories
+              </a>
+          
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/tags/">
+                Tags
+              </a>
+          
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/about/">
+          About
+        </a>
+
+        
+      </span>
+
+    
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    &copy; 2017 haicheng.
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+    </p>
+  </div>
+
+  <div class="sidebar-item">
+    <p>
+    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home" title="haicheng的博客">
+                haicheng的博客
+            </a>
+<!--            <small>haicheng的博客</small>-->
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php/">
+        win7 oracle php
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2017</span>
+     | 
+    
+    
+
+    <article>
+      <h1 id="目录">目录</h1>
+<ul id="markdown-toc">
+  <li><a href="#目录" id="markdown-toc-目录">目录</a></li>
+</ul>
+<hr />
+
+<p>今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。
+    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。
+    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装，一切顺利，打开phpinfo()，没有oci8的提示，所以，进入php目录。打开php.ini，吧extension=php_oci8.dll，extension=php_pdo_oci.dll前面的；去掉，重启apache，打开phpinfo()，仍然没有oci8的提示，这里有个小问题，就是在php的扩展库里没有对oracle的扩展支持，所以大家还有下oraociei10.dll 和orannzsbb10.dll 和oci.dll（大家可以在这里下载），放入php环境下的ext（这个要在环境变里面，否则就复制到system32下面），重启apache，打开phpinfo()，已经有了oci8的提示。
+    下面配置oci客户端（这里大家注意下，因为php5以后，默认只支持10g以上版本），因为我这里要与公司的局域网服务端连接，只需要plsql调试，也就是客户端的安装就好了（http://115.com/file/dng7y94w），安装过程是从网上找的：</p>
+<ol>
+  <li>把下载的Basic版压缩包解压，放到 D:\Program Files\instantclient_10_2 目录下，总共8个文件。</li>
+  <li>桌面上，右键点“我的电脑”，选择“属性”，选择“高级”页中的“环境变量”，在系统变量中，增加：
+1) 变量名：ORACLE_HOME
+   变量值：D:\Program Files\instantclient_10_2
+2) 变量名：TNS_ADMIN
+   变量值：D:\Program Files\instantclient_10_2
+3) 变量名：NLS_LANG
+   变量值：SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+4) 修改Path变量，在后面添加 D:\Program Files\instantclient_10_2
+如果不愿意手工增加，可以下载 SetOraEnv.rar 附件, 解压后执行其中的 setOraEnv.bat.</li>
+  <li>在D:\Progra~1\instantclient_10_2 新建一个文本文件，文件名为tnsnames.ora,文件中增加自己的数据库别名配置，
+示例如下：
+MyDB =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = 172.16.1.16)(PORT = 1521))
+ (CONNECT_DATA =
+   (SERVER = DEDICATED)
+   (SERVICE_NAME = ora10g)
+ )
+)
+主要改=前面的别名，Host为IP地址, SERVICE_NAME为数据库服务器的实例名。</li>
+  <li>把sqlplus的压缩包中的文件，解压到 D:\Program Files\instantclient_10_2 目录下,共3个文件。
+在Dos命令行，在D:\Program Files\instantclient_10_2 目录下，运行 sqlplus   username/password@dbname,即可连到数据库上。
+（我没有进行第四步），个人认为环境变量最重要的是path、TNS_ADMIN的修改，重启apache，一切OK。</li>
+</ol>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp/">
+        php5 oracle xp
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2017</span>
+     | 
+    
+    <a href="/blog/tags/#php" class="post-tag">php</a>
+    
+    
+
+    <article>
+      <div class="highlighter-rouge"><pre class="highlight"><code> 由于换组，今天不得不把业务熟悉下。新的组长要求我在本地进行程序编写及测试，所以。不得不搭建PHP的本地环境。虽然有傻瓜式的集成环境搭建工具，但是都是基于MySQL的，可是我需要搭建Oracle的本地环境，连接线上的数据库，想想就头痛。 因为以前自己测试过xampp搭建xp/php5/oracle，所以这次选用的是xampp，抛弃了一直用的wamp。一开始都很顺利，可是老问题也来了。 1.安装orl client 2.修改php.ini，打开php_oci.dll等扩展dll 重启apache，结果和我想的一样，木有用哭，还是报哪个“找不到php_oci8.php模块”。 能怎么办，度娘，google呗。查了半天，有了点眉目，有的资料上说php在xp平台上支持oci的最低版本是10g，没办法试一下吧，我把自己的已安装的9g卸掉，下了个10g的版本，地址ed2k://%7Cfile%7C%5BOracle.10g.For.Windows%5D.Oracle.10g.for.Windows.ISO%7C650379264%7C6cc207b3996489dd0998e4354a929481%7Ch=w3j5oxjfere6le6kykjxfwoymgojzhs3%7C/ 花了半天安上，重启apache（表示平静，打击多了也就不兴奋了）结果依旧抓狂。 继续查资料，这是找到了个有点靠谱的文章，地址http://blog.sina.com.cn/s/blog_56e9c93c01000ace.html 所以我又下了个instantclient10（我已经收藏到我的资源里了），并把里面的oraociei10.dll 和orannzsbb10.dll 和oci.dll 复制到php的ext（个人觉得只要在环境变量里就行），重启apache，好了，出现了oci8的支持。可怜。 当然我还借鉴了其他的文章，跟大家分享下http://bbs.phpchina.com/thread-44502-1-1.html
+</code></pre>
+</div>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem/">
+        oracle php week problem
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2017</span>
+     | 
+    
+    <a href="/blog/tags/#php" class="post-tag">php</a>
+    
+    
+
+    <article>
+      <p>今天遇到了个小问题，项目要求在数据库里查出某一天上一周的数据列，sql语句还好写；</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="n">to_char</span><span class="p">(</span><span class="nv">"date"</span><span class="p">,</span><span class="s1">'ww'</span><span class="p">)</span> <span class="o">&gt;</span><span class="p">:</span><span class="n">date</span>  
+</code></pre>
+</div>
+<p>运行，测试。起初还好，几轮测试下来出问题了，总是有那么几天不正确，就是说手算是40周，这是查询时却不是，有可能是41，所以我查了下手册，原来PHP中给日期格式化是这样的</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>date("W")//当天是当年的第几周，注：每周是从星期一开始  
+</code></pre>
+</div>
+<p>但是在Oracle周的解释是每周是从一月一日算起，所以显而易见会有些问题，所以为了解决我们就最好使他们保持一致，所以我写了下面的算法，跟大家分享下</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code>function get_week_index($month=null, $day=null, $year=null){  
+        //拿到某一天的月日年  
+        $month =$month?$month: date("m");  
+        $day =$day?$day:date("d");   
+        $year  =$year?$year: date("Y");  
+        //得到那一天的时间戳  
+        $getDay = mktime(0, 0, 0, $month, $day, $year);  
+        //得到差值  
+        $dayMin =$getDay- mktime(0, 0, 0, 1, 1, $year);  
+        //换算出是第几周  
+        $dayR =(int) ($dayMin / (7*24*3600));   
+        return ++$dayR;  
+}  
+</code></pre>
+</div>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where/">
+        left join where
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2017</span>
+     | 
+    
+    <a href="/blog/tags/#sql" class="post-tag">sql</a>
+    
+    <a href="/blog/tags/#数据库" class="post-tag">数据库</a>
+    
+    
+
+    <article>
+      <p>今天项目中遇到个问题，
+有三个表需要联合查询，我起初用的是where条件，语句是</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code>
+<span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span><span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+          <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span><span class="p">,</span> <span class="n">pps_ad_brand</span> <span class="n">b</span><span class="p">,</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+         <span class="k">where</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+           <span class="k">and</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span> <span class="k">and</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span> <span class="k">like</span>   
+</code></pre>
+</div>
+
+<p>测试没什么问题，可是偶尔会差不到，经过测试，原来数据录入时，有的时候这几个表偶儿会无法关联，也就是id无法对应上，所以果断使用left join，开始的语句是这样写的</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code>
+<span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+                  <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span>   
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+                    <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+                    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span> <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%%'</span> <span class="k">and</span> <span class="n">rownum</span> <span class="o">&lt;</span> <span class="mi">5</span>  
+
+</code></pre>
+</div>
+
+<p>这样出现的问题主要like条件不能成立，还有ROWNUM&lt;5条件不能成立，看来是sql语法有问题，查了下资料，更改成</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span>  
+          <span class="k">from</span> <span class="p">(</span><span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+                  <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span>   
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+                    <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+                    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+                   <span class="p">)</span>  
+          <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%运%'</span> <span class="k">and</span> <span class="n">ROWNUM</span> <span class="o">&lt;=</span> <span class="mi">5</span>  
+          
+</code></pre>
+</div>
+
+<p>虽然结果正确，但是大家可以看到，这样的效率不高，所以我有改进了一下</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">with</span> <span class="k">c</span> <span class="k">as</span> <span class="p">(</span><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">pps_ad_corporation_event</span>  <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%运%'</span> <span class="k">and</span> <span class="n">rownum</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span>     
+       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">c</span> <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+          <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+        <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+          <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+</code></pre>
+</div>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json/">
+        json string to json
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2017</span>
+     | 
+    
+    <a href="/blog/tags/#javascript" class="post-tag">javascript</a>
+    
+    
+
+    <article>
+      
+<p>jQuery的ajax返回的如果是json格式，在success方法获取的值并不能直接当做json object处理，需要用$.parseJSON来转化成个json对象
+例如
+后台程序</p>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>  
+<span class="k">include</span> <span class="p">(</span><span class="s2">"json_helper.php"</span><span class="p">);</span>  
+<span class="nv">$Josn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Services_JSON</span> <span class="p">();</span>  
+<span class="nv">$r</span> <span class="o">=</span> <span class="nx">Array</span> <span class="p">(</span><span class="s2">"status"</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span><span class="s2">"list"</span><span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>  
+        <span class="nx">Array</span> <span class="p">(</span><span class="s2">"c_id"</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"c_parent_id"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_name"</span> <span class="o">=&gt;</span> <span class="s2">"旅游美食"</span><span class="p">,</span> <span class="s2">"c_status"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_type"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_area"</span> <span class="o">=&gt;</span> <span class="s2">"反选:福建|湖南|内蒙古|"</span> <span class="p">),</span>  
+        <span class="nx">Array</span> <span class="p">(</span><span class="s2">"c_id"</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c_parent_id"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_name"</span> <span class="o">=&gt;</span> <span class="s2">"旅游美食"</span><span class="p">,</span> <span class="s2">"c_status"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_type"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_area"</span> <span class="o">=&gt;</span> <span class="s2">"反选:福建|湖南|内蒙古|"</span> <span class="p">),</span>  
+        <span class="nx">Array</span> <span class="p">(</span><span class="s2">"c_id"</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"c_parent_id"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_name"</span> <span class="o">=&gt;</span> <span class="s2">"旅游美食"</span><span class="p">,</span> <span class="s2">"c_status"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_type"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_area"</span> <span class="o">=&gt;</span> <span class="s2">"反选:福建|湖南|内蒙古|"</span> <span class="p">),</span>  
+        <span class="nx">Array</span> <span class="p">(</span><span class="s2">"c_id"</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">"c_parent_id"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_name"</span> <span class="o">=&gt;</span> <span class="s2">"旅游美食"</span><span class="p">,</span> <span class="s2">"c_status"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_type"</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"c_area"</span> <span class="o">=&gt;</span> <span class="s2">"反选:福建|湖南|内蒙古|"</span> <span class="p">),</span>  
+    <span class="p">)</span>  
+<span class="p">);</span>  
+<span class="nv">$r_josn</span> <span class="o">=</span> <span class="nv">$Josn</span><span class="o">-&gt;</span><span class="na">encode</span><span class="p">(</span><span class="nv">$r</span><span class="p">);</span>   
+<span class="k">echo</span> <span class="nv">$r_josn</span><span class="p">;</span>   
+</code></pre>
+</div>
+
+<p>静态页面</p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>  
+<span class="nt">&lt;html&gt;</span>  
+<span class="nt">&lt;head&gt;</span>  
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span><span class="nt">&gt;</span>  
+<span class="nt">&lt;title&gt;</span>Insert title here<span class="nt">&lt;/title&gt;</span>  
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/js/jquery-1.4.2.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>  
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>  
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>   
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#getjson"</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>  
+        <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>  
+              <span class="na">type</span><span class="p">:</span> <span class="s2">"POST"</span><span class="p">,</span>  
+               <span class="na">url</span><span class="p">:</span> <span class="s2">"/json/index.php"</span><span class="p">,</span>  
+               <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">){</span>   
+                   <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>   
+                   <span class="kd">var</span> <span class="nx">tb</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;table border=1&gt;&lt;/table&gt;"</span><span class="p">);</span>  
+                   <span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">r</span><span class="p">.</span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>  
+                       <span class="nx">tb</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"&lt;tr&gt;&lt;td&gt;"</span><span class="o">+</span><span class="nx">r</span><span class="p">.</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">c_id</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;td&gt;"</span><span class="o">+</span><span class="nx">r</span><span class="p">.</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">c_name</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;/tr&gt;"</span><span class="p">);</span>  
+                   <span class="p">}</span>  
+                   <span class="nx">$</span><span class="p">(</span><span class="s2">"body"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">tb</span><span class="p">);</span>  
+               <span class="p">}</span>  
+  
+        <span class="p">});</span>  
+    <span class="p">});</span>  
+<span class="p">})</span>  
+<span class="nt">&lt;/script&gt;</span>  
+<span class="nt">&lt;/head&gt;</span>  
+<span class="nt">&lt;body&gt;</span>  
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"getjson"</span><span class="nt">&gt;</span>获取<span class="nt">&lt;/button&gt;</span>  
+<span class="nt">&lt;/body&gt;</span>  
+<span class="nt">&lt;/html&gt;</span>  
+
+</code></pre>
+</div>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/blog/page4">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/blog/page2">Newer</a>
+    
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if (target === toggle) {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+          } else if (checkbox.checked && !sidebar.contains(target)) {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+          }
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

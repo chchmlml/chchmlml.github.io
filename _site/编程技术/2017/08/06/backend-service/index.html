@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      SaaS 后端即服务 &middot; haicheng的博客
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">-->
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="/">
+          <img src="/public/blog-author.jpg" title="haicheng的博客" alt="haicheng的博客" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>博观而约取，厚积而薄发。</p>
+      </div>
+      
+      
+      
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: 
+        
+        
+        
+        <a href="http://weibo.com/chchmlml">
+          <i class="fa fa-weibo" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://github.com/chchmlml">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https://twitter.com/chchmlml">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="mailto:chchmlml@163.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        
+        
+        
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/">
+          Home
+        </a>
+
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="foldable">
+        <a class="sidebar-nav-item " href="/blog/">
+          Blog
+        </a>
+
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/">
+                Categories
+              </a>
+          
+        
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/tags/">
+                Tags
+              </a>
+          
+        
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/about/">
+          About
+        </a>
+
+        
+      </span>
+
+    
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    &copy; 2017 haicheng.
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+    </p>
+  </div>
+
+  <div class="sidebar-item">
+    <p>
+    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home" title="haicheng的博客">
+                haicheng的博客
+            </a>
+<!--            <small>haicheng的博客</small>-->
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">SaaS 后端即服务</h1>
+  <span class="post-date">06 Aug 2017</span>
+   | 
+  
+  
+  <article>
+    <h1 id="目录">目录</h1>
+<ul id="markdown-toc">
+  <li><a href="#目录" id="markdown-toc-目录">目录</a></li>
+  <li><a href="#阐述" id="markdown-toc-阐述">阐述</a></li>
+  <li><a href="#初创公司平台建立" id="markdown-toc-初创公司平台建立">初创公司平台建立</a></li>
+  <li><a href="#我们要面对的问题" id="markdown-toc-我们要面对的问题">我们要面对的问题</a>    <ul>
+      <li><a href="#系统繁多不能轻装上阵" id="markdown-toc-系统繁多不能轻装上阵">系统繁多，不能轻装上阵</a></li>
+      <li><a href="#对开发人员人手布局的考验" id="markdown-toc-对开发人员人手布局的考验">对开发人员人手布局的考验</a></li>
+      <li><a href="#业务之间集成的标准" id="markdown-toc-业务之间集成的标准">业务之间集成的标准</a></li>
+    </ul>
+  </li>
+  <li><a href="#我们应该专注做什么" id="markdown-toc-我们应该专注做什么">我们应该专注做什么</a>    <ul>
+      <li><a href="#构建精细化管理" id="markdown-toc-构建精细化管理">构建精细化管理</a></li>
+      <li><a href="#系统之间集成标准的建立" id="markdown-toc-系统之间集成标准的建立">系统之间集成标准的建立</a></li>
+      <li><a href="#提高业务进化速度" id="markdown-toc-提高业务进化速度">提高业务进化速度</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h1 id="阐述">阐述</h1>
+<p>这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。</p>
+
+<h1 id="初创公司平台建立">初创公司平台建立</h1>
+
+<p>可以说这是一个激烈竞争的市场，在这样的市场，<code class="highlighter-rouge">只有高效，有效的模式会成功的存留下来</code>，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。</p>
+
+<p>对创业开发者来说，成本和效率是最需要关注的两个方面，<code class="highlighter-rouge">第一他们缺少技术的积累，第二他们需要很低的成本去验证他们的模式，从而成长起来</code>。这些云服务提供者成为他们最好的选择。</p>
+
+<p>在这个移动互联网时代，基本会需要移动APP和web的功能，那么一下的问题我们需要解决：</p>
+
+<ul>
+  <li>服务器部署维护</li>
+  <li>APP和Web网站开发</li>
+  <li>后端服务开发</li>
+  <li>平台功能：
+    <ul>
+      <li>认证和授权</li>
+      <li>文件存储</li>
+      <li>推送和通讯</li>
+      <li>地图功能</li>
+      <li>支付功能</li>
+      <li>社会化分享</li>
+      <li>验证和安全</li>
+      <li>智能识别</li>
+      <li>搜索</li>
+      <li>用户行为分析</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>业务功能</li>
+  <li>…</li>
+</ul>
+
+<h1 id="我们要面对的问题">我们要面对的问题</h1>
+<h3 id="系统繁多不能轻装上阵">系统繁多，不能轻装上阵</h3>
+
+<p>然后我们又发现，好像我们没做太多事情啊，支持的业务可以数的过来，这些居然需要上百系统来支持。</p>
+
+<p>这后面存在的问题肯定让人深思，然后随着我们梳理的深入，会发现有些最主要的问题是：</p>
+<ol>
+  <li>重复建设</li>
+  <li>缺乏规划</li>
+</ol>
+
+<p>这里对开发资源和物理资源的浪费将显而易见。</p>
+
+<p>这些系统也成为了一个庞大的负担，我们需要花很大的精力去维护，升级，开发，同时也要花很多公司的资源去运行，监控。</p>
+
+<p><code class="highlighter-rouge">如果一个软件变得复杂难以维护需要去做代码级别的重构，那么我们这种系统级别的复杂就需要架构级别的重构了。</code></p>
+
+<h3 id="对开发人员人手布局的考验">对开发人员人手布局的考验</h3>
+
+<p>为什么我们做个业务系统，除了业务逻辑实现外，还需要每个开发人员掌握如此多的技能。 作为业务系统的开发人员，不是应该专注于业务逻辑的开发吗。 系统的稳定性，后端的高并发性能不是应该有更底层，更专业的团队去做吗，为什么每个开发团队都要求去做，这些不合理是由什么造成的，是分工？规划？还是技术架构？</p>
+
+<h3 id="业务之间集成的标准">业务之间集成的标准</h3>
+
+<h1 id="我们应该专注做什么">我们应该专注做什么</h1>
+
+<p>我们的开发团队可以很好的分工开发各种能力模块，同时业务系统可以标准化的使用这些模块。</p>
+<h3 id="构建精细化管理">构建精细化管理</h3>
+<h3 id="系统之间集成标准的建立">系统之间集成标准的建立</h3>
+<h3 id="提高业务进化速度">提高业务进化速度</h3>
+
+<blockquote>
+  <p>以上是我对此文章的总结归纳，完整地址： <a href="https://yq.aliyun.com/articles/2918?comefrom=http://blogread.cn/news/">BaaS后端即服务 - 通往中台架构之路</a></p>
+</blockquote>
+
+
+  </article>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1/">
+            面试题目收集1
+            <small>22 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/php/2017/08/14/optimization-performance-with-php/">
+            php与系统性能优化总结
+            <small>14 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap/">
+            HashMap 和 HashTable 源码学习和面试总结
+            <small>08 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if (target === toggle) {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+          } else if (checkbox.checked && !sidebar.contains(target)) {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+          }
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

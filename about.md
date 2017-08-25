@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about.html
 ---
+
 
 ![Alt text](/images/blog-author.jpg )
 
@@ -35,3 +35,5 @@ permalink: /about.html
 2. 京东 酱油几年
 3. 微博 酱油几年
 4. 未来希望能做点喜欢的
+
+Thanks for reading!

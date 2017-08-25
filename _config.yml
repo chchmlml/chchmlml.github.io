@@ -1,15 +1,52 @@
-# Site settings
+# Site Info
 title: haicheng的博客
-email: chchmlml@163.com
+tagline: 'haicheng的博客'
+description: '这是haicheng的博客，里面是技术跟感悟的东西。'
 baseurl: ""
 url: "https://chchmlml.github.io"
-description: >
-  这是haicheng的博客，里面是技术跟感悟的东西。
-twitter_username: chchmlml
-weibo_username: chchmlml
-github_username:  chchmlml
-motto: "博观而约取，厚积而薄发。"
+logo: '/public/logo.png'
 
+# Site configurations
+plugins:
+  - jekyll-paginate
 markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
+version: 1.0.0
+
+# About/contact
+author:
+  name: haicheng
+  description: 博观而约取，厚积而薄发。
+  contact:
+    weibo:     http://weibo.com/chchmlml
+    github:    https://github.com/chchmlml
+    twitter:   https://twitter.com/chchmlml
+    email:     mailto:chchmlml@163.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/index.jpg
+  caption: '这是肉包，我养的猫'
