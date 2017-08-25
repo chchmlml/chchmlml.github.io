@@ -49,6 +49,6 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/index.jpg
-  caption: 'Sheldon: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors。'
+  caption: 'You know nothing,Jon Snow.'
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
