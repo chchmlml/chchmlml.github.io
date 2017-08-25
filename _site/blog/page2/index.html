@@ -206,72 +206,7 @@
     
 
     <article>
-      <ul id="markdown-toc">
-  <li><a href="#第一周" id="markdown-toc-第一周">第一周</a></li>
-  <li><a href="#第二周" id="markdown-toc-第二周">第二周</a></li>
-  <li><a href="#第三周" id="markdown-toc-第三周">第三周</a></li>
-</ul>
-<hr />
-
-<h1 id="第一周">第一周</h1>
-<ul>
-  <li>追求自我价值之路
-    <div class="highlighter-rouge"><pre class="highlight"><code>承认自己的价值，正视自己的作用
-</code></pre>
-    </div>
-  </li>
-  <li>如何获取好点子</li>
-  <li>八个认为是好习惯的坏习惯</li>
-  <li>做个积极的悲观主义者（韩雪）
-    <div class="highlighter-rouge"><pre class="highlight"><code>勇于接受挑战，不惧怕失败
-</code></pre>
-    </div>
-  </li>
-  <li>我为什么做一个黑客
-    <div class="highlighter-rouge"><pre class="highlight"><code>从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
-</code></pre>
-    </div>
-  </li>
-</ul>
-
-<h1 id="第二周">第二周</h1>
-<ul>
-  <li>《redis设计与实现》
-    <div class="highlighter-rouge"><pre class="highlight"><code>类型概要，SDS simple dynamic string
-</code></pre>
-    </div>
-  </li>
-  <li>《redis设计与实现》
-    <div class="highlighter-rouge"><pre class="highlight"><code>字典模型，跳跃表
-</code></pre>
-    </div>
-  </li>
-  <li>性格迷思 - 你究竟是谁
-    <div class="highlighter-rouge"><pre class="highlight"><code>人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
-</code></pre>
-    </div>
-  </li>
-  <li>对自己好 认识你自己
-    <div class="highlighter-rouge"><pre class="highlight"><code>为什么我要看这个 月亮杯？
-</code></pre>
-    </div>
-  </li>
-  <li>邓乐普谈对人生的热情</li>
-</ul>
-
-<h1 id="第三周">第三周</h1>
-<ul>
-  <li>
-    <p>定位自我的意义</p>
-  </li>
-  <li>
-    <p>请求的艺术</p>
-    <div class="highlighter-rouge"><pre class="highlight"><code>请求需要沟通，交流
-</code></pre>
-    </div>
-  </li>
-</ul>
-
+      <p>我的每天学习笔记，做个日记记录点滴</p>
 
     <article>
     <div class="post-more">
@@ -293,30 +228,7 @@
     
 
     <article>
-      <ul id="markdown-toc">
-  <li><a href="#stacer" id="markdown-toc-stacer">Stacer</a></li>
-  <li><a href="#简介" id="markdown-toc-简介">简介</a></li>
-  <li><a href="#项目地址" id="markdown-toc-项目地址">项目地址</a></li>
-</ul>
-<hr />
-
-<p>想看看源码来着，作为后端学习意义不大，实际应用更大。</p>
-
-<h1 id="stacer">Stacer</h1>
-
-<h1 id="简介">简介</h1>
-<ul>
-  <li>针对linux服务器监控，主要是Ubuntu</li>
-  <li>系统概要监控，整体运行、文件状态</li>
-  <li>支持插件、服务</li>
-  <li>进程监控</li>
-  <li>资源监控</li>
-  <li>多语言系统支持</li>
-</ul>
-
-<h1 id="项目地址">项目地址</h1>
-<p><a href="https://github.com/oguzhaninan/Stacer">https://github.com/oguzhaninan/Stacer</a></p>
-
+      <p>想看看源码来着，作为后端学习意义不大，实际应用更大。</p>
 
     <article>
     <div class="post-more">
@@ -338,45 +250,7 @@
     
 
     <article>
-      <ul id="markdown-toc">
-  <li><a href="#基本原理" id="markdown-toc-基本原理">基本原理</a></li>
-  <li><a href="#爬虫的工作流程" id="markdown-toc-爬虫的工作流程">爬虫的工作流程</a></li>
-  <li><a href="#要解决的问题" id="markdown-toc-要解决的问题">要解决的问题</a></li>
-  <li><a href="#相关资料" id="markdown-toc-相关资料">相关资料</a></li>
-</ul>
-<hr />
-
-<h1 id="基本原理">基本原理</h1>
-<div class="highlighter-rouge"><pre class="highlight"><code>网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），
-是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还
-有蚂蚁、自动索引、模拟程序或者蠕虫。
-</code></pre>
-</div>
-
-<p>我这里说的爬虫则是相对狭义，作为开发，自己做爬虫爬去资料无疑是很有成就感的。</p>
-
-<h1 id="爬虫的工作流程">爬虫的工作流程</h1>
-<ul>
-  <li>准备种子URL；</li>
-  <li>将这些URL放入待抓取URL队列；</li>
-  <li>从待抓取URL队列中取出待抓取在URL，解析DNS，并且得到主机的ip，并将URL对应的网页下载下来，存储进已下载网页库中。此外，将这些URL放进已抓取URL队列。</li>
-  <li>分析已抓取URL队列中的URL，分析其中的其他URL，并且将URL放入待抓取URL队列，从而进入下一个循环；</li>
-</ul>
-
-<h1 id="要解决的问题">要解决的问题</h1>
-<ul>
-  <li>要获取我们只定的信息，所以可以指定我们需要的格式来定义目标也，通过DOM解析技术从缓存的页面提炼信息，保存指定信息；</li>
-  <li>效率是个大问题，多线程、分布式技术的应用很重要；</li>
-  <li>递归的获取url地址是个类似图数据结构，以何种方式抓取url成为抓取策略，其中有<code class="highlighter-rouge">深度优先遍历策略</code>、<code class="highlighter-rouge">宽度优先遍历策略</code>、<code class="highlighter-rouge">反向链接数策略</code>、<code class="highlighter-rouge">PageRank策略</code>。</li>
-</ul>
-
-<h1 id="相关资料">相关资料</h1>
-<p>java、python、Node.js、Go语言因为多线程、协程的支持，非常适合做爬虫语言；php应用多进程方式也可作为爬虫的应用。</p>
-<ul>
-  <li><a href="https://github.com/owner888/phpspider">php爬虫</a></li>
-  <li><a href="PHP, Python, Node.js 哪个比较适合写爬虫？">PHP, Python, Node.js 哪个比较适合写爬虫？</a></li>
-</ul>
-
+      <p>今天说说爬虫、 网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者）， 是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还 有蚂蚁、自动索引、模拟程序或者蠕虫。</p>
 
     <article>
     <div class="post-more">
@@ -398,69 +272,7 @@
     
 
     <article>
-      <ul id="markdown-toc">
-  <li><a href="#开发中的信息加密" id="markdown-toc-开发中的信息加密">开发中的信息加密</a></li>
-  <li><a href="#加密技术分类" id="markdown-toc-加密技术分类">加密技术分类</a></li>
-  <li><a href="#对称加密" id="markdown-toc-对称加密">对称加密</a></li>
-  <li><a href="#非对称加密" id="markdown-toc-非对称加密">非对称加密</a></li>
-  <li><a href="#单线散列摘要" id="markdown-toc-单线散列摘要">单线散列摘要</a></li>
-  <li><a href="#https中对加密技术的应用" id="markdown-toc-https中对加密技术的应用">https中对加密技术的应用</a></li>
-</ul>
-<hr />
-
-<h1 id="开发中的信息加密">开发中的信息加密</h1>
-<div class="highlighter-rouge"><pre class="highlight"><code>加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，
-到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子
-商务和VPN上的应用
-</code></pre>
-</div>
-
-<h1 id="加密技术分类">加密技术分类</h1>
-<p>加密技术根据其实现，主要分为<code class="highlighter-rouge">对称加密</code>、<code class="highlighter-rouge">非对称加密</code>，但是大家熟知的MD5、sha算法不是加密技术，属于<code class="highlighter-rouge">单线散列摘要</code>算法，不可逆算法。</p>
-
-<h1 id="对称加密">对称加密</h1>
-<p>所谓对称加密，就是加密和解密使用同一秘钥，这也是这种加密算法最显著的缺点之一。上面的字典、圣经等也可以理解为是一份秘钥。现代的加密算法中，DES、3DES、AES等算法都属于对称加密算法。</p>
-
-<ul>
-  <li>优点：效率高</li>
-  <li>缺点：密钥传输不确定性，一单密钥泄露，就造成加密的失败</li>
-</ul>
-
-<h1 id="非对称加密">非对称加密</h1>
-<p>这种加密算法的秘钥分为公钥和私钥，公开秘钥用于对信息进行加密，而解密时使用私有秘钥进行解密，信息发送方使用公钥对信息进行加密，然后将信息发送给接收方，接收方使用私钥进行解密即可。常见的非对称加密算法有：RSA、EIGamal、背包算法、Rebin（RSA的特例）。</p>
-
-<ul>
-  <li>优点：相对于对称加密安全</li>
-  <li>缺点：效率低</li>
-</ul>
-
-<h1 id="单线散列摘要">单线散列摘要</h1>
-<blockquote>
-  <p>单向散列算法，又称hash函数，Hash函数（也称杂凑函数或杂凑算法）就是把任意长的输入消息串变化
-成固定长的输出串的一种函数。这个输出串称为该消息的杂凑值。一般用于产生消息摘要，密钥加密等。</p>
-</blockquote>
-
-<p>常见散列函数(Hash函数)有：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>MD5（Message Digest Algorithm 5）：是RSA数据安全公司开发的一种单向散列算法，MD5被广泛使用，
-可以用来把不同长度的数据块进行暗码运算成一个128位的数值。
-SHA（Secure Hash Algorithm）这是一种较新的散列算法，可以对任意长度的数据运算生成一个160位的数值。
-MAC（Message Authentication Code）：消息认证代码，是一种使用密钥的单向函数，可以用它们在系统上或
-用户之间认证文件或消息，常见的是HMAC（用于消息认证的密钥散列算法）。
-CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现简单，检错能力强，被广泛使用在各种
-数据校验应用中。占用系统资源少，用软硬件均能实现，是进行数据传输差错检测地一种很好的手段（CRC 并不是严格
-意义上的散列算法，但它的作用与散列算法大致相同，所以归于此类）。
-</code></pre>
-</div>
-
-<p>(摘录于百度)</p>
-
-<h1 id="https中对加密技术的应用">https中对加密技术的应用</h1>
-<p>https通信双方建立通信后，A首先生成一对公钥和私钥，并将公钥发送给B，B使用公钥将一个对称加密算法的“秘钥+有效期”加密后，再发回给A，A使用私钥解密后，双方便同步了一个对称算法的秘钥，然后在规定的有效期内，双方便可以使用这个秘钥对通信数据进行加密和解密。</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>总结起来：非对称加密传输的是加密算法；对称加密传输的是信息。
-</code></pre>
-</div>
+      <p>开发中遇到的信息加密技术</p>
 
     <article>
     <div class="post-more">
@@ -482,41 +294,7 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
     
 
     <article>
-      <h1 id="目录">目录</h1>
-<ul id="markdown-toc">
-  <li><a href="#目录" id="markdown-toc-目录">目录</a></li>
-  <li><a href="#我的职业经历" id="markdown-toc-我的职业经历">我的职业经历</a></li>
-  <li><a href="#遇到的问题" id="markdown-toc-遇到的问题">遇到的问题</a></li>
-  <li><a href="#关于技术的学习" id="markdown-toc-关于技术的学习">关于技术的学习</a></li>
-</ul>
-<hr />
-
-<h1 id="我的职业经历">我的职业经历</h1>
-
-<p>2011年怀着惊喜与忐忑，来到了上海漕河泾，成为毕业生实习的光荣一员。当时的公司PPS对自己来说还是很满意的，毕竟自己的学校与能力能顺利的找到工作还是知足的，漫漫工作路只是开始，在漕河泾一待就是三年多，里面的坎坷、温馨、困难自然如同生活一样不期而遇又不出意料。应该要感谢这份工作，从中理解生活与自我塑造的收获相比作为一名技术人员来说，更多而且丰富。</p>
-
-<p>随着时间的进行，工作与生活的迷茫渐渐使自己不知所措。就如这浮躁的社会一样，离开重新开始也是顺应潮流了。所以我做了个至今不知道正确与否的决定，加入去做一份完全不可能成功的工作，美其名曰叫创业，甚至连自己否不知道这两个字的意义。</p>
-
-<p>至少生活还是公平的，不会轻易放弃任何一个人，在诡异的结束了这个邮轮海的项目，我又一次似乎是被命运驱使的前行，来到了jd。从pps到jd，整整三年时间，自己的技术并没有显著提高，同时可能也错过了自己最该成长的日子。可是至少对于生活的领悟人、更加准确，明白如何面对自己、面对生活。</p>
-
-<p>2015来到北京，我觉得这次是对自己的反省，承认自己的失败，对之前的日子彻底推翻重来。对自己的要求只有放低一切，重新塑造。是不是该感谢自己能承认之前的失误呢，不清楚，至少浪费了时间要自己争取回来，丢掉的自尊要自己拾起来，失去的快乐要慢慢先把伤口抚平起来。</p>
-
-<h1 id="遇到的问题">遇到的问题</h1>
-<p>来北京之前，虽然忐忑，但是对自己的技术还是相对自信的，可是面试的时候确实碰了不少壁，也曾经十分消沉，不知道这究竟是怎么回事。</p>
-
-<p>后来也花一段时间思考原因，毕竟对自己的问题，钻牛角尖的时候还是挺多的，先记下来吧。</p>
-
-<p>归纳起来，我觉得自身的问题可是技术方面的，长久以来自己对技术都是相对宽泛的学习，追求广度而缺乏精度，从后端到前端都学习，但是由于职业的进展跟技术的进步很贴近，杂而不够深入，所以较真的问题不行；缺乏周期性的归纳，不能牢靠的吸收可能是专业性较强的专业都怕的，甚至于生活，老祖宗早就告诉我们：“吾日三省吾身，为人谋而不忠乎？与朋友交而不信乎？传而不习乎”；缺乏对于人性的洞察，可能说来有些玄，可是事实就是所有事都是跟人打交道，把事情想的简单或者复杂终究不能成事，自身的发展不迎合身边的一切终究不成功。</p>
-
-<h1 id="关于技术的学习">关于技术的学习</h1>
-<p>职业的迷茫在于缺乏成长带来的危机感，技术成长停滞更加明显。</p>
-
-<p>曾经我不断追求新的东西，并且贴近于实践，使得很长一段时间所有的理解仅限于知其然不知所以然，后来渐渐改掉这个毛病。</p>
-
-<p>但是面对海量的技术，而且不断出现的新技术，很难保持长久的动力对所有的东西进行学习。</p>
-
-<p>渐渐的明白我的做法或者着说方向是有问题的，毕竟做万金油不能保持上面所说的长久的上升动力，所以我希望以后对于技术学习保持：
-1、对知识的透彻理解 2、对某一方向的深入精通 3、对未知的敬畏。</p>
+      <p>关于职业的困惑和探讨</p>
 
     <article>
     <div class="post-more">
