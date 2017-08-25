@@ -6,8 +6,8 @@
 </description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Aug 2017 14:21:21 +0800</pubDate>
-    <lastBuildDate>Thu, 24 Aug 2017 14:21:21 +0800</lastBuildDate>
+    <pubDate>Fri, 25 Aug 2017 10:04:34 +0800</pubDate>
+    <lastBuildDate>Fri, 25 Aug 2017 10:04:34 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -20,6 +20,7 @@
   &lt;li&gt;&lt;a href=&quot;#memcache跟redis的区别&quot; id=&quot;markdown-toc-memcache跟redis的区别&quot;&gt;memcache跟redis的区别&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#php快速输出响应&quot; id=&quot;markdown-toc-php快速输出响应&quot;&gt;php快速输出响应&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#怎么对系统的qps进行优化&quot; id=&quot;markdown-toc-怎么对系统的qps进行优化&quot;&gt;怎么对系统的QPS进行优化&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mysql查询优化有什么心得&quot; id=&quot;markdown-toc-mysql查询优化有什么心得&quot;&gt;mysql查询优化有什么心得&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -64,6 +65,14 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
 &lt;h3 id=&quot;怎么对系统的qps进行优化&quot;&gt;怎么对系统的QPS进行优化&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;提高QPS可以从水平和垂直两个反面进行，水平扩展机器，垂直可采用增加一步特性（减少耗时处理）、减少数据库交互、优化业务逻辑。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;mysql查询优化有什么心得&quot;&gt;mysql查询优化有什么心得&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;索引、关联查询、返回列优化
+是否可以将一个复杂查询分成多个简单查询 
+优化COUNT()查询 
+优化关联查询&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 10:44:29 +0800</pubDate>
