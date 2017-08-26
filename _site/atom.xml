@@ -4,7 +4,7 @@
  <title>haicheng的博客</title>
  <link href="https://chchmlml.github.io/atom.xml" rel="self"/>
  <link href="https://chchmlml.github.io/"/>
- <updated>2017-08-25T13:47:10+08:00</updated>
+ <updated>2017-08-26T11:33:35+08:00</updated>
  <id>https://chchmlml.github.io</id>
  <author>
    <name>haicheng</name>
@@ -327,8 +327,6 @@ explain应用
       &lt;li&gt;&lt;a href=&quot;#简单动态字符串-sds&quot; id=&quot;markdown-toc-简单动态字符串-sds&quot;&gt;简单动态字符串 SDS&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#链表&quot; id=&quot;markdown-toc-链表&quot;&gt;链表&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#字典&quot; id=&quot;markdown-toc-字典&quot;&gt;字典&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#跳跃表&quot; id=&quot;markdown-toc-跳跃表&quot;&gt;跳跃表&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#整数集合&quot; id=&quot;markdown-toc-整数集合&quot;&gt;整数集合&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#压缩列表&quot; id=&quot;markdown-toc-压缩列表&quot;&gt;压缩列表&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#对象&quot; id=&quot;markdown-toc-对象&quot;&gt;对象&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -336,14 +334,22 @@ explain应用
   &lt;li&gt;&lt;a href=&quot;#单机数据库实现&quot; id=&quot;markdown-toc-单机数据库实现&quot;&gt;单机数据库实现&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#数据库&quot; id=&quot;markdown-toc-数据库&quot;&gt;数据库&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#rdb持久化&quot; id=&quot;markdown-toc-rdb持久化&quot;&gt;RDB持久化&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#aof持久化&quot; id=&quot;markdown-toc-aof持久化&quot;&gt;AOF持久化&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#事件&quot; id=&quot;markdown-toc-事件&quot;&gt;事件&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#客户端&quot; id=&quot;markdown-toc-客户端&quot;&gt;客户端&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#服务器&quot; id=&quot;markdown-toc-服务器&quot;&gt;服务器&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#多机数据库实现&quot; id=&quot;markdown-toc-多机数据库实现&quot;&gt;多机数据库实现&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#独立功能实现&quot; id=&quot;markdown-toc-独立功能实现&quot;&gt;独立功能实现&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#多机数据库实现&quot; id=&quot;markdown-toc-多机数据库实现&quot;&gt;多机数据库实现&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#复制&quot; id=&quot;markdown-toc-复制&quot;&gt;复制&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#独立功能实现&quot; id=&quot;markdown-toc-独立功能实现&quot;&gt;独立功能实现&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#发布订阅&quot; id=&quot;markdown-toc-发布订阅&quot;&gt;发布订阅&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#事务&quot; id=&quot;markdown-toc-事务&quot;&gt;事务&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lua脚本&quot; id=&quot;markdown-toc-lua脚本&quot;&gt;lua脚本&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#排序&quot; id=&quot;markdown-toc-排序&quot;&gt;排序&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#二进制数组&quot; id=&quot;markdown-toc-二进制数组&quot;&gt;二进制数组&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#慢查询日志&quot; id=&quot;markdown-toc-慢查询日志&quot;&gt;慢查询日志&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
@@ -373,8 +379,21 @@ explain应用
 &lt;/div&gt;
 
 &lt;h3 id=&quot;字典&quot;&gt;字典&lt;/h3&gt;
-&lt;h3 id=&quot;跳跃表&quot;&gt;跳跃表&lt;/h3&gt;
-&lt;h3 id=&quot;整数集合&quot;&gt;整数集合&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典的实现是hash表
+使用链表地址解决冲突 ### 跳跃表
+
+有续集集合实现之一
+层高1到32随机数
+按节点值大小排序 ### 整数集合
+
+集合的实现之一
+底层数组实现，可以有序、无序，无重复的保存
+升级操作节约内存
+不支持降级
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;压缩列表&quot;&gt;压缩列表&lt;/h3&gt;
 &lt;h3 id=&quot;对象&quot;&gt;对象&lt;/h3&gt;
 
@@ -392,15 +411,53 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
 &lt;h1 id=&quot;单机数据库实现&quot;&gt;单机数据库实现&lt;/h1&gt;
 
 &lt;h3 id=&quot;数据库&quot;&gt;数据库&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;保存在redisserver.db中
+客户端修改数据库指针，指向redisserver.db中指针切换数据库
+数据库由dict、exprise组成，保存键值对和过期时间
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;rdb持久化&quot;&gt;RDB持久化&lt;/h3&gt;
-&lt;h3 id=&quot;aof持久化&quot;&gt;AOF持久化&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RDB文件保存和还原数据库所有数据
+SAVE命令服务器进程保存操作，阻塞数据库
+BSAVE子进程保存数据，不会阻塞数据库
+RDB文件是二进制的
+不同数据RDB保存格式不一样 ### AOF持久化
+
+·AOF 文件 通过 保存 所有 修改 数据库 的 写 命令 请求 来 记录 服务器 的 数据库 状态。 
+·AOF 文件 中的 所有 命令 都以 Redis 命令 请求 协议 的 格式 保存。 
+·命令 请求 会 先 保存 到 AOF 缓冲区 里面， 之后 再 定期 写入 并 同步 到 AOF 文件。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;事件&quot;&gt;事件&lt;/h3&gt;
-&lt;h3 id=&quot;客户端&quot;&gt;客户端&lt;/h3&gt;
-&lt;h3 id=&quot;服务器&quot;&gt;服务器&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis是事件驱动
+文件事件、时间事件
+文件时间读时间、写事件
+时间事件分为定时和周期事件 ### 客户端 ### 服务器
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;多机数据库实现&quot;&gt;多机数据库实现&lt;/h1&gt;
 
+&lt;h3 id=&quot;复制&quot;&gt;复制&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;旧版文件同步
+新版支持点复制，也就是偏移量复制 ### sentinel
+监控redis ### 集群
+分片、按槽处理自己的键值
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h1 id=&quot;独立功能实现&quot;&gt;独立功能实现&lt;/h1&gt;
+&lt;h3 id=&quot;发布订阅&quot;&gt;发布订阅&lt;/h3&gt;
+&lt;h3 id=&quot;事务&quot;&gt;事务&lt;/h3&gt;
+&lt;h3 id=&quot;lua脚本&quot;&gt;lua脚本&lt;/h3&gt;
+&lt;h3 id=&quot;排序&quot;&gt;排序&lt;/h3&gt;
+&lt;h3 id=&quot;二进制数组&quot;&gt;二进制数组&lt;/h3&gt;
+&lt;h3 id=&quot;慢查询日志&quot;&gt;慢查询日志&lt;/h3&gt;
 
 </content>
  </entry>
