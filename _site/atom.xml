@@ -4,7 +4,7 @@
  <title>haicheng的博客</title>
  <link href="https://chchmlml.github.io/atom.xml" rel="self"/>
  <link href="https://chchmlml.github.io/"/>
- <updated>2017-08-26T11:43:48+08:00</updated>
+ <updated>2017-08-26T11:45:03+08:00</updated>
  <id>https://chchmlml.github.io</id>
  <author>
    <name>haicheng</name>
@@ -334,6 +334,7 @@ explain应用
   &lt;li&gt;&lt;a href=&quot;#单机数据库实现&quot; id=&quot;markdown-toc-单机数据库实现&quot;&gt;单机数据库实现&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#数据库&quot; id=&quot;markdown-toc-数据库&quot;&gt;数据库&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#rdb持久化&quot; id=&quot;markdown-toc-rdb持久化&quot;&gt;RDB持久化&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#aof持久化&quot; id=&quot;markdown-toc-aof持久化&quot;&gt;AOF持久化&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#事件&quot; id=&quot;markdown-toc-事件&quot;&gt;事件&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#客户端&quot; id=&quot;markdown-toc-客户端&quot;&gt;客户端&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#服务器&quot; id=&quot;markdown-toc-服务器&quot;&gt;服务器&lt;/a&gt;&lt;/li&gt;
@@ -428,11 +429,14 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
 SAVE命令服务器进程保存操作，阻塞数据库
 BSAVE子进程保存数据，不会阻塞数据库
 RDB文件是二进制的
-不同数据RDB保存格式不一样 ### AOF持久化
+不同数据RDB保存格式不一样
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-·AOF 文件 通过 保存 所有 修改 数据库 的 写 命令 请求 来 记录 服务器 的 数据库 状态。 
-·AOF 文件 中的 所有 命令 都以 Redis 命令 请求 协议 的 格式 保存。 
-·命令 请求 会 先 保存 到 AOF 缓冲区 里面， 之后 再 定期 写入 并 同步 到 AOF 文件。
+&lt;h3 id=&quot;aof持久化&quot;&gt;AOF持久化&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;·AOF文件通过保存所有修改数据库的写命令请求来记录服务器的数据库状态。
+·AOF文件中的所有命令都以Redis命令请求协议的格式保存。
+·命令请求会先保存到AOF缓冲区里面，之后再定期写入并同步到AOF文件。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
