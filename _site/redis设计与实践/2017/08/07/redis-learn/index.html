@@ -212,10 +212,14 @@
       <li><a href="#数据库" id="markdown-toc-数据库">数据库</a></li>
       <li><a href="#rdb持久化" id="markdown-toc-rdb持久化">RDB持久化</a></li>
       <li><a href="#事件" id="markdown-toc-事件">事件</a></li>
+      <li><a href="#客户端" id="markdown-toc-客户端">客户端</a></li>
+      <li><a href="#服务器" id="markdown-toc-服务器">服务器</a></li>
     </ul>
   </li>
   <li><a href="#多机数据库实现" id="markdown-toc-多机数据库实现">多机数据库实现</a>    <ul>
       <li><a href="#复制" id="markdown-toc-复制">复制</a></li>
+      <li><a href="#sentinel" id="markdown-toc-sentinel">sentinel</a></li>
+      <li><a href="#集群" id="markdown-toc-集群">集群</a></li>
     </ul>
   </li>
   <li><a href="#独立功能实现" id="markdown-toc-独立功能实现">独立功能实现</a>    <ul>
@@ -314,17 +318,31 @@ RDB文件是二进制的
 <div class="highlighter-rouge"><pre class="highlight"><code>redis是事件驱动
 文件事件、时间事件
 文件时间读时间、写事件
-时间事件分为定时和周期事件 ### 客户端 ### 服务器
+时间事件分为定时和周期事件
 </code></pre>
 </div>
+
+<h3 id="客户端">客户端</h3>
+<h3 id="服务器">服务器</h3>
 
 <h1 id="多机数据库实现">多机数据库实现</h1>
 
 <h3 id="复制">复制</h3>
+
 <div class="highlighter-rouge"><pre class="highlight"><code>旧版文件同步
-新版支持点复制，也就是偏移量复制 ### sentinel
-监控redis ### 集群
-分片、按槽处理自己的键值
+新版支持点复制，也就是偏移量复制
+</code></pre>
+</div>
+
+<h3 id="sentinel">sentinel</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>监控redis
+</code></pre>
+</div>
+
+<h3 id="集群">集群</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>分片、按槽处理自己的键值
 </code></pre>
 </div>
 

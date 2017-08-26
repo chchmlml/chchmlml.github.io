@@ -4,7 +4,7 @@
  <title>haicheng的博客</title>
  <link href="https://chchmlml.github.io/atom.xml" rel="self"/>
  <link href="https://chchmlml.github.io/"/>
- <updated>2017-08-26T11:33:35+08:00</updated>
+ <updated>2017-08-26T11:43:48+08:00</updated>
  <id>https://chchmlml.github.io</id>
  <author>
    <name>haicheng</name>
@@ -335,10 +335,14 @@ explain应用
       &lt;li&gt;&lt;a href=&quot;#数据库&quot; id=&quot;markdown-toc-数据库&quot;&gt;数据库&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#rdb持久化&quot; id=&quot;markdown-toc-rdb持久化&quot;&gt;RDB持久化&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#事件&quot; id=&quot;markdown-toc-事件&quot;&gt;事件&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#客户端&quot; id=&quot;markdown-toc-客户端&quot;&gt;客户端&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#服务器&quot; id=&quot;markdown-toc-服务器&quot;&gt;服务器&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#多机数据库实现&quot; id=&quot;markdown-toc-多机数据库实现&quot;&gt;多机数据库实现&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#复制&quot; id=&quot;markdown-toc-复制&quot;&gt;复制&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#sentinel&quot; id=&quot;markdown-toc-sentinel&quot;&gt;sentinel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#集群&quot; id=&quot;markdown-toc-集群&quot;&gt;集群&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#独立功能实现&quot; id=&quot;markdown-toc-独立功能实现&quot;&gt;独立功能实现&lt;/a&gt;    &lt;ul&gt;
@@ -437,17 +441,31 @@ RDB文件是二进制的
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis是事件驱动
 文件事件、时间事件
 文件时间读时间、写事件
-时间事件分为定时和周期事件 ### 客户端 ### 服务器
+时间事件分为定时和周期事件
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;h3 id=&quot;客户端&quot;&gt;客户端&lt;/h3&gt;
+&lt;h3 id=&quot;服务器&quot;&gt;服务器&lt;/h3&gt;
 
 &lt;h1 id=&quot;多机数据库实现&quot;&gt;多机数据库实现&lt;/h1&gt;
 
 &lt;h3 id=&quot;复制&quot;&gt;复制&lt;/h3&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;旧版文件同步
-新版支持点复制，也就是偏移量复制 ### sentinel
-监控redis ### 集群
-分片、按槽处理自己的键值
+新版支持点复制，也就是偏移量复制
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;sentinel&quot;&gt;sentinel&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;监控redis
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;集群&quot;&gt;集群&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;分片、按槽处理自己的键值
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
