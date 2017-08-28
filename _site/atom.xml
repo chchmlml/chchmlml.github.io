@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>haicheng的博客</title>
- <link href="https://chchmlml.github.io/atom.xml" rel="self"/>
- <link href="https://chchmlml.github.io/"/>
- <updated>2017-08-25T13:47:10+08:00</updated>
- <id>https://chchmlml.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-08-28T10:51:44+08:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>haicheng</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>面试题目收集1</title>
-   <link href="https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1/"/>
+   <link href="http://localhost:4000/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1/"/>
    <updated>2017-08-22T10:44:29+08:00</updated>
-   <id>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1</id>
+   <id>http://localhost:4000/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#什么是内存泄露什么引起的&quot; id=&quot;markdown-toc-什么是内存泄露什么引起的&quot;&gt;什么是内存泄露？什么引起的&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ip地址可以被伪造吗&quot; id=&quot;markdown-toc-ip地址可以被伪造吗&quot;&gt;ip地址可以被伪造吗？&lt;/a&gt;&lt;/li&gt;
@@ -84,9 +84,9 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
  
  <entry>
    <title>php与系统性能优化总结</title>
-   <link href="https://chchmlml.github.io/php/2017/08/14/optimization-performance-with-php/"/>
+   <link href="http://localhost:4000/php/2017/08/14/optimization-performance-with-php/"/>
    <updated>2017-08-14T14:01:20+08:00</updated>
-   <id>https://chchmlml.github.io/php/2017/08/14/optimization-performance-with-php</id>
+   <id>http://localhost:4000/php/2017/08/14/optimization-performance-with-php</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#原则&quot; id=&quot;markdown-toc-原则&quot;&gt;原则&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#前端优化&quot; id=&quot;markdown-toc-前端优化&quot;&gt;前端优化&lt;/a&gt;    &lt;ul&gt;
@@ -245,9 +245,9 @@ explain应用
  
  <entry>
    <title>HashMap 和 HashTable 源码学习和面试总结</title>
-   <link href="https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap/"/>
+   <link href="http://localhost:4000/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap/"/>
    <updated>2017-08-08T09:26:03+08:00</updated>
-   <id>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap</id>
+   <id>http://localhost:4000/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#java集合概述&quot; id=&quot;markdown-toc-java集合概述&quot;&gt;Java集合概述&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#hashmap介绍&quot; id=&quot;markdown-toc-hashmap介绍&quot;&gt;HashMap介绍&lt;/a&gt;    &lt;ul&gt;
@@ -318,9 +318,9 @@ explain应用
  
  <entry>
    <title>《redis设计与实践》学习</title>
-   <link href="https://chchmlml.github.io/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn/"/>
+   <link href="http://localhost:4000/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn/"/>
    <updated>2017-08-07T11:04:42+08:00</updated>
-   <id>https://chchmlml.github.io/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn</id>
+   <id>http://localhost:4000/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#引言&quot; id=&quot;markdown-toc-引言&quot;&gt;引言&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#数据结构与对象&quot; id=&quot;markdown-toc-数据结构与对象&quot;&gt;数据结构与对象&lt;/a&gt;    &lt;ul&gt;
@@ -407,9 +407,9 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
  
  <entry>
    <title>SaaS 后端即服务</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service/"/>
    <updated>2017-08-06T20:57:06+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service</id>
    <content type="html">&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
@@ -503,9 +503,9 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
  
  <entry>
    <title>每天学习笔记</title>
-   <link href="https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn/"/>
+   <link href="http://localhost:4000/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn/"/>
    <updated>2017-08-01T13:13:26+08:00</updated>
-   <id>https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn</id>
+   <id>http://localhost:4000/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#第一周&quot; id=&quot;markdown-toc-第一周&quot;&gt;第一周&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#第二周&quot; id=&quot;markdown-toc-第二周&quot;&gt;第二周&lt;/a&gt;&lt;/li&gt;
@@ -577,9 +577,9 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
  
  <entry>
    <title>Stacer Linux监控系统</title>
-   <link href="https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer/"/>
+   <link href="http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer/"/>
    <updated>2017-07-30T14:45:03+08:00</updated>
-   <id>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer</id>
+   <id>http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#stacer&quot; id=&quot;markdown-toc-stacer&quot;&gt;Stacer&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#简介&quot; id=&quot;markdown-toc-简介&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
@@ -609,9 +609,9 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
  
  <entry>
    <title>网络爬虫技术总结</title>
-   <link href="https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology/"/>
+   <link href="http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology/"/>
    <updated>2017-07-30T13:58:34+08:00</updated>
-   <id>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology</id>
+   <id>http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#基本原理&quot; id=&quot;markdown-toc-基本原理&quot;&gt;基本原理&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#爬虫的工作流程&quot; id=&quot;markdown-toc-爬虫的工作流程&quot;&gt;爬虫的工作流程&lt;/a&gt;&lt;/li&gt;
@@ -656,9 +656,9 @@ redis有字符串、 列表、hash、集合、有序集合五种类型，每种�
  
  <entry>
    <title>信息加密技术总结</title>
-   <link href="https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology/"/>
+   <link href="http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology/"/>
    <updated>2017-07-15T15:43:36+08:00</updated>
-   <id>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology</id>
+   <id>http://localhost:4000/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#开发中的信息加密&quot; id=&quot;markdown-toc-开发中的信息加密&quot;&gt;开发中的信息加密&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#加密技术分类&quot; id=&quot;markdown-toc-加密技术分类&quot;&gt;加密技术分类&lt;/a&gt;&lt;/li&gt;
@@ -727,9 +727,9 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
  
  <entry>
    <title>关于职业的困惑和探讨</title>
-   <link href="https://chchmlml.github.io/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury/"/>
+   <link href="http://localhost:4000/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury/"/>
    <updated>2017-07-14T14:13:04+08:00</updated>
-   <id>https://chchmlml.github.io/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury</id>
+   <id>http://localhost:4000/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury</id>
    <content type="html">&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
@@ -770,9 +770,9 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
  
  <entry>
    <title>win7 oracle php</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php</id>
    <content type="html">&lt;h1 id=&quot;目录&quot;&gt;目录&lt;/h1&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
@@ -814,9 +814,9 @@ MyDB =
  
  <entry>
    <title>php5 oracle xp</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/php5-oracle-xp</id>
    <content type="html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 由于换组，今天不得不把业务熟悉下。新的组长要求我在本地进行程序编写及测试，所以。不得不搭建PHP的本地环境。虽然有傻瓜式的集成环境搭建工具，但是都是基于MySQL的，可是我需要搭建Oracle的本地环境，连接线上的数据库，想想就头痛。 因为以前自己测试过xampp搭建xp/php5/oracle，所以这次选用的是xampp，抛弃了一直用的wamp。一开始都很顺利，可是老问题也来了。 1.安装orl client 2.修改php.ini，打开php_oci.dll等扩展dll 重启apache，结果和我想的一样，木有用哭，还是报哪个“找不到php_oci8.php模块”。 能怎么办，度娘，google呗。查了半天，有了点眉目，有的资料上说php在xp平台上支持oci的最低版本是10g，没办法试一下吧，我把自己的已安装的9g卸掉，下了个10g的版本，地址ed2k://%7Cfile%7C%5BOracle.10g.For.Windows%5D.Oracle.10g.for.Windows.ISO%7C650379264%7C6cc207b3996489dd0998e4354a929481%7Ch=w3j5oxjfere6le6kykjxfwoymgojzhs3%7C/ 花了半天安上，重启apache（表示平静，打击多了也就不兴奋了）结果依旧抓狂。 继续查资料，这是找到了个有点靠谱的文章，地址http://blog.sina.com.cn/s/blog_56e9c93c01000ace.html 所以我又下了个instantclient10（我已经收藏到我的资源里了），并把里面的oraociei10.dll 和orannzsbb10.dll 和oci.dll 复制到php的ext（个人觉得只要在环境变量里就行），重启apache，好了，出现了oci8的支持。可怜。 当然我还借鉴了其他的文章，跟大家分享下http://bbs.phpchina.com/thread-44502-1-1.html
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -826,9 +826,9 @@ MyDB =
  
  <entry>
    <title>oracle php week problem</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/oracle-php-week-problem</id>
    <content type="html">&lt;p&gt;今天遇到了个小问题，项目要求在数据库里查出某一天上一周的数据列，sql语句还好写；&lt;/p&gt;
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;to_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ww'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;  
 &lt;/code&gt;&lt;/pre&gt;
@@ -858,9 +858,9 @@ MyDB =
  
  <entry>
    <title>left join where</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/left-join-where</id>
    <content type="html">&lt;p&gt;今天项目中遇到个问题，
 有三个表需要联合查询，我起初用的是where条件，语句是&lt;/p&gt;
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
@@ -911,9 +911,9 @@ MyDB =
  
  <entry>
    <title>json string to json</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/json-string-to-json</id>
    <content type="html">
 &lt;p&gt;jQuery的ajax返回的如果是json格式，在success方法获取的值并不能直接当做json object处理，需要用$.parseJSON来转化成个json对象
 例如
@@ -972,9 +972,9 @@ MyDB =
  
  <entry>
    <title>设计模式之策略模式</title>
-   <link href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/design-pattern-strategy/"/>
+   <link href="http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/design-pattern-strategy/"/>
    <updated>2017-07-07T13:37:21+08:00</updated>
-   <id>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/design-pattern-strategy</id>
+   <id>http://localhost:4000/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/07/design-pattern-strategy</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#设计模式&quot; id=&quot;markdown-toc-设计模式&quot;&gt;设计模式&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#继承一下&quot; id=&quot;markdown-toc-继承一下&quot;&gt;继承一下&lt;/a&gt;&lt;/li&gt;
@@ -1064,9 +1064,9 @@ class mikeFly implement flyBehivour{
  
  <entry>
    <title> JS json object 与 string 相互转换</title>
-   <link href="https://chchmlml.github.io/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/2017/07/06/json-to-string/"/>
+   <link href="http://localhost:4000/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/2017/07/06/json-to-string/"/>
    <updated>2017-07-06T03:21:35+08:00</updated>
-   <id>https://chchmlml.github.io/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/2017/07/06/json-to-string</id>
+   <id>http://localhost:4000/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/2017/07/06/json-to-string</id>
    <content type="html">
 &lt;p&gt;这是很久之前从文章了，收录下&lt;/p&gt;
 
@@ -1109,28 +1109,6 @@ class mikeFly implement flyBehivour{
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Welcome to Jekyll!</title>
-   <link href="https://chchmlml.github.io/jekyll/update/2015/04/09/welcome-to-jekyll-copy/"/>
-   <updated>2015-04-09T19:23:32+08:00</updated>
-   <id>https://chchmlml.github.io/jekyll/update/2015/04/09/welcome-to-jekyll copy</id>
-   <content type="html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
 </content>
  </entry>

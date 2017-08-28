@@ -34,13 +34,13 @@ author:
 
 # Navigation (2nd level links supported)
 nav:
-  Home:           
+  首页:
     - '/'
-  Blog:           
+  归档:
     - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  About:          
+    - { 按分类: '/blog/categories/' }
+    - { 按标签: '/blog/tags/' }
+  About:
     - '/about/'
 
 # Where are tags and categories displayed
