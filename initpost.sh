@@ -143,9 +143,9 @@ echo "location:"
 echo "author: 'haicheng'"
 echo "---"
 echo ""
-echo "* content"
-echo "{:toc}"
-echo "---------------------------------------"
+#echo "* content"
+#echo "{:toc}"
+#echo "---------------------------------------"
 }
 
 # Create post
