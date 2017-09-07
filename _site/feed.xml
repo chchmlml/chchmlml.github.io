@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Sep 2017 17:21:15 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Sep 2017 17:21:15 +0800</lastBuildDate>
+    <pubDate>Thu, 07 Sep 2017 17:26:41 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Sep 2017 17:26:41 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -468,12 +468,24 @@ RDB文件是二进制的
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;承认自己的价值，正视自己的作用
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/div&gt;
-  &lt;p&gt;如何获取好点子
-八个认为是好习惯的坏习惯
-做个积极的悲观主义者（韩雪）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如何获取好点子&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;八个认为是好习惯的坏习惯&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;做个积极的悲观主义者（韩雪）&lt;/p&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;勇于接受挑战，不惧怕失败
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;我为什么做一个黑客&lt;/p&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
 &lt;/code&gt;&lt;/pre&gt;
@@ -486,10 +498,16 @@ RDB文件是二进制的
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类型概要，SDS simple dynamic string
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;《redis设计与实现》&lt;/p&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典模型，跳跃表
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;性格迷思 &amp;gt; 你究竟是谁&lt;/p&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
 &lt;/code&gt;&lt;/pre&gt;
@@ -501,6 +519,9 @@ RDB文件是二进制的
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;为什么我要看这个 月亮杯？
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;邓乐普谈对人生的热情&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -519,26 +540,20 @@ RDB文件是二进制的
 &lt;h1 id=&quot;第四周&quot;&gt;第四周&lt;/h1&gt;
 &lt;blockquote&gt;
   &lt;p&gt;20170907&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000010748235?utm_source=weekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=email_weekly&quot;&gt;php的坑&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;字符串==比较的强类型转换&lt;/li&gt;
-  &lt;li&gt;array_merge vs +&lt;/li&gt;
-  &lt;li&gt;浮点数精度问题，比较带来的问题&lt;/li&gt;
-  &lt;li&gt;in_array 强类型转换&lt;/li&gt;
-  &lt;li&gt;strpos第二个参数不是string，直接返回&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;用MySQL的朋友们请不要使用”utf8”，请使用”utf8mb4”&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。
- MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php的坑
+(https://segmentfault.com/a/1190000010748235?utm_source=weekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=email_weekly)
+字符串==比较的强类型转换    
+array_merge vs +            
+浮点数精度问题，比较带来的问题            
+in_array 强类型转换            
+strpos第二个参数不是string，直接返回        
+用MySQL的朋友们请不要使用&quot;utf8&quot;，请使用&quot;utf8mb4&quot;        
+MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。
+MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
+websocket http的区别与关系
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;websocket http的区别与关系&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
 
 </description>
         <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
