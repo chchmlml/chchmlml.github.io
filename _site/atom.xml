@@ -4,7 +4,7 @@
  <title>haicheng的博客</title>
  <link href="https://chchmlml.github.io/atom.xml" rel="self"/>
  <link href="https://chchmlml.github.io/"/>
- <updated>2017-08-29T10:39:31+08:00</updated>
+ <updated>2017-09-07T10:12:10+08:00</updated>
  <id>https://chchmlml.github.io</id>
  <author>
    <name>haicheng</name>
@@ -27,9 +27,9 @@
  
  <entry>
    <title>面试题目收集2 （算法篇）</title>
-   <link href="https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/28/about-interview-questions-2/"/>
+   <link href="https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/28/about-interview-question-2/"/>
    <updated>2017-08-28T10:54:03+08:00</updated>
-   <id>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/28/about-interview-questions-2</id>
+   <id>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/28/about-interview-question-2</id>
    <content type="html">&lt;p&gt;http://www.imooc.com/article/8633&lt;/p&gt;
 </content>
  </entry>
@@ -604,70 +604,87 @@ RDB文件是二进制的
  
  <entry>
    <title>每天学习笔记</title>
-   <link href="https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn/"/>
+   <link href="https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn-1/"/>
    <updated>2017-08-01T13:13:26+08:00</updated>
-   <id>https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn</id>
+   <id>https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn-1</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#第一周&quot; id=&quot;markdown-toc-第一周&quot;&gt;第一周&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#第二周&quot; id=&quot;markdown-toc-第二周&quot;&gt;第二周&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#第三周&quot; id=&quot;markdown-toc-第三周&quot;&gt;第三周&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#第四周&quot; id=&quot;markdown-toc-第四周&quot;&gt;第四周&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 
 &lt;h1 id=&quot;第一周&quot;&gt;第一周&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;追求自我价值之路
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;承认自己的价值，正视自己的作用
+&lt;blockquote&gt;
+  &lt;p&gt;追求自我价值之路&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;承认自己的价值，正视自己的作用
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何获取好点子&lt;/li&gt;
-  &lt;li&gt;八个认为是好习惯的坏习惯&lt;/li&gt;
-  &lt;li&gt;做个积极的悲观主义者（韩雪）
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;勇于接受挑战，不惧怕失败
+  &lt;/div&gt;
+  &lt;p&gt;如何获取好点子
+八个认为是好习惯的坏习惯
+做个积极的悲观主义者（韩雪）&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;勇于接受挑战，不惧怕失败
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;我为什么做一个黑客
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
+  &lt;/div&gt;
+  &lt;p&gt;我为什么做一个黑客&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;第二周&quot;&gt;第二周&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;《redis设计与实现》
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类型概要，SDS simple dynamic string
+&lt;blockquote&gt;
+  &lt;p&gt;《redis设计与实现》&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类型概要，SDS simple dynamic string
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;《redis设计与实现》
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典模型，跳跃表
+  &lt;/div&gt;
+  &lt;p&gt;《redis设计与实现》&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典模型，跳跃表
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;性格迷思 - 你究竟是谁
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
+  &lt;/div&gt;
+  &lt;p&gt;性格迷思 &amp;gt; 你究竟是谁&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;对自己好 认识你自己
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;为什么我要看这个 月亮杯？
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;对自己好 认识你自己&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;为什么我要看这个 月亮杯？
 &lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;邓乐普谈对人生的热情&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;p&gt;邓乐普谈对人生的热情&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;第三周&quot;&gt;第三周&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;定位自我的意义&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;请求的艺术&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求需要沟通，交流
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;第四周&quot;&gt;第四周&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;20170907&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000010748235?utm_source=weekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=email_weekly&quot;&gt;php的坑&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;字符串==比较的强类型转换&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;array_merge vs +&lt;/li&gt;
+  &lt;li&gt;浮点数精度问题，比较带来的问题&lt;/li&gt;
+  &lt;li&gt;in_array 强类型转换&lt;/li&gt;
+  &lt;li&gt;strpos第二个参数不是string，直接返回&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;定位自我的意义&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;请求的艺术&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求需要沟通，交流
+    &lt;p&gt;用MySQL的朋友们请不要使用”utf8”，请使用”utf8mb4”&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
