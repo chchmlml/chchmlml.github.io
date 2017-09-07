@@ -7,13 +7,10 @@ description: '关于职业的困惑和探讨'
 categories:
 - 感悟
 author: 'haicheng'
+image:
+  feature: 'https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg'
+  credit: '@someone'
 ---
-
-目录
-===
-* content
-{:toc}
----------------------------------------
 
 我的职业经历
 ====

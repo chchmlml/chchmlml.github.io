@@ -1,17 +1,15 @@
 ---
 layout: post
-title: '每天学习笔记'
+title: '每天学习笔记1'
 date: '2017-08-01 13:13:26'
 image: '/styles/images/'
 description: '我的每天学习笔记，做个日记记录点滴'
 categories:
 - 学习笔记
-author: 'haicheng'
+image:
+  feature: 'https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg'
+  credit: '@someone'
 ---
-
-* content
-{:toc}
----------------------------------------
 
 # 第一周
 > 追求自我价值之路

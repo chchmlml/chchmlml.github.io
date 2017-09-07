@@ -11,9 +11,6 @@ categories:
 - 编程技术
 ---
 
-* content
-{:toc}
-
 设计模式
 ====
 

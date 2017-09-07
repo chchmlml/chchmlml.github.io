@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="阐述这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。初创公司平台建立可以说这是一个激烈竞争的市场，在这样的市场，只有高效，有效的模式会成功的存留下来，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。对创业开发者来说，成本和效...">
+  <meta name="keywords" content="Programming, PHP, and Ruby">
+  <meta name="author" content="SaaS 后端即服务 | haicheng的博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SaaS 后端即服务 | haicheng的博客">
+  <meta name="twitter:description" content="阐述这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。初创公司平台建立可以说这是一个激烈竞争的市场，在这样的市场，只有高效，有效的模式会成功的存留下来，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。对创业开发者来说，成本和效...">
+  <meta name="twitter:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://chchmlml.github.io">
+  <meta property="og:title" content="SaaS 后端即服务 | haicheng的博客">
+  <meta property="og:description" content="阐述这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。初创公司平台建立可以说这是一个激烈竞争的市场，在这样的市场，只有高效，有效的模式会成功的存留下来，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。对创业开发者来说，成本和效...">
+  <meta property="og:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+  <title>SaaS 后端即服务 | haicheng的博客</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/main.css">
+
+  <link rel="canonical" href="https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html">
+  <link rel="alternate" type="application/rss+xml" title="haicheng的博客" href="https://chchmlml.github.io /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="https://chchmlml.github.io/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="https://chchmlml.github.io/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+<div class="cover-card table-cell table-middle">
+  
+  <img src="https://chchmlml.github.io/img/blog-author.jpg" alt="" class="avatar">
+  
+  <a href="https://chchmlml.github.io/" class="author_name">haicheng</a>
+  <span class="author_job">PHP Developer</span>
+  <span class="author_bio mbm">这是haicheng的博客，里面是技术跟感悟的东西。</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/resume/">关于</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/tags/">标签</a>
+        
+      </li>
+       
+    </ul>
+  </nav>
+  <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    
+      <li>
+      <script>gen_mail_to_link('chchmlml@163.com', 'Hello from website');</script>
+      </li>
+    
+    <li><a href="http://twitter.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>
+    <li><a href="http://facebook.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+    
+    
+    
+    
+    
+    <li><a href="http://github.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="http://www.weibo.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <a class="btn" href= "https://chchmlml.github.io/" >
+  首页
+</a>
+
+<div class="post-image-feature">
+  <img class="feature-image" src=
+  
+  "https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg"
+  
+  alt="SaaS 后端即服务 feature image">
+
+  
+  <span class="image-credit">Photo Credit: <a href="">@someone</a></span>
+  
+</div><!-- /.image-wrap -->
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="SaaS 后端即服务">SaaS 后端即服务</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        6 AUG 2017
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <h1 id="阐述">阐述</h1>
+<p>这篇文章阐述的是平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。</p>
+
+<h1 id="初创公司平台建立">初创公司平台建立</h1>
+
+<p>可以说这是一个激烈竞争的市场，在这样的市场，<code class="highlighter-rouge">只有高效，有效的模式会成功的存留下来</code>，而BaaS的架构就是诞生发展于移动互联网这个熔炉中并快速发展起来，成为云架构体系中重要的架构思想之一。</p>
+
+<p>对创业开发者来说，成本和效率是最需要关注的两个方面，<code class="highlighter-rouge">第一他们缺少技术的积累，第二他们需要很低的成本去验证他们的模式，从而成长起来</code>。这些云服务提供者成为他们最好的选择。</p>
+
+<p>在这个移动互联网时代，基本会需要移动APP和web的功能，那么一下的问题我们需要解决：</p>
+
+<ul>
+  <li>服务器部署维护</li>
+  <li>APP和Web网站开发</li>
+  <li>后端服务开发</li>
+  <li>平台功能：
+    <ul>
+      <li>认证和授权</li>
+      <li>文件存储</li>
+      <li>推送和通讯</li>
+      <li>地图功能</li>
+      <li>支付功能</li>
+      <li>社会化分享</li>
+      <li>验证和安全</li>
+      <li>智能识别</li>
+      <li>搜索</li>
+      <li>用户行为分析</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>业务功能</li>
+  <li>…</li>
+</ul>
+
+<h1 id="我们要面对的问题">我们要面对的问题</h1>
+<h3 id="系统繁多不能轻装上阵">系统繁多，不能轻装上阵</h3>
+
+<p>然后我们又发现，好像我们没做太多事情啊，支持的业务可以数的过来，这些居然需要上百系统来支持。</p>
+
+<p>这后面存在的问题肯定让人深思，然后随着我们梳理的深入，会发现有些最主要的问题是：</p>
+<ol>
+  <li>重复建设</li>
+  <li>缺乏规划</li>
+</ol>
+
+<p>这里对开发资源和物理资源的浪费将显而易见。</p>
+
+<p>这些系统也成为了一个庞大的负担，我们需要花很大的精力去维护，升级，开发，同时也要花很多公司的资源去运行，监控。</p>
+
+<p><code class="highlighter-rouge">如果一个软件变得复杂难以维护需要去做代码级别的重构，那么我们这种系统级别的复杂就需要架构级别的重构了。</code></p>
+
+<h3 id="对开发人员人手布局的考验">对开发人员人手布局的考验</h3>
+
+<p>为什么我们做个业务系统，除了业务逻辑实现外，还需要每个开发人员掌握如此多的技能。 作为业务系统的开发人员，不是应该专注于业务逻辑的开发吗。 系统的稳定性，后端的高并发性能不是应该有更底层，更专业的团队去做吗，为什么每个开发团队都要求去做，这些不合理是由什么造成的，是分工？规划？还是技术架构？</p>
+
+<h3 id="业务之间集成的标准">业务之间集成的标准</h3>
+
+<h1 id="我们应该专注做什么">我们应该专注做什么</h1>
+
+<p>我们的开发团队可以很好的分工开发各种能力模块，同时业务系统可以标准化的使用这些模块。</p>
+<h3 id="构建精细化管理">构建精细化管理</h3>
+<h3 id="系统之间集成标准的建立">系统之间集成标准的建立</h3>
+<h3 id="提高业务进化速度">提高业务进化速度</h3>
+
+<blockquote>
+  <p>以上是我对此文章的总结归纳，完整地址： <a href="https://yq.aliyun.com/articles/2918?comefrom=http://blogread.cn/news/">BaaS后端即服务 - 通往中台架构之路</a></p>
+</blockquote>
+
+
+  </article>
+</div>
+
+<!--<div class="share-buttons">-->
+<!--  <h6>Share on: </h6>-->
+<!--  <ul>-->
+<!--    <li>-->
+<!--      <a href="https://twitter.com/intent/tweet?text=https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.facebook.com/sharer/sharer.php?u=https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://plus.google.com/share?url=https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://news.ycombinator.com/submitlink?u=https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.reddit.com/submit?url=https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div><!-- end share-buttons -->
+
+
+        <footer>
+  &copy; 2017 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://chchmlml.github.io/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://chchmlml.github.io/js/main.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

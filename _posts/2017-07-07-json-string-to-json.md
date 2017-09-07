@@ -10,10 +10,6 @@ categories:
 - 编程技术
 ---
 
-* content
-{:toc}
-
-
 jQuery的ajax返回的如果是json格式，在success方法获取的值并不能直接当做json object处理，需要用$.parseJSON来转化成个json对象
 例如
 后台程序

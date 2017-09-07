@@ -8,12 +8,10 @@ categories:
 - 面试总结
 location:
 author: 'haicheng'
+image:
+  feature: 'https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg'
+  credit: '@someone'
 ---
-
-* content
-{:toc}
----------------------------------------
-
 
 ### 什么是内存泄露？什么引起的
 > 内存泄漏是因为一块被分配内存既不能被使用，也不能被回收，直到进程结束。

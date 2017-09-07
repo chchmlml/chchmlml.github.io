@@ -8,11 +8,14 @@ categories:
 - redis设计与实践
 location:
 author: 'haicheng'
+image:
+  feature: 'https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg'
+  credit: '@someone'
 ---
 
-* content
-{:toc}
----------------------------------------
+ 
+ 
+
 
 # 引言
 

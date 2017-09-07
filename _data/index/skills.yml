@@ -1,0 +1,6 @@
+# skills section data
+
+label: 技术
+id : cs
+aspects: php, Java, HTML/CSS, Linux, GitHub
+percentage: 88, 65, 70, 60, 60

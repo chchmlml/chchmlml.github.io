@@ -8,11 +8,7 @@ tags:
 - javascript
 categories:
 - 前端技术
-twitter_text: 'Put your twitter description here.'
 ---
-
-* content
-{:toc}
 
 这是很久之前从文章了，收录下
 

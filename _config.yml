@@ -1,49 +1,46 @@
-# Site Info
+#
+###################################
+# Site wide configuration
+####################################
+#
 title: haicheng的博客
 tagline: 'haicheng的博客'
 description: '这是haicheng的博客，里面是技术跟感悟的东西。'
 baseurl: ""
 url: "https://chchmlml.github.io"
+keywords: ["Programming", "PHP", "Ruby"]
 
-# Site configurations
-plugins:
-  - jekyll-paginate
-markdown: kramdown
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+
 kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
-sass:
-  style: compressed
-  sass_dir: _scss    
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-version: 1.0.0
-
-# About/contact
-author:
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
   name: haicheng
-  description: 博观而约取，厚积而薄发。
-  contact:
-    weibo:     http://weibo.com/chchmlml
-    github:    https://github.com/chchmlml
-    twitter:   https://twitter.com/chchmlml
-    email:     mailto:chchmlml@163.com
-
-# Navigation (2nd level links supported)
-nav:
-  首页:
-    - '/'
-  归档:
-    - '/blog/'
-    - { 按分类: '/blog/categories/' }
-    - { 按标签: '/blog/tags/' }
-  About:
-    - '/about/'
-
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+  avatar: blog-author.jpg
+  job: "PHP Developer"
+  bio: "这是haicheng的博客，里面是技术跟感悟的东西。"
+  weibo: chchmlml
+  twitter: chchmlml #username
+  github: chchmlml #username
+  email: chchmlml@163.com
+  facebook: chchmlml #username
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
