@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Sep 2017 13:47:44 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Sep 2017 13:47:44 +0800</lastBuildDate>
+    <pubDate>Thu, 07 Sep 2017 13:49:22 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Sep 2017 13:49:22 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -522,8 +522,9 @@ RDB文件是二进制的
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000010748235?utm_source=weekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=email_weekly&quot;&gt;php的坑&lt;/a&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;字符串==比较的强类型转换&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;字符串==比较的强类型转换&lt;/li&gt;
   &lt;li&gt;array_merge vs +&lt;/li&gt;
   &lt;li&gt;浮点数精度问题，比较带来的问题&lt;/li&gt;
   &lt;li&gt;in_array 强类型转换&lt;/li&gt;

@@ -60,12 +60,13 @@ image:
 > 20170907
     
 [php的坑](https://segmentfault.com/a/1190000010748235?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
-- `字符串==比较的强类型转换`
-- array_merge vs +
-- 浮点数精度问题，比较带来的问题
-- in_array 强类型转换
-- strpos第二个参数不是string，直接返回
-- 用MySQL的朋友们请不要使用"utf8"，请使用"utf8mb4"
+
+- 字符串==比较的强类型转换    
+- array_merge vs +            
+- 浮点数精度问题，比较带来的问题            
+- in_array 强类型转换            
+- strpos第二个参数不是string，直接返回        
+- 用MySQL的朋友们请不要使用"utf8"，请使用"utf8mb4"        
 
        MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
 
