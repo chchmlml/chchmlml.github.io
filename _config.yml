@@ -4,7 +4,6 @@ tagline: 'haicheng的博客'
 description: '这是haicheng的博客，里面是技术跟感悟的东西。'
 baseurl: ""
 url: "https://chchmlml.github.io"
-logo: '/public/logo.png'
 
 # Site configurations
 plugins:
@@ -46,9 +45,5 @@ nav:
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
-
-hero:
-  image: /public/img/index.jpg
-  caption: 'You know nothing,Jon Snow.'
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile','package.json', 'src', 'node_modules', '*.sh', '*.iml']
