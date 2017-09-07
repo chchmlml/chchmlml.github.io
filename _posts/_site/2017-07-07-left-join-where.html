@@ -1,0 +1,45 @@
+<p>今天项目中遇到个问题，
+有三个表需要联合查询，我起初用的是where条件，语句是</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code>
+<span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span><span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+          <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span><span class="p">,</span> <span class="n">pps_ad_brand</span> <span class="n">b</span><span class="p">,</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+         <span class="k">where</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+           <span class="k">and</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span> <span class="k">and</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span> <span class="k">like</span>   
+</code></pre>
+</div>
+
+<p>测试没什么问题，可是偶尔会差不到，经过测试，原来数据录入时，有的时候这几个表偶儿会无法关联，也就是id无法对应上，所以果断使用left join，开始的语句是这样写的</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code>
+<span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+                  <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span>   
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+                    <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+                    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span> <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%%'</span> <span class="k">and</span> <span class="n">rownum</span> <span class="o">&lt;</span> <span class="mi">5</span>  
+
+</code></pre>
+</div>
+
+<p>这样出现的问题主要like条件不能成立，还有ROWNUM&lt;5条件不能成立，看来是sql语法有问题，查了下资料，更改成</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span>  
+          <span class="k">from</span> <span class="p">(</span><span class="k">select</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_id</span><span class="p">,</span> <span class="k">c</span><span class="p">.</span><span class="n">ce_name</span><span class="p">,</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_name</span>  
+                  <span class="k">from</span> <span class="n">pps_ad_corporation_event</span> <span class="k">c</span>   
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+                    <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+                  <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+                    <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+                   <span class="p">)</span>  
+          <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%运%'</span> <span class="k">and</span> <span class="n">ROWNUM</span> <span class="o">&lt;=</span> <span class="mi">5</span>  
+          
+</code></pre>
+</div>
+
+<p>虽然结果正确，但是大家可以看到，这样的效率不高，所以我有改进了一下</p>
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">with</span> <span class="k">c</span> <span class="k">as</span> <span class="p">(</span><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">pps_ad_corporation_event</span>  <span class="k">where</span> <span class="n">ce_name</span> <span class="k">like</span> <span class="s1">'%运%'</span> <span class="k">and</span> <span class="n">rownum</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span>     
+       <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">c</span> <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_brand</span> <span class="n">b</span>  
+          <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">brand_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">brand_id</span>  
+        <span class="k">left</span> <span class="k">join</span> <span class="n">pps_ad_profession</span> <span class="n">p</span>  
+          <span class="k">on</span> <span class="n">p</span><span class="p">.</span><span class="n">pro_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">pro_id</span>  
+</code></pre>
+</div>
+
