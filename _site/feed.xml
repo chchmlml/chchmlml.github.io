@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Sep 2017 15:08:15 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Sep 2017 15:08:15 +0800</lastBuildDate>
+    <pubDate>Thu, 07 Sep 2017 17:21:15 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Sep 2017 17:21:15 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -532,10 +532,12 @@ RDB文件是二进制的
   &lt;li&gt;
     &lt;p&gt;用MySQL的朋友们请不要使用”utf8”，请使用”utf8mb4”&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。
+ MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
+  &lt;li&gt;websocket http的区别与关系&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
