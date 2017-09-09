@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Sep 2017 17:26:41 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Sep 2017 17:26:41 +0800</lastBuildDate>
+    <pubDate>Sat, 09 Sep 2017 10:53:07 +0800</pubDate>
+    <lastBuildDate>Sat, 09 Sep 2017 10:53:07 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -63,11 +63,13 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 10:44:29 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/22/about-interview-question-1.html</guid>
-        
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</guid>
         
         <category>面试总结</category>
+        
+        
+        <category>技术</category>
         
       </item>
     
@@ -177,11 +179,15 @@ explain应用
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
-        <link>https://chchmlml.github.io/php/2017/08/14/optimization-performance-with-php.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/php/2017/08/14/optimization-performance-with-php.html</guid>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</guid>
+        
+        <category>redis</category>
+        
+        <category>读书笔记</category>
         
         
-        <category>php</category>
+        <category>随笔</category>
         
       </item>
     
@@ -237,11 +243,13 @@ explain应用
 &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/24338517&quot;&gt;源博&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Aug 2017 09:26:03 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/2017/08/08/java-hashmap.html</guid>
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/08/java-hashmap.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/08/java-hashmap.html</guid>
+        
+        <category>java</category>
         
         
-        <category>面试总结</category>
+        <category>技术</category>
         
       </item>
     
@@ -372,11 +380,15 @@ RDB文件是二进制的
 
 </description>
         <pubDate>Mon, 07 Aug 2017 11:04:42 +0800</pubDate>
-        <link>https://chchmlml.github.io/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/2017/08/07/redis-learn.html</guid>
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/07/redis-learn.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/07/redis-learn.html</guid>
+        
+        <category>redis</category>
+        
+        <category>读书笔记</category>
         
         
-        <category>redis设计与实践</category>
+        <category>技术</category>
         
       </item>
     
@@ -452,11 +464,13 @@ RDB文件是二进制的
 
 </description>
         <pubDate>Sun, 06 Aug 2017 20:57:06 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</guid>
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</guid>
+        
+        <category>读书笔记</category>
         
         
-        <category>编程技术</category>
+        <category>技术</category>
         
       </item>
     
@@ -557,11 +571,15 @@ websocket http的区别与关系
 
 </description>
         <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn-1.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2017/08/01/everyday-learn-1.html</guid>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-1.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-1.html</guid>
+        
+        <category>Ted演讲</category>
+        
+        <category>每日积累</category>
         
         
-        <category>学习笔记</category>
+        <category>随笔</category>
         
       </item>
     
@@ -586,13 +604,15 @@ websocket http的区别与关系
 
 </description>
         <pubDate>Sun, 30 Jul 2017 14:45:03 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%89%8D%E7%AB%AF/2017/07/30/stacer.html</guid>
-        
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/stacer.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/stacer.html</guid>
         
         <category>服务器</category>
         
         <category>前端</category>
+        
+        
+        <category>技术</category>
         
       </item>
     
@@ -631,13 +651,15 @@ websocket http的区别与关系
 
 </description>
         <pubDate>Sun, 30 Jul 2017 13:58:34 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/2017/07/30/about-crawler-technology.html</guid>
-        
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/about-crawler-technology.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/about-crawler-technology.html</guid>
         
         <category>服务器</category>
         
-        <category>关于网络爬虫</category>
+        <category>网络爬虫</category>
+        
+        
+        <category>技术</category>
         
       </item>
     
@@ -698,13 +720,13 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 15 Jul 2017 15:43:36 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</guid>
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</guid>
+        
+        <category>加密技术</category>
         
         
-        <category>服务器</category>
-        
-        <category>编程技术</category>
+        <category>技术</category>
         
       </item>
     
@@ -738,11 +760,11 @@ CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现
 1、对知识的透彻理解 2、对某一方向的深入精通 3、对未知的敬畏。&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Jul 2017 14:13:04 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%84%9F%E6%82%9F/2017/07/14/my-life-stage-summury.html</guid>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/07/14/my-life-stage-summury.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/07/14/my-life-stage-summury.html</guid>
         
         
-        <category>感悟</category>
+        <category>随笔</category>
         
       </item>
     

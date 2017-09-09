@@ -5,12 +5,10 @@ date: '2017-08-07 11:04:42'
 image: '/styles/images/'
 description: '《redis设计与实践》读书笔记'
 categories:
-- redis设计与实践
-location:
-author: 'haicheng'
-image:
-  feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'
-  credit: '@someone'
+- 技术
+tags:
+- redis
+- 读书笔记
 ---
 
  

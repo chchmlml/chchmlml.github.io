@@ -5,7 +5,9 @@ date: '2017-08-06 20:57:06'
 image: '/styles/images/'
 description: 'SaaS 后端即服务,这篇文章阐述PaaS平台、系统与业务发展，面对人员、业务的发展如何处理其中要面对的问题。'
 categories:
-- 编程技术
+- 技术
+tags:
+- 读书笔记
 author: 'haicheng'
 image:
   feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'

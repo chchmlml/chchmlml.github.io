@@ -5,12 +5,9 @@ date: '2017-08-22 10:44:29'
 image: '/assets/img_of_post/'
 description: '收集一些面试题目，补充下基础知识'
 categories:
+- 技术
+tags:
 - 面试总结
-location:
-author: 'haicheng'
-image:
-  feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'
-  credit: '@someone'
 ---
 
 ### 什么是内存泄露？什么引起的

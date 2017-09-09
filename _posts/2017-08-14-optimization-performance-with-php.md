@@ -5,9 +5,10 @@ date: '2017-08-14 14:01:20'
 image: '/assets/img_of_post/'
 description: '系统性能从开发角度怎样性能压榨呢，总结一下以供学习参考'
 categories:
-- php
-location:
-author: 'haicheng'
+- 随笔
+tags:
+- redis
+- 读书笔记
 ---
 
  

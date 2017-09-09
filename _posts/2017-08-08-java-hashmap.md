@@ -4,12 +4,12 @@ title: 'HashMap 和 HashTable 源码学习和面试总结'
 date: '2017-08-08 09:26:03'
 description: 'HashMap 和 HashTable 是各种面试问滥的问题，掌握好理解好也是对java学习上必要的课程。'
 categories: 
-- 面试总结
+- 技术
+tags:
+- java
+
 location:
 author: 'haicheng'
-image:
-  feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'
-  credit: '@someone'
 ---
 
  

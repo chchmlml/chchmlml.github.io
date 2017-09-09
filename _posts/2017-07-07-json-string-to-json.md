@@ -7,7 +7,7 @@ description: '这是我的测试文章.'
 tags:
 - javascript
 categories:
-- 编程技术
+- 技术
 ---
 
 jQuery的ajax返回的如果是json格式，在success方法获取的值并不能直接当做json object处理，需要用$.parseJSON来转化成个json对象

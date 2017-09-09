@@ -5,7 +5,10 @@ date: '2017-08-01 13:13:26'
 image: '/styles/images/'
 description: '我的每天学习笔记，做个日记记录点滴'
 categories:
-- 学习笔记
+- 随笔
+tags:
+- Ted演讲
+- 每日积累
 image:
   feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'
   credit: '@someone'

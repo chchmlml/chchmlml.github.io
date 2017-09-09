@@ -6,9 +6,11 @@ image: '/styles/images/'
 description: '今天说说爬虫、 网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），
                          是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还
                          有蚂蚁、自动索引、模拟程序或者蠕虫。'
-categories:
+tags:
 - 服务器 
-- 关于网络爬虫
+- 网络爬虫
+categories: 
+- 技术
 author: 'haicheng'
 image:
   feature: 'https://pic2.zhimg.com/50/v2-2c2900d03c3c57659ccb1860b9946549_hd.jpg'
