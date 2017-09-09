@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'about take a house in beijing'
+title: '活在北京/Now Fucking Live In Beijing'
 date: '2017-09-09 10:55:33'
-description: '必须哦'
+description: '苦逼在北京生活'
 categories:
 - 随笔
 tags:
