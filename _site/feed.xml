@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Sep 2017 10:48:55 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Sep 2017 10:48:55 +0800</lastBuildDate>
+    <pubDate>Mon, 11 Sep 2017 16:30:55 +0800</pubDate>
+    <lastBuildDate>Mon, 11 Sep 2017 16:30:55 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -35,21 +35,35 @@
     
       <item>
         <title>我的项目总结</title>
-        <description>&lt;p&gt;#pps广告平台&lt;/p&gt;
+        <description>&lt;h1 id=&quot;pps广告平台--移动投放平台&quot;&gt;pps广告平台 &amp;amp; 移动投放平台&lt;/h1&gt;
 
-&lt;p&gt;#pps移动投放平台&lt;/p&gt;
+&lt;h3 id=&quot;定义&quot;&gt;定义&lt;/h3&gt;
+&lt;p&gt;作为公司的主要收入，广告系统涵盖了很多。解决了广告排期录入、分发投放的问题，作为业务系统配置式的项目管理
+把系统的扩展性体现的特别好，在当时我觉得还是相当成熟的。
+   我后期参与的任务流的处理方式我认为作为广告业务系统结合OA、ERP是很棒的处理方式。&lt;/p&gt;
 
-&lt;p&gt;#邮轮海电商平台&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;移动投放平台&lt;/code&gt;即时的投放处理系统，依靠php+lvs+mecached的方式进行处理，这种架构可以说提供了很高qps的性能。&lt;/p&gt;
 
-&lt;p&gt;#京东旅游邮轮平台&lt;/p&gt;
+&lt;h3 id=&quot;包含的模块&quot;&gt;包含的模块&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 业务录入
+- 排期处理
+- 任务提醒
+- 邮件提醒
+- 广告投放
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;#京东众包h5平台&lt;/p&gt;
+&lt;h3 id=&quot;解决问题&quot;&gt;解决问题&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 录入
+- 排期处理
+- 高qps、响应低延迟
+- 容灾处理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;#微博应用家平台&lt;/p&gt;
+&lt;h1 id=&quot;京东旅游邮轮平台--京东众包h5平台&quot;&gt;京东旅游邮轮平台 &amp;amp; 京东众包h5平台&lt;/h1&gt;
 
-&lt;p&gt;#微博超级粉丝通&lt;/p&gt;
-
-&lt;p&gt;#微博KA项目群&lt;/p&gt;
+&lt;h1 id=&quot;微博应用家平台--微博超级粉丝通--微博ka项目群&quot;&gt;微博应用家平台 &amp;amp; 微博超级粉丝通 &amp;amp; 微博KA项目群&lt;/h1&gt;
 </description>
         <pubDate>Fri, 25 Aug 2017 11:19:59 +0800</pubDate>
         <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</link>
@@ -533,12 +547,12 @@ RDB文件是二进制的
         <title>每天学习笔记【2】</title>
         <description>&lt;h1 id=&quot;第五周&quot;&gt;第五周&lt;/h1&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;20170911
-```
-《互联网时代的项目管理术》读书第二章&lt;/p&gt;
+  &lt;p&gt;20170911&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;```&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;《互联网时代的项目管理术》读书第二章
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
         <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-2.html</link>
