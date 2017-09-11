@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Sep 2017 09:15:02 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Sep 2017 09:15:02 +0800</lastBuildDate>
+    <pubDate>Mon, 11 Sep 2017 10:48:55 +0800</pubDate>
+    <lastBuildDate>Mon, 11 Sep 2017 10:48:55 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -27,6 +27,37 @@
         <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</guid>
         
         <category>买房子</category>
+        
+        
+        <category>随笔</category>
+        
+      </item>
+    
+      <item>
+        <title>我的项目总结</title>
+        <description>&lt;p&gt;#pps广告平台&lt;/p&gt;
+
+&lt;p&gt;#pps移动投放平台&lt;/p&gt;
+
+&lt;p&gt;#邮轮海电商平台&lt;/p&gt;
+
+&lt;p&gt;#京东旅游邮轮平台&lt;/p&gt;
+
+&lt;p&gt;#京东众包h5平台&lt;/p&gt;
+
+&lt;p&gt;#微博应用家平台&lt;/p&gt;
+
+&lt;p&gt;#微博超级粉丝通&lt;/p&gt;
+
+&lt;p&gt;#微博KA项目群&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Aug 2017 11:19:59 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</guid>
+        
+        <category>总结</category>
+        
+        <category>项目</category>
         
         
         <category>随笔</category>
@@ -499,7 +530,31 @@ RDB文件是二进制的
       </item>
     
       <item>
-        <title>每天学习笔记1</title>
+        <title>每天学习笔记【2】</title>
+        <description>&lt;h1 id=&quot;第五周&quot;&gt;第五周&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;20170911
+```
+《互联网时代的项目管理术》读书第二章&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-2.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-2.html</guid>
+        
+        <category>Ted演讲</category>
+        
+        <category>每日积累</category>
+        
+        
+        <category>随笔</category>
+        
+      </item>
+    
+      <item>
+        <title>每天学习笔记【1】</title>
         <description>&lt;h1 id=&quot;第一周&quot;&gt;第一周&lt;/h1&gt;
 &lt;blockquote&gt;
   &lt;p&gt;追求自我价值之路&lt;/p&gt;
@@ -634,120 +689,6 @@ websocket http的区别与关系
         <category>服务器</category>
         
         <category>前端</category>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>网络爬虫技术总结</title>
-        <description>&lt;h1 id=&quot;基本原理&quot;&gt;基本原理&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），
-是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还
-有蚂蚁、自动索引、模拟程序或者蠕虫。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我这里说的爬虫则是相对狭义，作为开发，自己做爬虫爬去资料无疑是很有成就感的。&lt;/p&gt;
-
-&lt;h1 id=&quot;爬虫的工作流程&quot;&gt;爬虫的工作流程&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;准备种子URL；&lt;/li&gt;
-  &lt;li&gt;将这些URL放入待抓取URL队列；&lt;/li&gt;
-  &lt;li&gt;从待抓取URL队列中取出待抓取在URL，解析DNS，并且得到主机的ip，并将URL对应的网页下载下来，存储进已下载网页库中。此外，将这些URL放进已抓取URL队列。&lt;/li&gt;
-  &lt;li&gt;分析已抓取URL队列中的URL，分析其中的其他URL，并且将URL放入待抓取URL队列，从而进入下一个循环；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;要解决的问题&quot;&gt;要解决的问题&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;要获取我们只定的信息，所以可以指定我们需要的格式来定义目标也，通过DOM解析技术从缓存的页面提炼信息，保存指定信息；&lt;/li&gt;
-  &lt;li&gt;效率是个大问题，多线程、分布式技术的应用很重要；&lt;/li&gt;
-  &lt;li&gt;递归的获取url地址是个类似图数据结构，以何种方式抓取url成为抓取策略，其中有&lt;code class=&quot;highlighter-rouge&quot;&gt;深度优先遍历策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;宽度优先遍历策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;反向链接数策略&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;PageRank策略&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;相关资料&quot;&gt;相关资料&lt;/h1&gt;
-&lt;p&gt;java、python、Node.js、Go语言因为多线程、协程的支持，非常适合做爬虫语言；php应用多进程方式也可作为爬虫的应用。&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/owner888/phpspider&quot;&gt;php爬虫&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;PHP, Python, Node.js 哪个比较适合写爬虫？&quot;&gt;PHP, Python, Node.js 哪个比较适合写爬虫？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 30 Jul 2017 13:58:34 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/about-crawler-technology.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/about-crawler-technology.html</guid>
-        
-        <category>服务器</category>
-        
-        <category>网络爬虫</category>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>信息加密技术总结</title>
-        <description>&lt;h1 id=&quot;开发中的信息加密&quot;&gt;开发中的信息加密&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，
-到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子
-商务和VPN上的应用
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;加密技术分类&quot;&gt;加密技术分类&lt;/h1&gt;
-&lt;p&gt;加密技术根据其实现，主要分为&lt;code class=&quot;highlighter-rouge&quot;&gt;对称加密&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;非对称加密&lt;/code&gt;，但是大家熟知的MD5、sha算法不是加密技术，属于&lt;code class=&quot;highlighter-rouge&quot;&gt;单线散列摘要&lt;/code&gt;算法，不可逆算法。&lt;/p&gt;
-
-&lt;h1 id=&quot;对称加密&quot;&gt;对称加密&lt;/h1&gt;
-&lt;p&gt;所谓对称加密，就是加密和解密使用同一秘钥，这也是这种加密算法最显著的缺点之一。上面的字典、圣经等也可以理解为是一份秘钥。现代的加密算法中，DES、3DES、AES等算法都属于对称加密算法。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;优点：效率高&lt;/li&gt;
-  &lt;li&gt;缺点：密钥传输不确定性，一单密钥泄露，就造成加密的失败&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;非对称加密&quot;&gt;非对称加密&lt;/h1&gt;
-&lt;p&gt;这种加密算法的秘钥分为公钥和私钥，公开秘钥用于对信息进行加密，而解密时使用私有秘钥进行解密，信息发送方使用公钥对信息进行加密，然后将信息发送给接收方，接收方使用私钥进行解密即可。常见的非对称加密算法有：RSA、EIGamal、背包算法、Rebin（RSA的特例）。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;优点：相对于对称加密安全&lt;/li&gt;
-  &lt;li&gt;缺点：效率低&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;单线散列摘要&quot;&gt;单线散列摘要&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;单向散列算法，又称hash函数，Hash函数（也称杂凑函数或杂凑算法）就是把任意长的输入消息串变化
-成固定长的输出串的一种函数。这个输出串称为该消息的杂凑值。一般用于产生消息摘要，密钥加密等。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;常见散列函数(Hash函数)有：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MD5（Message Digest Algorithm 5）：是RSA数据安全公司开发的一种单向散列算法，MD5被广泛使用，
-可以用来把不同长度的数据块进行暗码运算成一个128位的数值。
-SHA（Secure Hash Algorithm）这是一种较新的散列算法，可以对任意长度的数据运算生成一个160位的数值。
-MAC（Message Authentication Code）：消息认证代码，是一种使用密钥的单向函数，可以用它们在系统上或
-用户之间认证文件或消息，常见的是HMAC（用于消息认证的密钥散列算法）。
-CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现简单，检错能力强，被广泛使用在各种
-数据校验应用中。占用系统资源少，用软硬件均能实现，是进行数据传输差错检测地一种很好的手段（CRC 并不是严格
-意义上的散列算法，但它的作用与散列算法大致相同，所以归于此类）。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;(摘录于百度)&lt;/p&gt;
-
-&lt;h1 id=&quot;https中对加密技术的应用&quot;&gt;https中对加密技术的应用&lt;/h1&gt;
-&lt;p&gt;https通信双方建立通信后，A首先生成一对公钥和私钥，并将公钥发送给B，B使用公钥将一个对称加密算法的“秘钥+有效期”加密后，再发回给A，A使用私钥解密后，双方便同步了一个对称算法的秘钥，然后在规定的有效期内，双方便可以使用这个秘钥对通信数据进行加密和解密。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;总结起来：非对称加密传输的是加密算法；对称加密传输的是信息。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 15 Jul 2017 15:43:36 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html</guid>
-        
-        <category>加密技术</category>
         
         
         <category>技术</category>

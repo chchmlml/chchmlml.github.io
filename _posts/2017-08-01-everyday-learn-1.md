@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '每天学习笔记1'
+title: '每天学习笔记【1】'
 date: '2017-08-01 13:13:26'
 image: '/styles/images/'
 description: '我的每天学习笔记，做个日记记录点滴'
