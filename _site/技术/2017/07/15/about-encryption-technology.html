@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="开发中的信息加密加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子商务和VPN上的应用加密技术分类加密技术根据其实现，主要分为对称加密、非对称加密，但是大家熟知的MD5、sh...">
+  <meta name="keywords" content="Programming, PHP, and Ruby">
+  <meta name="author" content="信息加密技术总结 | haicheng的博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="信息加密技术总结 | haicheng的博客">
+  <meta name="twitter:description" content="开发中的信息加密加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子商务和VPN上的应用加密技术分类加密技术根据其实现，主要分为对称加密、非对称加密，但是大家熟知的MD5、sh...">
+  <meta name="twitter:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://chchmlml.github.io">
+  <meta property="og:title" content="信息加密技术总结 | haicheng的博客">
+  <meta property="og:description" content="开发中的信息加密加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子商务和VPN上的应用加密技术分类加密技术根据其实现，主要分为对称加密、非对称加密，但是大家熟知的MD5、sh...">
+  <meta property="og:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+  <title>信息加密技术总结 | haicheng的博客</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/main.css">
+
+  <link rel="canonical" href="https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html">
+  <link rel="alternate" type="application/rss+xml" title="haicheng的博客" href="https://chchmlml.github.io /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="https://chchmlml.github.io/favicon.ico">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+<div class="cover-card table-cell table-middle">
+  
+  <img src="https://chchmlml.github.io/img/blog-author.jpg" alt="" class="avatar">
+  
+  <a href="https://chchmlml.github.io/" class="author_name">haicheng</a>
+  <span class="author_job">PHP Developer</span>
+  <span class="author_bio mbm">这是haicheng的博客，里面是技术跟感悟的东西。</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/resume/">关于</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/tags/">标签</a>
+        
+      </li>
+       
+    </ul>
+  </nav>
+  <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    
+      <li>
+      <script>gen_mail_to_link('chchmlml@163.com', 'Hello from website');</script>
+      </li>
+    
+    <li><a href="http://twitter.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>
+    <li><a href="http://facebook.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+    
+    
+    
+    
+    
+    <li><a href="http://github.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="http://www.weibo.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <a class="btn" href= "https://chchmlml.github.io/" >
+  首页
+</a>
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="信息加密技术总结">信息加密技术总结</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        15 JUL 2017
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <h1 id="开发中的信息加密">开发中的信息加密</h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>加密技术作为安全保密措施，是最常用的安全保密手段，利用技术手段把重要的数据变为乱码（加密）传送，
+到达目的地后再用相同或不同的手段还原（解密）。加密技术的应用是多方面的，但最为广泛的还是在电子
+商务和VPN上的应用
+</code></pre>
+</div>
+
+<h1 id="加密技术分类">加密技术分类</h1>
+<p>加密技术根据其实现，主要分为<code class="highlighter-rouge">对称加密</code>、<code class="highlighter-rouge">非对称加密</code>，但是大家熟知的MD5、sha算法不是加密技术，属于<code class="highlighter-rouge">单线散列摘要</code>算法，不可逆算法。</p>
+
+<h1 id="对称加密">对称加密</h1>
+<p>所谓对称加密，就是加密和解密使用同一秘钥，这也是这种加密算法最显著的缺点之一。上面的字典、圣经等也可以理解为是一份秘钥。现代的加密算法中，DES、3DES、AES等算法都属于对称加密算法。</p>
+
+<ul>
+  <li>优点：效率高</li>
+  <li>缺点：密钥传输不确定性，一单密钥泄露，就造成加密的失败</li>
+</ul>
+
+<h1 id="非对称加密">非对称加密</h1>
+<p>这种加密算法的秘钥分为公钥和私钥，公开秘钥用于对信息进行加密，而解密时使用私有秘钥进行解密，信息发送方使用公钥对信息进行加密，然后将信息发送给接收方，接收方使用私钥进行解密即可。常见的非对称加密算法有：RSA、EIGamal、背包算法、Rebin（RSA的特例）。</p>
+
+<ul>
+  <li>优点：相对于对称加密安全</li>
+  <li>缺点：效率低</li>
+</ul>
+
+<h1 id="单线散列摘要">单线散列摘要</h1>
+<blockquote>
+  <p>单向散列算法，又称hash函数，Hash函数（也称杂凑函数或杂凑算法）就是把任意长的输入消息串变化
+成固定长的输出串的一种函数。这个输出串称为该消息的杂凑值。一般用于产生消息摘要，密钥加密等。</p>
+</blockquote>
+
+<p>常见散列函数(Hash函数)有：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>MD5（Message Digest Algorithm 5）：是RSA数据安全公司开发的一种单向散列算法，MD5被广泛使用，
+可以用来把不同长度的数据块进行暗码运算成一个128位的数值。
+SHA（Secure Hash Algorithm）这是一种较新的散列算法，可以对任意长度的数据运算生成一个160位的数值。
+MAC（Message Authentication Code）：消息认证代码，是一种使用密钥的单向函数，可以用它们在系统上或
+用户之间认证文件或消息，常见的是HMAC（用于消息认证的密钥散列算法）。
+CRC（Cyclic Redundancy Check）：循环冗余校验码，CRC校验由于实现简单，检错能力强，被广泛使用在各种
+数据校验应用中。占用系统资源少，用软硬件均能实现，是进行数据传输差错检测地一种很好的手段（CRC 并不是严格
+意义上的散列算法，但它的作用与散列算法大致相同，所以归于此类）。
+</code></pre>
+</div>
+
+<p>(摘录于百度)</p>
+
+<h1 id="https中对加密技术的应用">https中对加密技术的应用</h1>
+<p>https通信双方建立通信后，A首先生成一对公钥和私钥，并将公钥发送给B，B使用公钥将一个对称加密算法的“秘钥+有效期”加密后，再发回给A，A使用私钥解密后，双方便同步了一个对称算法的秘钥，然后在规定的有效期内，双方便可以使用这个秘钥对通信数据进行加密和解密。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>总结起来：非对称加密传输的是加密算法；对称加密传输的是信息。
+</code></pre>
+</div>
+
+  </article>
+</div>
+
+<!--<div class="share-buttons">-->
+<!--  <h6>Share on: </h6>-->
+<!--  <ul>-->
+<!--    <li>-->
+<!--      <a href="https://twitter.com/intent/tweet?text=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.facebook.com/sharer/sharer.php?u=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://plus.google.com/share?url=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://news.ycombinator.com/submitlink?u=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.reddit.com/submit?url=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/15/about-encryption-technology.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div><!-- end share-buttons -->
+
+
+        <footer>
+  &copy; 2017 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://chchmlml.github.io/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://chchmlml.github.io/js/main.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

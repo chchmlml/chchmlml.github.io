@@ -8,7 +8,7 @@ tags:
 - php
 - 设计模式
 categories:
-- 编程技术
+- 技术
 ---
 
 设计模式

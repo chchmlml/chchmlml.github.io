@@ -5,7 +5,7 @@ date: '2017-07-07 13:37:21'
 image: '/styles/images/'
 description: '这是我的测试文章.'
 categories:
-- 编程技术
+- 技术
 ---
 
 

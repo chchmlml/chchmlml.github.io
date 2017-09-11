@@ -7,7 +7,7 @@ description: '这是我的测试文章.'
 tags:
 - php
 categories:
-- 编程技术
+- 技术
 ---
 
 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="原则优化不可脱离业务前端优化减少http请求浏览器缓存CDN分布式存储前端资源多域名访问原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求原因二：使用同一域名的时候无用的 cookie 简直是噩梦数据压缩gzip压缩资源编译压缩首页优化基础加载、后期渲染Nginx优化Nginx配置优化进程数进...">
+  <meta name="keywords" content="Programming, PHP, and Ruby">
+  <meta name="author" content="php与系统性能优化总结 | haicheng的博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="php与系统性能优化总结 | haicheng的博客">
+  <meta name="twitter:description" content="原则优化不可脱离业务前端优化减少http请求浏览器缓存CDN分布式存储前端资源多域名访问原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求原因二：使用同一域名的时候无用的 cookie 简直是噩梦数据压缩gzip压缩资源编译压缩首页优化基础加载、后期渲染Nginx优化Nginx配置优化进程数进...">
+  <meta name="twitter:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://chchmlml.github.io">
+  <meta property="og:title" content="php与系统性能优化总结 | haicheng的博客">
+  <meta property="og:description" content="原则优化不可脱离业务前端优化减少http请求浏览器缓存CDN分布式存储前端资源多域名访问原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求原因二：使用同一域名的时候无用的 cookie 简直是噩梦数据压缩gzip压缩资源编译压缩首页优化基础加载、后期渲染Nginx优化Nginx配置优化进程数进...">
+  <meta property="og:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+  <title>php与系统性能优化总结 | haicheng的博客</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/main.css">
+
+  <link rel="canonical" href="https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html">
+  <link rel="alternate" type="application/rss+xml" title="haicheng的博客" href="https://chchmlml.github.io /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="https://chchmlml.github.io/favicon.ico">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+<div class="cover-card table-cell table-middle">
+  
+  <img src="https://chchmlml.github.io/img/blog-author.jpg" alt="" class="avatar">
+  
+  <a href="https://chchmlml.github.io/" class="author_name">haicheng</a>
+  <span class="author_job">PHP Developer</span>
+  <span class="author_bio mbm">这是haicheng的博客，里面是技术跟感悟的东西。</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/resume/">关于</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/tags/">标签</a>
+        
+      </li>
+       
+    </ul>
+  </nav>
+  <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    
+      <li>
+      <script>gen_mail_to_link('chchmlml@163.com', 'Hello from website');</script>
+      </li>
+    
+    <li><a href="http://twitter.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>
+    <li><a href="http://facebook.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+    
+    
+    
+    
+    
+    <li><a href="http://github.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="http://www.weibo.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <a class="btn" href= "https://chchmlml.github.io/" >
+  首页
+</a>
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="php与系统性能优化总结">php与系统性能优化总结</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        14 AUG 2017
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <h1 id="原则">原则</h1>
+<div class="highlighter-rouge"><pre class="highlight"><code>优化不可脱离业务
+</code></pre>
+</div>
+
+<h1 id="前端优化">前端优化</h1>
+
+<h3 id="减少http请求">减少http请求</h3>
+<h3 id="浏览器缓存">浏览器缓存</h3>
+<h3 id="cdn分布式存储前端资源">CDN分布式存储前端资源</h3>
+<h3 id="多域名访问">多域名访问</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+原因二：使用同一域名的时候无用的 cookie 简直是噩梦
+</code></pre>
+</div>
+
+<h3 id="数据压缩">数据压缩</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>gzip压缩
+资源编译压缩
+</code></pre>
+</div>
+
+<h3 id="首页优化">首页优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>基础加载、后期渲染
+</code></pre>
+</div>
+
+<h1 id="nginx优化">Nginx优化</h1>
+
+<h3 id="nginx配置优化">Nginx配置优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>进程数
+进程文件打开最大数
+多路复用
+gzip压缩
+静态资源缓存（动态也支持）
+开启长连接
+</code></pre>
+</div>
+
+<h3 id="tcpip-网络协议配置优化">tcp/ip 网络协议配置优化</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>这边不太熟悉
+</code></pre>
+</div>
+
+<h3 id="linux系统优化">linux系统优化</h3>
+
+<h1 id="php优化">php优化</h1>
+
+<h3 id="php7升级">php7升级？</h3>
+<h3 id="opcode缓存">opcode缓存</h3>
+<h3 id="代码伪编译">代码伪编译</h3>
+<h3 id="模板编译">模板编译</h3>
+<h3 id="xhprof">xhprof</h3>
+
+<h1 id="业务优化">业务优化</h1>
+
+<h3 id="扩展开放修改封闭">扩展开放、修改封闭</h3>
+<h3 id="异步缓存分布式">异步、缓存、分布式</h3>
+<h3 id="静态化">静态化</h3>
+<h3 id="业务解耦">业务解耦</h3>
+
+<h1 id="mysql优化">mysql优化</h1>
+
+<h3 id="部署">部署</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>慢查询日志收集
+nosql
+并发数
+连接时间
+</code></pre>
+</div>
+
+<h3 id="开发">开发</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>innodb表引擎
+主键索引
+字段优化
+explain应用
+</code></pre>
+</div>
+
+<h1 id="缓存优化">缓存优化</h1>
+
+<h3 id="多级缓存">多级缓存</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>请求内缓存
+本地缓存
+分布式缓存
+</code></pre>
+</div>
+
+<p>#redis
+    多实例化
+    内存优化
+    hash使用</p>
+
+<h1 id="服务器优化">服务器优化</h1>
+
+<h3 id="多进程">多进程</h3>
+<h3 id="减少上下文切换">减少上下文切换</h3>
+<h3 id="多路复用">多路复用</h3>
+<h3 id="减少系统调用">减少系统调用</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>strace统计调用次数
+</code></pre>
+</div>
+
+  </article>
+</div>
+
+<!--<div class="share-buttons">-->
+<!--  <h6>Share on: </h6>-->
+<!--  <ul>-->
+<!--    <li>-->
+<!--      <a href="https://twitter.com/intent/tweet?text=https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.facebook.com/sharer/sharer.php?u=https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://plus.google.com/share?url=https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://news.ycombinator.com/submitlink?u=https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.reddit.com/submit?url=https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div><!-- end share-buttons -->
+
+
+        <footer>
+  &copy; 2017 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://chchmlml.github.io/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://chchmlml.github.io/js/main.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

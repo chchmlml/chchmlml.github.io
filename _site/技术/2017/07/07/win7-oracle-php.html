@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装...">
+  <meta name="keywords" content="Programming, PHP, and Ruby">
+  <meta name="author" content="win7 oracle php | haicheng的博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="win7 oracle php | haicheng的博客">
+  <meta name="twitter:description" content="今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装...">
+  <meta name="twitter:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="https://chchmlml.github.io">
+  <meta property="og:title" content="win7 oracle php | haicheng的博客">
+  <meta property="og:description" content="今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装...">
+  <meta property="og:image" content="https://chchmlml.github.io/img/leonids-logo.png">
+  <title>win7 oracle php | haicheng的博客</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://chchmlml.github.io/css/main.css">
+
+  <link rel="canonical" href="https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html">
+  <link rel="alternate" type="application/rss+xml" title="haicheng的博客" href="https://chchmlml.github.io /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="https://chchmlml.github.io/favicon.ico">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+<div class="cover-card table-cell table-middle">
+  
+  <img src="https://chchmlml.github.io/img/blog-author.jpg" alt="" class="avatar">
+  
+  <a href="https://chchmlml.github.io/" class="author_name">haicheng</a>
+  <span class="author_job">PHP Developer</span>
+  <span class="author_bio mbm">这是haicheng的博客，里面是技术跟感悟的东西。</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/resume/">关于</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="https://chchmlml.github.io/tags/">标签</a>
+        
+      </li>
+       
+    </ul>
+  </nav>
+  <script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
+<div class="social-links">
+  <ul>
+    
+      <li>
+      <script>gen_mail_to_link('chchmlml@163.com', 'Hello from website');</script>
+      </li>
+    
+    <li><a href="http://twitter.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>
+    <li><a href="http://facebook.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+    
+    
+    
+    
+    
+    <li><a href="http://github.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="http://www.weibo.com/chchmlml" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <a class="btn" href= "https://chchmlml.github.io/" >
+  首页
+</a>
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h1 title="win7 oracle php">win7 oracle php</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        7 JUL 2017
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+    </span>
+
+  </header>
+
+  <article class="post-content">
+    <p>今天自己的电脑突然很卡，一上午竟然死机了四次，没办法就准备升级到win7。
+    升级之后最麻烦的来了，就是要搭建我的工作环境。我的工作环境是本地php5+局域网内的oracle客户端访问。因为之前有xp的搭建经验，所以这次不是很棘手。
+    先下载个xampp1.7.5（之前在xp上也是这个，所以就继续），安装，一切顺利，打开phpinfo()，没有oci8的提示，所以，进入php目录。打开php.ini，吧extension=php_oci8.dll，extension=php_pdo_oci.dll前面的；去掉，重启apache，打开phpinfo()，仍然没有oci8的提示，这里有个小问题，就是在php的扩展库里没有对oracle的扩展支持，所以大家还有下oraociei10.dll 和orannzsbb10.dll 和oci.dll（大家可以在这里下载），放入php环境下的ext（这个要在环境变里面，否则就复制到system32下面），重启apache，打开phpinfo()，已经有了oci8的提示。
+    下面配置oci客户端（这里大家注意下，因为php5以后，默认只支持10g以上版本），因为我这里要与公司的局域网服务端连接，只需要plsql调试，也就是客户端的安装就好了（http://115.com/file/dng7y94w），安装过程是从网上找的：</p>
+<ol>
+  <li>把下载的Basic版压缩包解压，放到 D:\Program Files\instantclient_10_2 目录下，总共8个文件。</li>
+  <li>桌面上，右键点“我的电脑”，选择“属性”，选择“高级”页中的“环境变量”，在系统变量中，增加：
+1) 变量名：ORACLE_HOME
+   变量值：D:\Program Files\instantclient_10_2
+2) 变量名：TNS_ADMIN
+   变量值：D:\Program Files\instantclient_10_2
+3) 变量名：NLS_LANG
+   变量值：SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+4) 修改Path变量，在后面添加 D:\Program Files\instantclient_10_2
+如果不愿意手工增加，可以下载 SetOraEnv.rar 附件, 解压后执行其中的 setOraEnv.bat.</li>
+  <li>在D:\Progra~1\instantclient_10_2 新建一个文本文件，文件名为tnsnames.ora,文件中增加自己的数据库别名配置，
+示例如下：
+MyDB =
+(DESCRIPTION =
+ (ADDRESS = (PROTOCOL = TCP)(HOST = 172.16.1.16)(PORT = 1521))
+ (CONNECT_DATA =
+   (SERVER = DEDICATED)
+   (SERVICE_NAME = ora10g)
+ )
+)
+主要改=前面的别名，Host为IP地址, SERVICE_NAME为数据库服务器的实例名。</li>
+  <li>把sqlplus的压缩包中的文件，解压到 D:\Program Files\instantclient_10_2 目录下,共3个文件。
+在Dos命令行，在D:\Program Files\instantclient_10_2 目录下，运行 sqlplus   username/password@dbname,即可连到数据库上。
+（我没有进行第四步），个人认为环境变量最重要的是path、TNS_ADMIN的修改，重启apache，一切OK。</li>
+</ol>
+
+  </article>
+</div>
+
+<!--<div class="share-buttons">-->
+<!--  <h6>Share on: </h6>-->
+<!--  <ul>-->
+<!--    <li>-->
+<!--      <a href="https://twitter.com/intent/tweet?text=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.facebook.com/sharer/sharer.php?u=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://plus.google.com/share?url=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://news.ycombinator.com/submitlink?u=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <a href="https://www.reddit.com/submit?url=https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/07/win7-oracle-php.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div><!-- end share-buttons -->
+
+
+        <footer>
+  &copy; 2017 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://chchmlml.github.io/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://chchmlml.github.io/js/main.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

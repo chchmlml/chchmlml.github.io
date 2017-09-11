@@ -7,7 +7,7 @@ description: '一篇javascript小技巧.'
 tags:
 - javascript
 categories:
-- 前端技术
+- 技术
 ---
 
 这是很久之前从文章了，收录下

@@ -8,7 +8,7 @@ tags:
 - sql
 - 数据库
 categories:
-- 编程技术
+- 技术
 ---
 
 

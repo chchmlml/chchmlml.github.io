@@ -5,7 +5,7 @@ date: '2017-07-14 14:13:04'
 image: '/styles/images/'
 description: '关于职业的困惑和探讨'
 categories:
-- 感悟
+- 随笔
 author: 'haicheng'
 image:
   feature: 'https://wx2.sinaimg.cn/crop.0.0.1000.562.1000/458a21d7ly1fjasnl3hvrj20rs0fm41h.jpg'
