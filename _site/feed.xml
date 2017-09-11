@@ -5,8 +5,8 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Sep 2017 16:30:55 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Sep 2017 16:30:55 +0800</lastBuildDate>
+    <pubDate>Mon, 11 Sep 2017 17:01:30 +0800</pubDate>
+    <lastBuildDate>Mon, 11 Sep 2017 17:01:30 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -37,33 +37,66 @@
         <title>我的项目总结</title>
         <description>&lt;h1 id=&quot;pps广告平台--移动投放平台&quot;&gt;pps广告平台 &amp;amp; 移动投放平台&lt;/h1&gt;
 
-&lt;h3 id=&quot;定义&quot;&gt;定义&lt;/h3&gt;
-&lt;p&gt;作为公司的主要收入，广告系统涵盖了很多。解决了广告排期录入、分发投放的问题，作为业务系统配置式的项目管理
+&lt;blockquote&gt;
+  &lt;p&gt;定义  &lt;br /&gt;
+   作为公司的主要收入，广告系统涵盖了很多。解决了广告排期录入、分发投放的问题，作为业务系统配置式的项目管理
 把系统的扩展性体现的特别好，在当时我觉得还是相当成熟的。
-   我后期参与的任务流的处理方式我认为作为广告业务系统结合OA、ERP是很棒的处理方式。&lt;/p&gt;
+   我后期参与的任务流的处理方式我认为作为广告业务系统结合OA、ERP是很棒的处理方式。   &lt;br /&gt;
+   &lt;code class=&quot;highlighter-rouge&quot;&gt;移动投放平台&lt;/code&gt;即时的投放处理系统，依靠php+lvs+memcached的方式进行处理，这种架构可以说提供了很高qps的性能。&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;移动投放平台&lt;/code&gt;即时的投放处理系统，依靠php+lvs+mecached的方式进行处理，这种架构可以说提供了很高qps的性能。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;包含的模块&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;素材录入&lt;/li&gt;
+    &lt;li&gt;排期处理&lt;/li&gt;
+    &lt;li&gt;任务提醒&lt;/li&gt;
+    &lt;li&gt;邮件提醒&lt;/li&gt;
+    &lt;li&gt;广告投放&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;包含的模块&quot;&gt;包含的模块&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 业务录入
-- 排期处理
-- 任务提醒
-- 邮件提醒
-- 广告投放
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;解决问题&quot;&gt;解决问题&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 录入
-- 排期处理
-- 高qps、响应低延迟
-- 容灾处理
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;解决问题&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;录入&lt;/li&gt;
+    &lt;li&gt;排期处理&lt;/li&gt;
+    &lt;li&gt;高qps、响应低延迟&lt;/li&gt;
+    &lt;li&gt;容灾处理&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;京东旅游邮轮平台--京东众包h5平台&quot;&gt;京东旅游邮轮平台 &amp;amp; 京东众包h5平台&lt;/h1&gt;
 
 &lt;h1 id=&quot;微博应用家平台--微博超级粉丝通--微博ka项目群&quot;&gt;微博应用家平台 &amp;amp; 微博超级粉丝通 &amp;amp; 微博KA项目群&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;定义  &lt;br /&gt;
+    这个时候随着业务上对产品线的区分，我们对广告做基于品牌、基于流量的产品业务线策略，从而
+    产生了KA（品牌）和To广告商（流量的）的两个产品。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;模块&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;素材录入&lt;/li&gt;
+    &lt;li&gt;排期处理&lt;/li&gt;
+    &lt;li&gt;任务&lt;/li&gt;
+    &lt;li&gt;提醒&lt;/li&gt;
+    &lt;li&gt;消息&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;解决的问题
+不同于平台、产品类的项目，业务系统始终要满足业务方需求，所有响应时间、qps指标并不是最核心，稳定性
+确实更重要。
+我觉得，这个系统更像是一个集装箱，或者是适配器，向上要兼容业务需求，向下要合理的提供数据结构、下发
+策略，还要处理兼容基于微博的对象和微博，十分头痛。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;待续。。。&lt;/p&gt;
+
 </description>
         <pubDate>Fri, 25 Aug 2017 11:19:59 +0800</pubDate>
         <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</link>
