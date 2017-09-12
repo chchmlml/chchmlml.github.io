@@ -22,3 +22,10 @@ image:
 ```
 《互联网时代的项目管理术》读书第二章
 ```
+
+> 20170912
+
+```
+PHP的master与worker,master不负责处理请求，worker直接处理，master进程不断调用epoll_wait和getsockopt是用来异步处理信号事件和定时器事件.
+mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
+```
