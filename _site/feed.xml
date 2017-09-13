@@ -5,9 +5,54 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Sep 2017 10:32:13 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Sep 2017 10:32:13 +0800</lastBuildDate>
+    <pubDate>Wed, 13 Sep 2017 17:30:25 +0800</pubDate>
+    <lastBuildDate>Wed, 13 Sep 2017 17:30:25 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>读书笔记《高性能mysql》</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/读《高性能mysql》.png&quot; alt=&quot;高性能mysql&quot; title=&quot;高性能mysql&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Sep 2017 17:20:09 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</guid>
+        
+        <category>mysql</category>
+        
+        
+        <category>读书</category>
+        
+      </item>
+    
+      <item>
+        <title>读书笔记《代码整洁之道》</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/代码整洁之道.png&quot; alt=&quot;代码整洁之道&quot; title=&quot;代码整洁之道&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Sep 2017 17:20:09 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</guid>
+        
+        <category>编程习惯</category>
+        
+        
+        <category>读书</category>
+        
+      </item>
+    
+      <item>
+        <title>读书笔记《互联网时代的项目管理术》</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/互联网时代的项目管理术.png&quot; alt=&quot;互联网时代的项目管理术&quot; title=&quot;互联网时代的项目管理术&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Sep 2017 17:13:16 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</guid>
+        
+        <category>管理</category>
+        
+        
+        <category>读书</category>
+        
+      </item>
     
       <item>
         <title>活在北京/Now Fucking Live In Beijing</title>
@@ -574,179 +619,6 @@ RDB文件是二进制的
         <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/06/backend-service.html</guid>
         
         <category>读书笔记</category>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>每天学习笔记【2】</title>
-        <description>&lt;h1 id=&quot;第五周&quot;&gt;第五周&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;20170911&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;《互联网时代的项目管理术》读书第二章
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;20170912&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP的master与worker,master不负责处理请求，worker直接处理，master进程不断调用epoll_wait和getsockopt是用来异步处理信号事件和定时器事件.
-mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-2.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-2.html</guid>
-        
-        <category>Ted演讲</category>
-        
-        <category>每日积累</category>
-        
-        
-        <category>随笔</category>
-        
-      </item>
-    
-      <item>
-        <title>每天学习笔记【1】</title>
-        <description>&lt;h1 id=&quot;第一周&quot;&gt;第一周&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;追求自我价值之路&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;承认自己的价值，正视自己的作用
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;如何获取好点子&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;八个认为是好习惯的坏习惯&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;做个积极的悲观主义者（韩雪）&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;勇于接受挑战，不惧怕失败
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我为什么做一个黑客&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从突破中找到乐趣，在互联网上为年轻人简历正确的道德观   
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;第二周&quot;&gt;第二周&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;《redis设计与实现》&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类型概要，SDS simple dynamic string
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;《redis设计与实现》&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典模型，跳跃表
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;性格迷思 &amp;gt; 你究竟是谁&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;人性格可以分为内省与外向，按其表现形式；但是不能笼统贴出每个人的标签，真正做自己才是自己
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;对自己好 认识你自己&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;为什么我要看这个 月亮杯？
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;邓乐普谈对人生的热情&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;第三周&quot;&gt;第三周&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;定位自我的意义&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;请求的艺术&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求需要沟通，交流
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;第四周&quot;&gt;第四周&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;20170907&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;php的坑
-(https://segmentfault.com/a/1190000010748235?utm_source=weekly&amp;amp;utm_medium=email&amp;amp;utm_campaign=email_weekly)
-字符串==比较的强类型转换    
-array_merge vs +            
-浮点数精度问题，比较带来的问题            
-in_array 强类型转换            
-strpos第二个参数不是string，直接返回        
-用MySQL的朋友们请不要使用&quot;utf8&quot;，请使用&quot;utf8mb4&quot;        
-MySQL中的“utf8”编码只支持最大3字节每字符。真正的大家正在使用的UTF-8编码是应该能支持4字节每个字符。
-MySQL的开发者没有修复这个bug。他们在2010年增加了一个变通的方法：一个新的字符集“utf8mb4”
-websocket http的区别与关系
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 01 Aug 2017 13:13:26 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-1.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/01/everyday-learn-1.html</guid>
-        
-        <category>Ted演讲</category>
-        
-        <category>每日积累</category>
-        
-        
-        <category>随笔</category>
-        
-      </item>
-    
-      <item>
-        <title>Stacer Linux监控系统</title>
-        <description>&lt;p&gt;想看看源码来着，作为后端学习意义不大，实际应用更大。&lt;/p&gt;
-
-&lt;h1 id=&quot;stacer&quot;&gt;Stacer&lt;/h1&gt;
-
-&lt;h1 id=&quot;简介&quot;&gt;简介&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;针对linux服务器监控，主要是Ubuntu&lt;/li&gt;
-  &lt;li&gt;系统概要监控，整体运行、文件状态&lt;/li&gt;
-  &lt;li&gt;支持插件、服务&lt;/li&gt;
-  &lt;li&gt;进程监控&lt;/li&gt;
-  &lt;li&gt;资源监控&lt;/li&gt;
-  &lt;li&gt;多语言系统支持&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;项目地址&quot;&gt;项目地址&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/oguzhaninan/Stacer&quot;&gt;https://github.com/oguzhaninan/Stacer&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 30 Jul 2017 14:45:03 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/stacer.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/07/30/stacer.html</guid>
-        
-        <category>服务器</category>
-        
-        <category>前端</category>
         
         
         <category>技术</category>
