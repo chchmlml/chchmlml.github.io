@@ -5,9 +5,9 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Feb 2018 13:31:06 +0800</pubDate>
-    <lastBuildDate>Thu, 22 Feb 2018 13:31:06 +0800</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <pubDate>Mon, 02 Dec 2024 18:19:15 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Dec 2024 18:19:15 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
     
       <item>
         <title>2018年了，做些展望吧</title>
@@ -80,7 +80,7 @@
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;你好&quot;&gt;你好&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;不知道下次你看到是什么感觉，请留下你的现状+时间。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不知道下次你看到是什么感觉，请留下你的现状+时间。&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 09 Sep 2017 10:55:33 +0800</pubDate>
         <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</link>
@@ -102,7 +102,7 @@
    作为公司的主要收入，广告系统涵盖了很多。解决了广告排期录入、分发投放的问题，作为业务系统配置式的项目管理
 把系统的扩展性体现的特别好，在当时我觉得还是相当成熟的。
    我后期参与的任务流的处理方式我认为作为广告业务系统结合OA、ERP是很棒的处理方式。   &lt;br /&gt;
-   &lt;code class=&quot;highlighter-rouge&quot;&gt;移动投放平台&lt;/code&gt;即时的投放处理系统，依靠php+lvs+memcached的方式进行处理，这种架构可以说提供了很高qps的性能。&lt;/p&gt;
+   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;移动投放平台&lt;/code&gt;即时的投放处理系统，依靠php+lvs+memcached的方式进行处理，这种架构可以说提供了很高qps的性能。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -242,9 +242,8 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
       <item>
         <title>php与系统性能优化总结</title>
         <description>&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;前端优化&quot;&gt;前端优化&lt;/h1&gt;
 
@@ -252,38 +251,33 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
 &lt;h3 id=&quot;浏览器缓存&quot;&gt;浏览器缓存&lt;/h3&gt;
 &lt;h3 id=&quot;cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/h3&gt;
 &lt;h3 id=&quot;多域名访问&quot;&gt;多域名访问&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
 原因二：使用同一域名的时候无用的 cookie 简直是噩梦
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;数据压缩&quot;&gt;数据压缩&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip压缩
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip压缩
 资源编译压缩
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;首页优化&quot;&gt;首页优化&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;基础加载、后期渲染
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;基础加载、后期渲染
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;nginx优化&quot;&gt;Nginx优化&lt;/h1&gt;
 
 &lt;h3 id=&quot;nginx配置优化&quot;&gt;Nginx配置优化&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
 进程文件打开最大数
 多路复用
 gzip压缩
 静态资源缓存（动态也支持）
 开启长连接
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;linux系统优化&quot;&gt;linux系统优化&lt;/h3&gt;
 
@@ -305,29 +299,26 @@ gzip压缩
 &lt;h1 id=&quot;mysql优化&quot;&gt;mysql优化&lt;/h1&gt;
 
 &lt;h3 id=&quot;部署&quot;&gt;部署&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
 nosql
 并发数
 连接时间
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;开发&quot;&gt;开发&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
 主键索引
 字段优化
 explain应用
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;缓存优化&quot;&gt;缓存优化&lt;/h1&gt;
 
 &lt;h3 id=&quot;多级缓存&quot;&gt;多级缓存&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
 本地缓存
 分布式缓存
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;#redis
     多实例化
@@ -340,9 +331,116 @@ explain应用
 &lt;h3 id=&quot;减少上下文切换&quot;&gt;减少上下文切换&lt;/h3&gt;
 &lt;h3 id=&quot;多路复用&quot;&gt;多路复用&lt;/h3&gt;
 &lt;h3 id=&quot;减少系统调用&quot;&gt;减少系统调用&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</guid>
+        
+        <category>redis</category>
+        
+        <category>读书笔记</category>
+        
+        
+        <category>随笔</category>
+        
+      </item>
+    
+      <item>
+        <title>php与系统性能优化总结</title>
+        <description>&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;前端优化&quot;&gt;前端优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;减少http请求&quot;&gt;减少http请求&lt;/h3&gt;
+&lt;h3 id=&quot;浏览器缓存&quot;&gt;浏览器缓存&lt;/h3&gt;
+&lt;h3 id=&quot;cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/h3&gt;
+&lt;h3 id=&quot;多域名访问&quot;&gt;多域名访问&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+原因二：使用同一域名的时候无用的 cookie 简直是噩梦
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;数据压缩&quot;&gt;数据压缩&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip压缩
+资源编译压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;首页优化&quot;&gt;首页优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;基础加载、后期渲染
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;nginx优化&quot;&gt;Nginx优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;nginx配置优化&quot;&gt;Nginx配置优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
+进程文件打开最大数
+多路复用
+gzip压缩
+静态资源缓存（动态也支持）
+开启长连接
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;linux系统优化&quot;&gt;linux系统优化&lt;/h3&gt;
+
+&lt;h1 id=&quot;php优化&quot;&gt;php优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;php7升级&quot;&gt;php7升级？&lt;/h3&gt;
+&lt;h3 id=&quot;opcode缓存&quot;&gt;opcode缓存&lt;/h3&gt;
+&lt;h3 id=&quot;代码伪编译&quot;&gt;代码伪编译&lt;/h3&gt;
+&lt;h3 id=&quot;模板编译&quot;&gt;模板编译&lt;/h3&gt;
+&lt;h3 id=&quot;xhprof&quot;&gt;xhprof&lt;/h3&gt;
+
+&lt;h1 id=&quot;业务优化&quot;&gt;业务优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;扩展开放修改封闭&quot;&gt;扩展开放、修改封闭&lt;/h3&gt;
+&lt;h3 id=&quot;异步缓存分布式&quot;&gt;异步、缓存、分布式&lt;/h3&gt;
+&lt;h3 id=&quot;静态化&quot;&gt;静态化&lt;/h3&gt;
+&lt;h3 id=&quot;业务解耦&quot;&gt;业务解耦&lt;/h3&gt;
+
+&lt;h1 id=&quot;mysql优化&quot;&gt;mysql优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;部署&quot;&gt;部署&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
+nosql
+并发数
+连接时间
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;开发&quot;&gt;开发&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
+主键索引
+字段优化
+explain应用
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;缓存优化&quot;&gt;缓存优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多级缓存&quot;&gt;多级缓存&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
+本地缓存
+分布式缓存
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#redis
+    多实例化
+    内存优化
+    hash使用&lt;/p&gt;
+
+&lt;h1 id=&quot;服务器优化&quot;&gt;服务器优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多进程&quot;&gt;多进程&lt;/h3&gt;
+&lt;h3 id=&quot;减少上下文切换&quot;&gt;减少上下文切换&lt;/h3&gt;
+&lt;h3 id=&quot;多路复用&quot;&gt;多路复用&lt;/h3&gt;
+&lt;h3 id=&quot;减少系统调用&quot;&gt;减少系统调用&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
         <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
@@ -413,145 +511,6 @@ explain应用
         <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/08/java-hashmap.html</guid>
         
         <category>java</category>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>《redis设计与实践》学习</title>
-        <description>&lt;h1 id=&quot;引言&quot;&gt;引言&lt;/h1&gt;
-
-&lt;h1 id=&quot;数据结构与对象&quot;&gt;数据结构与对象&lt;/h1&gt;
-
-&lt;h3 id=&quot;简单动态字符串-sds&quot;&gt;简单动态字符串 SDS&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis用C的字符串作为字面量，SDS取而代之。好处
-获取长度常量复杂度
-杜绝缓冲溢出
-减少长度修改分配内存次数
-二进制安全
-兼容部分C字符串
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;链表&quot;&gt;链表&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;用途较广、订阅、慢查询等
-链表节点listNode结构、双向链表
-链表为list结构有头尾结构信息，长度信息
-头结点头指向、尾节点尾指向null
-节点保存不同类型
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;字典&quot;&gt;字典&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;字典的实现是hash表
-使用链表地址解决冲突 ### 跳跃表
-
-有续集集合实现之一
-层高1到32随机数
-按节点值大小排序 ### 整数集合
-
-集合的实现之一
-底层数组实现，可以有序、无序，无重复的保存
-升级操作节约内存
-不支持降级
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;压缩列表&quot;&gt;压缩列表&lt;/h3&gt;
-&lt;h3 id=&quot;对象&quot;&gt;对象&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis的键值对的键和值都是一个对象
-redis有字符串、 列表、hash、集合、有序集合五种类型，每种有至少两种以上编码
-不同编码效率不同
-
-执行命令之前会检查特定的键是否可以执行这个命令
-对象都带有计数垃圾回收机制
-共享0到9999的字符串对象
-每次最后的访问时间会被对象记录，计算空间的回转时间
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;单机数据库实现&quot;&gt;单机数据库实现&lt;/h1&gt;
-
-&lt;h3 id=&quot;数据库&quot;&gt;数据库&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;保存在redisserver.db中
-客户端修改数据库指针，指向redisserver.db中指针切换数据库
-数据库由dict、exprise组成，保存键值对和过期时间
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;rdb持久化&quot;&gt;RDB持久化&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RDB文件保存和还原数据库所有数据
-SAVE命令服务器进程保存操作，阻塞数据库
-BSAVE子进程保存数据，不会阻塞数据库
-RDB文件是二进制的
-不同数据RDB保存格式不一样
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;aof持久化&quot;&gt;AOF持久化&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;·AOF文件通过保存所有修改数据库的写命令请求来记录服务器的数据库状态。
-·AOF文件中的所有命令都以Redis命令请求协议的格式保存。
-·命令请求会先保存到AOF缓冲区里面，之后再定期写入并同步到AOF文件。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;事件&quot;&gt;事件&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis是事件驱动
-文件事件、时间事件
-文件时间读时间、写事件
-时间事件分为定时和周期事件
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;客户端&quot;&gt;客户端&lt;/h3&gt;
-&lt;h3 id=&quot;服务器&quot;&gt;服务器&lt;/h3&gt;
-
-&lt;h1 id=&quot;多机数据库实现&quot;&gt;多机数据库实现&lt;/h1&gt;
-
-&lt;h3 id=&quot;复制&quot;&gt;复制&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;旧版文件同步
-新版支持点复制，也就是偏移量复制
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;sentinel&quot;&gt;sentinel&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;监控redis
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;集群&quot;&gt;集群&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;分片、按槽处理自己的键值
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;独立功能实现&quot;&gt;独立功能实现&lt;/h1&gt;
-&lt;h3 id=&quot;发布订阅&quot;&gt;发布订阅&lt;/h3&gt;
-&lt;h3 id=&quot;事务&quot;&gt;事务&lt;/h3&gt;
-&lt;h3 id=&quot;lua脚本&quot;&gt;lua脚本&lt;/h3&gt;
-&lt;h3 id=&quot;排序&quot;&gt;排序&lt;/h3&gt;
-&lt;h3 id=&quot;二进制数组&quot;&gt;二进制数组&lt;/h3&gt;
-&lt;h3 id=&quot;慢查询日志&quot;&gt;慢查询日志&lt;/h3&gt;
-
-</description>
-        <pubDate>Mon, 07 Aug 2017 11:04:42 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/07/redis-learn.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/07/redis-learn.html</guid>
-        
-        <category>redis</category>
-        
-        <category>读书笔记</category>
         
         
         <category>技术</category>

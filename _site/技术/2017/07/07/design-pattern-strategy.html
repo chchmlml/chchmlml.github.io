@@ -166,71 +166,66 @@
 
 <p>策略模式：定义算法组，分别封装，他们之间可以互换，此模式让算法的变化与客户的需求分开。
 举个例子，当我们需要一群鸭子，我们就定义这样一个类</p>
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>class duck{  
- function quack(){}//鸭子叫  
- function fly(){}//飞起来了  
-}  
-</code></pre>
-</div>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">duck</span><span class="p">{</span>  
+ <span class="k">function</span> <span class="n">quack</span><span class="p">(){}</span><span class="c1">//鸭子叫  </span>
+ <span class="k">function</span> <span class="n">fly</span><span class="p">(){}</span><span class="c1">//飞起来了  </span>
+<span class="p">}</span>  
+</code></pre></div></div>
 
 <h1 id="继承一下">继承一下</h1>
 
 <p>当我们需要一个新的种类，继承就好了，但是问题是，有的鸭子不会飞，我们可以把叫跟飞的方法覆盖起来，但是工作量会很大，所以我们有用到接口了</p>
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>class duck{}  
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">duck</span><span class="p">{}</span>  
   
-interface quack{}  
-interface fly{}  
-</code></pre>
-</div>
+<span class="kd">interface</span> <span class="nc">quack</span><span class="p">{}</span>  
+<span class="kd">interface</span> <span class="nc">fly</span><span class="p">{}</span>  
+</code></pre></div></div>
 
 <h1 id="问题">问题</h1>
 <p>貌似这样就可以了，但是当需求又有变化时，再更改飞行，叫的接口时，很容易就会出问题了。
 策略模式就可以派上用场了，我们把会变化的部分全部抽象出来，不在主体类中实现，也就是有一个抽象父类</p>
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>abstruct class duck{  
- quackBehivour = null;  
- flyBehivour = null;  
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">abstruct</span> <span class="kd">class</span> <span class="nc">duck</span><span class="p">{</span>  
+ <span class="n">quackBehivour</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>  
+ <span class="n">flyBehivour</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>  
    
- function quack(){}  
- function fly(){}  
-}  
-</code></pre>
-</div>
+ <span class="k">function</span> <span class="n">quack</span><span class="p">(){}</span>  
+ <span class="k">function</span> <span class="n">fly</span><span class="p">(){}</span>  
+<span class="p">}</span>  
+</code></pre></div></div>
 
 <h1 id="接口来实现">接口来实现</h1>
 <p>上面的行为用来存储不同的鸭子不同的行为，所以这里还有两个类需要实现</p>
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>interface quackBehivour{  
- function quack(){}  
-}  
-interface flyBehivour{  
- function fly(){}  
-}  
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">quackBehivour</span><span class="p">{</span>  
+ <span class="k">function</span> <span class="n">quack</span><span class="p">(){}</span>  
+<span class="p">}</span>  
+<span class="kd">interface</span> <span class="nc">flyBehivour</span><span class="p">{</span>  
+ <span class="k">function</span> <span class="n">fly</span><span class="p">(){}</span>  
+<span class="p">}</span>  
   
-class mikeQuack implement quackBehivour{  
+<span class="kd">class</span> <span class="nc">mikeQuack</span> <span class="n">implement</span> <span class="n">quackBehivour</span><span class="p">{</span>  
   
-}  
-class mikeFly implement flyBehivour{  
+<span class="p">}</span>  
+<span class="kd">class</span> <span class="nc">mikeFly</span> <span class="n">implement</span> <span class="n">flyBehivour</span><span class="p">{</span>  
   
-}  
-</code></pre>
-</div>
+<span class="p">}</span>  
+</code></pre></div></div>
 
 <p>所以这样我们就可以实现自己的mike鸭子了</p>
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>class mikeDuck extend duck{  
- function __construct(){  
-   quackBehivour = new mikeQuack();  
-   flyBehivour = new mikeFly();  
- }  
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">mikeDuck</span> <span class="n">extend</span> <span class="n">duck</span><span class="p">{</span>  
+ <span class="k">function</span> <span class="n">__construct</span><span class="p">(){</span>  
+   <span class="n">quackBehivour</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">mikeQuack</span><span class="p">();</span>  
+   <span class="n">flyBehivour</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">mikeFly</span><span class="p">();</span>  
+ <span class="p">}</span>  
   
- function quack(){  
-  quackBehivour.quack();  
- }  
+ <span class="k">function</span> <span class="n">quack</span><span class="p">(){</span>  
+  <span class="n">quackBehivour</span><span class="mf">.</span><span class="nf">quack</span><span class="p">();</span>  
+ <span class="p">}</span>  
   
- function fly(){  
-  flyBehivour.fly();  
- }  
-}  
-</code></pre>
-</div>
+ <span class="k">function</span> <span class="n">fly</span><span class="p">(){</span>  
+  <span class="n">flyBehivour</span><span class="mf">.</span><span class="nf">fly</span><span class="p">();</span>  
+ <span class="p">}</span>  
+<span class="p">}</span>  
+</code></pre></div></div>
 
 <h1 id="总结">总结</h1>
 <p>这样我们就把变化最多的两个部分飞行，叫这两个部分分离出来了，新的需求来时，我们只需要增加新的类就能完成扩展。
@@ -265,7 +260,7 @@ class mikeFly implement flyBehivour{
 
 
         <footer>
-  &copy; 2018 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
+  &copy; 2024 haicheng. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>.
 </footer>
 
