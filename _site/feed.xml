@@ -3,29 +3,120 @@
   <channel>
     <title>haicheng的博客</title>
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Dec 2024 18:33:20 +0800</pubDate>
-    <lastBuildDate>Mon, 02 Dec 2024 18:33:20 +0800</lastBuildDate>
+    <link>https://chchmlml.github.io/</link>
+    <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 02 Dec 2024 18:38:15 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Dec 2024 18:38:15 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
-
+    
       <item>
         <title>php与系统性能优化总结</title>
-        <description>This message is used to verify that this feed (feedId:86347563794139136) belongs to me (userId:85631856962656256). Join me in enjoying the next generation information browser https://follow.is.
+        <description>&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;前端优化&quot;&gt;前端优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;减少http请求&quot;&gt;减少http请求&lt;/h3&gt;
+&lt;h3 id=&quot;浏览器缓存&quot;&gt;浏览器缓存&lt;/h3&gt;
+&lt;h3 id=&quot;cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/h3&gt;
+&lt;h3 id=&quot;多域名访问&quot;&gt;多域名访问&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
+原因二：使用同一域名的时候无用的 cookie 简直是噩梦
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;数据压缩&quot;&gt;数据压缩&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip压缩
+资源编译压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;首页优化&quot;&gt;首页优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;基础加载、后期渲染
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;nginx优化&quot;&gt;Nginx优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;nginx配置优化&quot;&gt;Nginx配置优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
+进程文件打开最大数
+多路复用
+gzip压缩
+静态资源缓存（动态也支持）
+开启长连接
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;linux系统优化&quot;&gt;linux系统优化&lt;/h3&gt;
+
+&lt;h1 id=&quot;php优化&quot;&gt;php优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;php7升级&quot;&gt;php7升级？&lt;/h3&gt;
+&lt;h3 id=&quot;opcode缓存&quot;&gt;opcode缓存&lt;/h3&gt;
+&lt;h3 id=&quot;代码伪编译&quot;&gt;代码伪编译&lt;/h3&gt;
+&lt;h3 id=&quot;模板编译&quot;&gt;模板编译&lt;/h3&gt;
+&lt;h3 id=&quot;xhprof&quot;&gt;xhprof&lt;/h3&gt;
+
+&lt;h1 id=&quot;业务优化&quot;&gt;业务优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;扩展开放修改封闭&quot;&gt;扩展开放、修改封闭&lt;/h3&gt;
+&lt;h3 id=&quot;异步缓存分布式&quot;&gt;异步、缓存、分布式&lt;/h3&gt;
+&lt;h3 id=&quot;静态化&quot;&gt;静态化&lt;/h3&gt;
+&lt;h3 id=&quot;业务解耦&quot;&gt;业务解耦&lt;/h3&gt;
+
+&lt;h1 id=&quot;mysql优化&quot;&gt;mysql优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;部署&quot;&gt;部署&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
+nosql
+并发数
+连接时间
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;开发&quot;&gt;开发&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
+主键索引
+字段优化
+explain应用
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;缓存优化&quot;&gt;缓存优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多级缓存&quot;&gt;多级缓存&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
+本地缓存
+分布式缓存
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;#redis
+    多实例化
+    内存优化
+    hash使用&lt;/p&gt;
+
+&lt;h1 id=&quot;服务器优化&quot;&gt;服务器优化&lt;/h1&gt;
+
+&lt;h3 id=&quot;多进程&quot;&gt;多进程&lt;/h3&gt;
+&lt;h3 id=&quot;减少上下文切换&quot;&gt;减少上下文切换&lt;/h3&gt;
+&lt;h3 id=&quot;多路复用&quot;&gt;多路复用&lt;/h3&gt;
+&lt;h3 id=&quot;减少系统调用&quot;&gt;减少系统调用&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 01 Dec 2024 14:01:20 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2024/12/01/optimization-performance-with-php.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2024/12/01/optimization-performance-with-php.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/01/optimization-performance-with-php.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/01/optimization-performance-with-php.html</guid>
+        
         <category>redis</category>
-
+        
         <category>读书笔记</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
       <item>
         <title>每天学习笔记【2】</title>
         <description>&lt;h1 id=&quot;第五周&quot;&gt;第五周&lt;/h1&gt;
@@ -49,78 +140,78 @@ mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 01 Dec 2024 13:13:26 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2024/12/01/everyday-learn-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2024/12/01/everyday-learn-2.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/01/everyday-learn-2.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/01/everyday-learn-2.html</guid>
+        
         <category>Ted演讲</category>
-
+        
         <category>每日积累</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
       <item>
         <title>2018年了，做些展望吧</title>
         <description>
 </description>
         <pubDate>Thu, 22 Feb 2018 13:27:45 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2018/02/22/happy-new-year.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2018/02/22/happy-new-year.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2018/02/22/happy-new-year.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2018/02/22/happy-new-year.html</guid>
+        
         <category>生活</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
       <item>
         <title>读书笔记《高性能mysql》</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/posts/读《高性能mysql》.png&quot; alt=&quot;高性能mysql&quot; title=&quot;高性能mysql&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 13 Sep 2017 17:20:09 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</guid>
-
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/ha-mysql.html</guid>
+        
         <category>mysql</category>
-
-
+        
+        
         <category>读书</category>
-
+        
       </item>
-
+    
       <item>
         <title>读书笔记《代码整洁之道》</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/posts/代码整洁之道.png&quot; alt=&quot;代码整洁之道&quot; title=&quot;代码整洁之道&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 13 Sep 2017 17:20:09 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</guid>
-
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/codes.html</guid>
+        
         <category>编程习惯</category>
-
-
+        
+        
         <category>读书</category>
-
+        
       </item>
-
+    
       <item>
         <title>读书笔记《互联网时代的项目管理术》</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/posts/互联网时代的项目管理术.png&quot; alt=&quot;互联网时代的项目管理术&quot; title=&quot;互联网时代的项目管理术&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 13 Sep 2017 17:13:16 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</guid>
-
+        <link>https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E8%AF%BB%E4%B9%A6/2017/09/13/project-manage-at-internet-era.html</guid>
+        
         <category>管理</category>
-
-
+        
+        
         <category>读书</category>
-
+        
       </item>
-
+    
       <item>
         <title>活在北京/Now Fucking Live In Beijing</title>
         <description>&lt;p&gt;记录下今天：现在的时间是【2017-09-09 10:55:33】，在北京，生活枯燥而且动荡。如果说有人觉得无聊的生活才可怕，那么不知所措的生活是否更加可怕？&lt;/p&gt;
@@ -135,16 +226,16 @@ mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不知道下次你看到是什么感觉，请留下你的现状+时间。&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 09 Sep 2017 10:55:33 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/09/09/about-take-a-house-in-beijing.html</guid>
+        
         <category>买房子</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
       <item>
         <title>我的项目总结</title>
         <description>&lt;h1 id=&quot;pps广告平台--移动投放平台&quot;&gt;pps广告平台 &amp;amp; 移动投放平台&lt;/h1&gt;
@@ -215,18 +306,18 @@ mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
 
 </description>
         <pubDate>Fri, 25 Aug 2017 11:19:59 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/25/my-career.html</guid>
+        
         <category>总结</category>
-
+        
         <category>项目</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
       <item>
         <title>面试题目收集1</title>
         <description>&lt;h3 id=&quot;什么是内存泄露什么引起的&quot;&gt;什么是内存泄露？什么引起的&lt;/h3&gt;
@@ -275,22 +366,22 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
 &lt;h3 id=&quot;mysql查询优化有什么心得&quot;&gt;mysql查询优化有什么心得&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;索引、关联查询、返回列优化
-是否可以将一个复杂查询分成多个简单查询
-优化COUNT()查询
+是否可以将一个复杂查询分成多个简单查询 
+优化COUNT()查询 
 优化关联查询&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 22 Aug 2017 10:44:29 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</guid>
-
+        <link>https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E6%8A%80%E6%9C%AF/2017/08/22/about-interview-question-1.html</guid>
+        
         <category>面试总结</category>
-
-
+        
+        
         <category>技术</category>
-
+        
       </item>
-
+    
       <item>
         <title>php与系统性能优化总结</title>
         <description>&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
@@ -387,17 +478,17 @@ explain应用
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
-        <link>http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</guid>
-
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</guid>
+        
         <category>redis</category>
-
+        
         <category>读书笔记</category>
-
-
+        
+        
         <category>随笔</category>
-
+        
       </item>
-
+    
   </channel>
 </rss>

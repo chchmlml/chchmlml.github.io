@@ -2,10 +2,13 @@
 layout: post
 title: 'do follow authorize'
 date: '2024-12-02 20:01:20'
-image: '/assets/img_of_post/'
 categories:
-- 随笔
+  - 随笔
 tags:
+  - 生活
+image:
+  feature:
+  credit:
 ---
 
 
