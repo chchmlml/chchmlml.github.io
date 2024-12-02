@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '每天学习笔记【2】'
-date: '2017-08-01 13:13:26'
+date: '2024-12-02 13:13:26'
 image: '/styles/images/'
 description: '我的每天学习笔记，做个日记记录点滴'
 categories:

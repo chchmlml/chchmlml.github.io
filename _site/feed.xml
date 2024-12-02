@@ -5,9 +5,44 @@
     <description>这是haicheng的博客，里面是技术跟感悟的东西。</description>
     <link>https://chchmlml.github.io/</link>
     <atom:link href="https://chchmlml.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Dec 2024 18:19:15 +0800</pubDate>
-    <lastBuildDate>Mon, 02 Dec 2024 18:19:15 +0800</lastBuildDate>
+    <pubDate>Mon, 02 Dec 2024 18:21:06 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Dec 2024 18:21:06 +0800</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>每天学习笔记【2】</title>
+        <description>&lt;h1 id=&quot;第五周&quot;&gt;第五周&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;20170911&lt;/p&gt;
+  &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;《互联网时代的项目管理术》读书第二章
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;20170912&lt;/p&gt;
+  &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP的master与worker,master不负责处理请求，worker直接处理，master进程不断调用epoll_wait和getsockopt是用来异步处理信号事件和定时器事件.
+mybatis二级缓存问题,sqlsession级别；namespace级别。脏读情况。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;20170913&lt;/p&gt;
+  &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;之前的读书笔记整理进来
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 02 Dec 2024 13:13:26 +0800</pubDate>
+        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/02/everyday-learn-2.html</link>
+        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2024/12/02/everyday-learn-2.html</guid>
+        
+        <category>Ted演讲</category>
+        
+        <category>每日积累</category>
+        
+        
+        <category>随笔</category>
+        
+      </item>
     
       <item>
         <title>2018年了，做些展望吧</title>
@@ -236,114 +271,6 @@ Apache可以用 ob_end_flush(); ob_start();&lt;/p&gt;
         
         
         <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>php与系统性能优化总结</title>
-        <description>&lt;h1 id=&quot;原则&quot;&gt;原则&lt;/h1&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;优化不可脱离业务
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;前端优化&quot;&gt;前端优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;减少http请求&quot;&gt;减少http请求&lt;/h3&gt;
-&lt;h3 id=&quot;浏览器缓存&quot;&gt;浏览器缓存&lt;/h3&gt;
-&lt;h3 id=&quot;cdn分布式存储前端资源&quot;&gt;CDN分布式存储前端资源&lt;/h3&gt;
-&lt;h3 id=&quot;多域名访问&quot;&gt;多域名访问&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因一：浏览器对同一域名的并行请求数有上限，多个域名则支持更多并行请求
-原因二：使用同一域名的时候无用的 cookie 简直是噩梦
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;数据压缩&quot;&gt;数据压缩&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip压缩
-资源编译压缩
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;首页优化&quot;&gt;首页优化&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;基础加载、后期渲染
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;nginx优化&quot;&gt;Nginx优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;nginx配置优化&quot;&gt;Nginx配置优化&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;进程数
-进程文件打开最大数
-多路复用
-gzip压缩
-静态资源缓存（动态也支持）
-开启长连接
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;tcpip-网络协议配置优化&quot;&gt;tcp/ip 网络协议配置优化&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这边不太熟悉
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;linux系统优化&quot;&gt;linux系统优化&lt;/h3&gt;
-
-&lt;h1 id=&quot;php优化&quot;&gt;php优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;php7升级&quot;&gt;php7升级？&lt;/h3&gt;
-&lt;h3 id=&quot;opcode缓存&quot;&gt;opcode缓存&lt;/h3&gt;
-&lt;h3 id=&quot;代码伪编译&quot;&gt;代码伪编译&lt;/h3&gt;
-&lt;h3 id=&quot;模板编译&quot;&gt;模板编译&lt;/h3&gt;
-&lt;h3 id=&quot;xhprof&quot;&gt;xhprof&lt;/h3&gt;
-
-&lt;h1 id=&quot;业务优化&quot;&gt;业务优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;扩展开放修改封闭&quot;&gt;扩展开放、修改封闭&lt;/h3&gt;
-&lt;h3 id=&quot;异步缓存分布式&quot;&gt;异步、缓存、分布式&lt;/h3&gt;
-&lt;h3 id=&quot;静态化&quot;&gt;静态化&lt;/h3&gt;
-&lt;h3 id=&quot;业务解耦&quot;&gt;业务解耦&lt;/h3&gt;
-
-&lt;h1 id=&quot;mysql优化&quot;&gt;mysql优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;部署&quot;&gt;部署&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;慢查询日志收集
-nosql
-并发数
-连接时间
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;开发&quot;&gt;开发&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;innodb表引擎
-主键索引
-字段优化
-explain应用
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;缓存优化&quot;&gt;缓存优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;多级缓存&quot;&gt;多级缓存&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;请求内缓存
-本地缓存
-分布式缓存
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;#redis
-    多实例化
-    内存优化
-    hash使用&lt;/p&gt;
-
-&lt;h1 id=&quot;服务器优化&quot;&gt;服务器优化&lt;/h1&gt;
-
-&lt;h3 id=&quot;多进程&quot;&gt;多进程&lt;/h3&gt;
-&lt;h3 id=&quot;减少上下文切换&quot;&gt;减少上下文切换&lt;/h3&gt;
-&lt;h3 id=&quot;多路复用&quot;&gt;多路复用&lt;/h3&gt;
-&lt;h3 id=&quot;减少系统调用&quot;&gt;减少系统调用&lt;/h3&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;strace统计调用次数
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Mon, 14 Aug 2017 14:01:20 +0800</pubDate>
-        <link>https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</link>
-        <guid isPermaLink="true">https://chchmlml.github.io/%E9%9A%8F%E7%AC%94/2017/08/14/optimization-performance-with-php.html</guid>
-        
-        <category>redis</category>
-        
-        <category>读书笔记</category>
-        
-        
-        <category>随笔</category>
         
       </item>
     
